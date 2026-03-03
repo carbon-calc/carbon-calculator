@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "eco": "https://data.carbon-calculator.co.uk/ontologies/ecology#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "label": "rdfs:label",
+    "managementRegimeCode": "eco:managementRegimeCode"
+  },
+  "@graph": [
+    {
+      "@id": "eco:NoThin",
+      "@type": "eco:ManagementRegime",
+      "label": "No Thinning",
+      "managementRegimeCode": "No_thin"
+    },
+    {
+      "@id": "eco:Thinned",
+      "@type": "eco:ManagementRegime",
+      "label": "Thinned",
+      "managementRegimeCode": "Thinned"
+    }
+  ]
+}

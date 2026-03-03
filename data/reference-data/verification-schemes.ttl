@@ -1,0 +1,16 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix proj:   <https://data.carbon-calculator.co.uk/ontologies/project#> .
+
+# =============================================================================
+# Reference Data — Verification Schemes
+# =============================================================================
+
+proj:Standard10Yearly
+    a proj:VerificationScheme ;
+    rdfs:label "Standard 10-Yearly Verification"@en ;
+    rdfs:comment "Standard WCC verification at 10-year intervals for projects in Scotland, Wales, NI, or English projects not using the Woodland Carbon Guarantee."@en .
+
+proj:Guarantee5Yearly
+    a proj:VerificationScheme ;
+    rdfs:label "5-Yearly Verification (Woodland Carbon Guarantee)"@en ;
+    rdfs:comment "5-yearly verification for WCC projects in England using the Woodland Carbon Guarantee."@en .

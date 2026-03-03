@@ -1,0 +1,660 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix calc:  <https://data.carbon-calculator.co.uk/ontologies/calculation#> .
+@prefix proj:  <https://data.carbon-calculator.co.uk/ontologies/project#> .
+@prefix eco:   <https://data.carbon-calculator.co.uk/ontologies/ecology#> .
+
+# =============================================================================
+# Reference Data — Soil Carbon Emission Lookup
+# =============================================================================
+# Each entry provides soil carbon emissions (tCO2e/ha) for a specific
+# country and topsoil carbon loss percentage, broken down by previous landuse.
+# =============================================================================
+
+calc:soilEmissionEngland00
+    a calc:SoilEmissionLookupEntry ;
+    rdfs:label "Soil emission: England, 00% topsoil lost"@en ;
+    calc:soilEmissionCountry proj:England ;
+    calc:topsoilPercentageCode "00" ;
+    calc:hasSoilEmissionRate calc:soilRateEngland00Seminatural ;
+    calc:hasSoilEmissionRate calc:soilRateEngland00Pasture ;
+    calc:hasSoilEmissionRate calc:soilRateEngland00Arable .
+
+calc:soilRateEngland00Seminatural
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: England, 00%, Seminatural"@en ;
+    calc:forPreviousLanduse eco:Seminatural ;
+    calc:soilEmissionValue 0 .
+
+calc:soilRateEngland00Pasture
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: England, 00%, Pasture"@en ;
+    calc:forPreviousLanduse eco:Pasture ;
+    calc:soilEmissionValue 0 .
+
+calc:soilRateEngland00Arable
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: England, 00%, Arable"@en ;
+    calc:forPreviousLanduse eco:Arable ;
+    calc:soilEmissionValue 0 .
+
+calc:soilEmissionScotland00
+    a calc:SoilEmissionLookupEntry ;
+    rdfs:label "Soil emission: Scotland, 00% topsoil lost"@en ;
+    calc:soilEmissionCountry proj:Scotland ;
+    calc:topsoilPercentageCode "00" ;
+    calc:hasSoilEmissionRate calc:soilRateScotland00Seminatural ;
+    calc:hasSoilEmissionRate calc:soilRateScotland00Pasture ;
+    calc:hasSoilEmissionRate calc:soilRateScotland00Arable .
+
+calc:soilRateScotland00Seminatural
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Scotland, 00%, Seminatural"@en ;
+    calc:forPreviousLanduse eco:Seminatural ;
+    calc:soilEmissionValue 0 .
+
+calc:soilRateScotland00Pasture
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Scotland, 00%, Pasture"@en ;
+    calc:forPreviousLanduse eco:Pasture ;
+    calc:soilEmissionValue 0 .
+
+calc:soilRateScotland00Arable
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Scotland, 00%, Arable"@en ;
+    calc:forPreviousLanduse eco:Arable ;
+    calc:soilEmissionValue 0 .
+
+calc:soilEmissionWales00
+    a calc:SoilEmissionLookupEntry ;
+    rdfs:label "Soil emission: Wales, 00% topsoil lost"@en ;
+    calc:soilEmissionCountry proj:Wales ;
+    calc:topsoilPercentageCode "00" ;
+    calc:hasSoilEmissionRate calc:soilRateWales00Seminatural ;
+    calc:hasSoilEmissionRate calc:soilRateWales00Pasture ;
+    calc:hasSoilEmissionRate calc:soilRateWales00Arable .
+
+calc:soilRateWales00Seminatural
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Wales, 00%, Seminatural"@en ;
+    calc:forPreviousLanduse eco:Seminatural ;
+    calc:soilEmissionValue 0 .
+
+calc:soilRateWales00Pasture
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Wales, 00%, Pasture"@en ;
+    calc:forPreviousLanduse eco:Pasture ;
+    calc:soilEmissionValue 0 .
+
+calc:soilRateWales00Arable
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Wales, 00%, Arable"@en ;
+    calc:forPreviousLanduse eco:Arable ;
+    calc:soilEmissionValue 0 .
+
+calc:soilEmissionNorthernIreland00
+    a calc:SoilEmissionLookupEntry ;
+    rdfs:label "Soil emission: Northern Ireland, 00% topsoil lost"@en ;
+    calc:soilEmissionCountry proj:NorthernIreland ;
+    calc:topsoilPercentageCode "00" ;
+    calc:hasSoilEmissionRate calc:soilRateNorthernIreland00Seminatural ;
+    calc:hasSoilEmissionRate calc:soilRateNorthernIreland00Pasture ;
+    calc:hasSoilEmissionRate calc:soilRateNorthernIreland00Arable .
+
+calc:soilRateNorthernIreland00Seminatural
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Northern Ireland, 00%, Seminatural"@en ;
+    calc:forPreviousLanduse eco:Seminatural ;
+    calc:soilEmissionValue 0 .
+
+calc:soilRateNorthernIreland00Pasture
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Northern Ireland, 00%, Pasture"@en ;
+    calc:forPreviousLanduse eco:Pasture ;
+    calc:soilEmissionValue 0 .
+
+calc:soilRateNorthernIreland00Arable
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Northern Ireland, 00%, Arable"@en ;
+    calc:forPreviousLanduse eco:Arable ;
+    calc:soilEmissionValue 0 .
+
+calc:soilEmissionEngland02
+    a calc:SoilEmissionLookupEntry ;
+    rdfs:label "Soil emission: England, 02% topsoil lost"@en ;
+    calc:soilEmissionCountry proj:England ;
+    calc:topsoilPercentageCode "02" ;
+    calc:hasSoilEmissionRate calc:soilRateEngland02Seminatural ;
+    calc:hasSoilEmissionRate calc:soilRateEngland02Pasture ;
+    calc:hasSoilEmissionRate calc:soilRateEngland02Arable .
+
+calc:soilRateEngland02Seminatural
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: England, 02%, Seminatural"@en ;
+    calc:forPreviousLanduse eco:Seminatural ;
+    calc:soilEmissionValue -8.8 .
+
+calc:soilRateEngland02Pasture
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: England, 02%, Pasture"@en ;
+    calc:forPreviousLanduse eco:Pasture ;
+    calc:soilEmissionValue -5.866666666666666 .
+
+calc:soilRateEngland02Arable
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: England, 02%, Arable"@en ;
+    calc:forPreviousLanduse eco:Arable ;
+    calc:soilEmissionValue -5.133333333333334 .
+
+calc:soilEmissionScotland02
+    a calc:SoilEmissionLookupEntry ;
+    rdfs:label "Soil emission: Scotland, 02% topsoil lost"@en ;
+    calc:soilEmissionCountry proj:Scotland ;
+    calc:topsoilPercentageCode "02" ;
+    calc:hasSoilEmissionRate calc:soilRateScotland02Seminatural ;
+    calc:hasSoilEmissionRate calc:soilRateScotland02Pasture ;
+    calc:hasSoilEmissionRate calc:soilRateScotland02Arable .
+
+calc:soilRateScotland02Seminatural
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Scotland, 02%, Seminatural"@en ;
+    calc:forPreviousLanduse eco:Seminatural ;
+    calc:soilEmissionValue -11.733333333333333 .
+
+calc:soilRateScotland02Pasture
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Scotland, 02%, Pasture"@en ;
+    calc:forPreviousLanduse eco:Pasture ;
+    calc:soilEmissionValue -11.733333333333333 .
+
+calc:soilRateScotland02Arable
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Scotland, 02%, Arable"@en ;
+    calc:forPreviousLanduse eco:Arable ;
+    calc:soilEmissionValue -8.8 .
+
+calc:soilEmissionWales02
+    a calc:SoilEmissionLookupEntry ;
+    rdfs:label "Soil emission: Wales, 02% topsoil lost"@en ;
+    calc:soilEmissionCountry proj:Wales ;
+    calc:topsoilPercentageCode "02" ;
+    calc:hasSoilEmissionRate calc:soilRateWales02Seminatural ;
+    calc:hasSoilEmissionRate calc:soilRateWales02Pasture ;
+    calc:hasSoilEmissionRate calc:soilRateWales02Arable .
+
+calc:soilRateWales02Seminatural
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Wales, 02%, Seminatural"@en ;
+    calc:forPreviousLanduse eco:Seminatural ;
+    calc:soilEmissionValue -8.066666666666666 .
+
+calc:soilRateWales02Pasture
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Wales, 02%, Pasture"@en ;
+    calc:forPreviousLanduse eco:Pasture ;
+    calc:soilEmissionValue -6.6 .
+
+calc:soilRateWales02Arable
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Wales, 02%, Arable"@en ;
+    calc:forPreviousLanduse eco:Arable ;
+    calc:soilEmissionValue -5.133333333333334 .
+
+calc:soilEmissionNorthernIreland02
+    a calc:SoilEmissionLookupEntry ;
+    rdfs:label "Soil emission: Northern Ireland, 02% topsoil lost"@en ;
+    calc:soilEmissionCountry proj:NorthernIreland ;
+    calc:topsoilPercentageCode "02" ;
+    calc:hasSoilEmissionRate calc:soilRateNorthernIreland02Seminatural ;
+    calc:hasSoilEmissionRate calc:soilRateNorthernIreland02Pasture ;
+    calc:hasSoilEmissionRate calc:soilRateNorthernIreland02Arable .
+
+calc:soilRateNorthernIreland02Seminatural
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Northern Ireland, 02%, Seminatural"@en ;
+    calc:forPreviousLanduse eco:Seminatural ;
+    calc:soilEmissionValue -13.933333333333334 .
+
+calc:soilRateNorthernIreland02Pasture
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Northern Ireland, 02%, Pasture"@en ;
+    calc:forPreviousLanduse eco:Pasture ;
+    calc:soilEmissionValue -9.533333333333333 .
+
+calc:soilRateNorthernIreland02Arable
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Northern Ireland, 02%, Arable"@en ;
+    calc:forPreviousLanduse eco:Arable ;
+    calc:soilEmissionValue -7.333333333333334 .
+
+calc:soilEmissionEngland05
+    a calc:SoilEmissionLookupEntry ;
+    rdfs:label "Soil emission: England, 05% topsoil lost"@en ;
+    calc:soilEmissionCountry proj:England ;
+    calc:topsoilPercentageCode "05" ;
+    calc:hasSoilEmissionRate calc:soilRateEngland05Seminatural ;
+    calc:hasSoilEmissionRate calc:soilRateEngland05Pasture ;
+    calc:hasSoilEmissionRate calc:soilRateEngland05Arable .
+
+calc:soilRateEngland05Seminatural
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: England, 05%, Seminatural"@en ;
+    calc:forPreviousLanduse eco:Seminatural ;
+    calc:soilEmissionValue -22 .
+
+calc:soilRateEngland05Pasture
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: England, 05%, Pasture"@en ;
+    calc:forPreviousLanduse eco:Pasture ;
+    calc:soilEmissionValue -14.666666666666666 .
+
+calc:soilRateEngland05Arable
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: England, 05%, Arable"@en ;
+    calc:forPreviousLanduse eco:Arable ;
+    calc:soilEmissionValue -12.833333333333336 .
+
+calc:soilEmissionScotland05
+    a calc:SoilEmissionLookupEntry ;
+    rdfs:label "Soil emission: Scotland, 05% topsoil lost"@en ;
+    calc:soilEmissionCountry proj:Scotland ;
+    calc:topsoilPercentageCode "05" ;
+    calc:hasSoilEmissionRate calc:soilRateScotland05Seminatural ;
+    calc:hasSoilEmissionRate calc:soilRateScotland05Pasture ;
+    calc:hasSoilEmissionRate calc:soilRateScotland05Arable .
+
+calc:soilRateScotland05Seminatural
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Scotland, 05%, Seminatural"@en ;
+    calc:forPreviousLanduse eco:Seminatural ;
+    calc:soilEmissionValue -29.333333333333332 .
+
+calc:soilRateScotland05Pasture
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Scotland, 05%, Pasture"@en ;
+    calc:forPreviousLanduse eco:Pasture ;
+    calc:soilEmissionValue -29.333333333333332 .
+
+calc:soilRateScotland05Arable
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Scotland, 05%, Arable"@en ;
+    calc:forPreviousLanduse eco:Arable ;
+    calc:soilEmissionValue -22 .
+
+calc:soilEmissionWales05
+    a calc:SoilEmissionLookupEntry ;
+    rdfs:label "Soil emission: Wales, 05% topsoil lost"@en ;
+    calc:soilEmissionCountry proj:Wales ;
+    calc:topsoilPercentageCode "05" ;
+    calc:hasSoilEmissionRate calc:soilRateWales05Seminatural ;
+    calc:hasSoilEmissionRate calc:soilRateWales05Pasture ;
+    calc:hasSoilEmissionRate calc:soilRateWales05Arable .
+
+calc:soilRateWales05Seminatural
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Wales, 05%, Seminatural"@en ;
+    calc:forPreviousLanduse eco:Seminatural ;
+    calc:soilEmissionValue -20.166666666666668 .
+
+calc:soilRateWales05Pasture
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Wales, 05%, Pasture"@en ;
+    calc:forPreviousLanduse eco:Pasture ;
+    calc:soilEmissionValue -16.5 .
+
+calc:soilRateWales05Arable
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Wales, 05%, Arable"@en ;
+    calc:forPreviousLanduse eco:Arable ;
+    calc:soilEmissionValue -12.833333333333336 .
+
+calc:soilEmissionNorthernIreland05
+    a calc:SoilEmissionLookupEntry ;
+    rdfs:label "Soil emission: Northern Ireland, 05% topsoil lost"@en ;
+    calc:soilEmissionCountry proj:NorthernIreland ;
+    calc:topsoilPercentageCode "05" ;
+    calc:hasSoilEmissionRate calc:soilRateNorthernIreland05Seminatural ;
+    calc:hasSoilEmissionRate calc:soilRateNorthernIreland05Pasture ;
+    calc:hasSoilEmissionRate calc:soilRateNorthernIreland05Arable .
+
+calc:soilRateNorthernIreland05Seminatural
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Northern Ireland, 05%, Seminatural"@en ;
+    calc:forPreviousLanduse eco:Seminatural ;
+    calc:soilEmissionValue -34.833333333333336 .
+
+calc:soilRateNorthernIreland05Pasture
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Northern Ireland, 05%, Pasture"@en ;
+    calc:forPreviousLanduse eco:Pasture ;
+    calc:soilEmissionValue -23.833333333333336 .
+
+calc:soilRateNorthernIreland05Arable
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Northern Ireland, 05%, Arable"@en ;
+    calc:forPreviousLanduse eco:Arable ;
+    calc:soilEmissionValue -18.333333333333336 .
+
+calc:soilEmissionEngland10
+    a calc:SoilEmissionLookupEntry ;
+    rdfs:label "Soil emission: England, 10% topsoil lost"@en ;
+    calc:soilEmissionCountry proj:England ;
+    calc:topsoilPercentageCode "10" ;
+    calc:hasSoilEmissionRate calc:soilRateEngland10Seminatural ;
+    calc:hasSoilEmissionRate calc:soilRateEngland10Pasture ;
+    calc:hasSoilEmissionRate calc:soilRateEngland10Arable .
+
+calc:soilRateEngland10Seminatural
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: England, 10%, Seminatural"@en ;
+    calc:forPreviousLanduse eco:Seminatural ;
+    calc:soilEmissionValue -44 .
+
+calc:soilRateEngland10Pasture
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: England, 10%, Pasture"@en ;
+    calc:forPreviousLanduse eco:Pasture ;
+    calc:soilEmissionValue -29.333333333333332 .
+
+calc:soilRateEngland10Arable
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: England, 10%, Arable"@en ;
+    calc:forPreviousLanduse eco:Arable ;
+    calc:soilEmissionValue -25.66666666666667 .
+
+calc:soilEmissionScotland10
+    a calc:SoilEmissionLookupEntry ;
+    rdfs:label "Soil emission: Scotland, 10% topsoil lost"@en ;
+    calc:soilEmissionCountry proj:Scotland ;
+    calc:topsoilPercentageCode "10" ;
+    calc:hasSoilEmissionRate calc:soilRateScotland10Seminatural ;
+    calc:hasSoilEmissionRate calc:soilRateScotland10Pasture ;
+    calc:hasSoilEmissionRate calc:soilRateScotland10Arable .
+
+calc:soilRateScotland10Seminatural
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Scotland, 10%, Seminatural"@en ;
+    calc:forPreviousLanduse eco:Seminatural ;
+    calc:soilEmissionValue -58.666666666666664 .
+
+calc:soilRateScotland10Pasture
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Scotland, 10%, Pasture"@en ;
+    calc:forPreviousLanduse eco:Pasture ;
+    calc:soilEmissionValue -58.666666666666664 .
+
+calc:soilRateScotland10Arable
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Scotland, 10%, Arable"@en ;
+    calc:forPreviousLanduse eco:Arable ;
+    calc:soilEmissionValue -44 .
+
+calc:soilEmissionWales10
+    a calc:SoilEmissionLookupEntry ;
+    rdfs:label "Soil emission: Wales, 10% topsoil lost"@en ;
+    calc:soilEmissionCountry proj:Wales ;
+    calc:topsoilPercentageCode "10" ;
+    calc:hasSoilEmissionRate calc:soilRateWales10Seminatural ;
+    calc:hasSoilEmissionRate calc:soilRateWales10Pasture ;
+    calc:hasSoilEmissionRate calc:soilRateWales10Arable .
+
+calc:soilRateWales10Seminatural
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Wales, 10%, Seminatural"@en ;
+    calc:forPreviousLanduse eco:Seminatural ;
+    calc:soilEmissionValue -40.333333333333336 .
+
+calc:soilRateWales10Pasture
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Wales, 10%, Pasture"@en ;
+    calc:forPreviousLanduse eco:Pasture ;
+    calc:soilEmissionValue -33 .
+
+calc:soilRateWales10Arable
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Wales, 10%, Arable"@en ;
+    calc:forPreviousLanduse eco:Arable ;
+    calc:soilEmissionValue -25.66666666666667 .
+
+calc:soilEmissionNorthernIreland10
+    a calc:SoilEmissionLookupEntry ;
+    rdfs:label "Soil emission: Northern Ireland, 10% topsoil lost"@en ;
+    calc:soilEmissionCountry proj:NorthernIreland ;
+    calc:topsoilPercentageCode "10" ;
+    calc:hasSoilEmissionRate calc:soilRateNorthernIreland10Seminatural ;
+    calc:hasSoilEmissionRate calc:soilRateNorthernIreland10Pasture ;
+    calc:hasSoilEmissionRate calc:soilRateNorthernIreland10Arable .
+
+calc:soilRateNorthernIreland10Seminatural
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Northern Ireland, 10%, Seminatural"@en ;
+    calc:forPreviousLanduse eco:Seminatural ;
+    calc:soilEmissionValue -69.66666666666667 .
+
+calc:soilRateNorthernIreland10Pasture
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Northern Ireland, 10%, Pasture"@en ;
+    calc:forPreviousLanduse eco:Pasture ;
+    calc:soilEmissionValue -47.66666666666667 .
+
+calc:soilRateNorthernIreland10Arable
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Northern Ireland, 10%, Arable"@en ;
+    calc:forPreviousLanduse eco:Arable ;
+    calc:soilEmissionValue -36.66666666666667 .
+
+calc:soilEmissionEngland20
+    a calc:SoilEmissionLookupEntry ;
+    rdfs:label "Soil emission: England, 20% topsoil lost"@en ;
+    calc:soilEmissionCountry proj:England ;
+    calc:topsoilPercentageCode "20" ;
+    calc:hasSoilEmissionRate calc:soilRateEngland20Seminatural ;
+    calc:hasSoilEmissionRate calc:soilRateEngland20Pasture ;
+    calc:hasSoilEmissionRate calc:soilRateEngland20Arable .
+
+calc:soilRateEngland20Seminatural
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: England, 20%, Seminatural"@en ;
+    calc:forPreviousLanduse eco:Seminatural ;
+    calc:soilEmissionValue -88 .
+
+calc:soilRateEngland20Pasture
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: England, 20%, Pasture"@en ;
+    calc:forPreviousLanduse eco:Pasture ;
+    calc:soilEmissionValue -58.666666666666664 .
+
+calc:soilRateEngland20Arable
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: England, 20%, Arable"@en ;
+    calc:forPreviousLanduse eco:Arable ;
+    calc:soilEmissionValue -51.33333333333334 .
+
+calc:soilEmissionScotland20
+    a calc:SoilEmissionLookupEntry ;
+    rdfs:label "Soil emission: Scotland, 20% topsoil lost"@en ;
+    calc:soilEmissionCountry proj:Scotland ;
+    calc:topsoilPercentageCode "20" ;
+    calc:hasSoilEmissionRate calc:soilRateScotland20Seminatural ;
+    calc:hasSoilEmissionRate calc:soilRateScotland20Pasture ;
+    calc:hasSoilEmissionRate calc:soilRateScotland20Arable .
+
+calc:soilRateScotland20Seminatural
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Scotland, 20%, Seminatural"@en ;
+    calc:forPreviousLanduse eco:Seminatural ;
+    calc:soilEmissionValue -117.33333333333333 .
+
+calc:soilRateScotland20Pasture
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Scotland, 20%, Pasture"@en ;
+    calc:forPreviousLanduse eco:Pasture ;
+    calc:soilEmissionValue -117.33333333333333 .
+
+calc:soilRateScotland20Arable
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Scotland, 20%, Arable"@en ;
+    calc:forPreviousLanduse eco:Arable ;
+    calc:soilEmissionValue -88 .
+
+calc:soilEmissionWales20
+    a calc:SoilEmissionLookupEntry ;
+    rdfs:label "Soil emission: Wales, 20% topsoil lost"@en ;
+    calc:soilEmissionCountry proj:Wales ;
+    calc:topsoilPercentageCode "20" ;
+    calc:hasSoilEmissionRate calc:soilRateWales20Seminatural ;
+    calc:hasSoilEmissionRate calc:soilRateWales20Pasture ;
+    calc:hasSoilEmissionRate calc:soilRateWales20Arable .
+
+calc:soilRateWales20Seminatural
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Wales, 20%, Seminatural"@en ;
+    calc:forPreviousLanduse eco:Seminatural ;
+    calc:soilEmissionValue -80.66666666666667 .
+
+calc:soilRateWales20Pasture
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Wales, 20%, Pasture"@en ;
+    calc:forPreviousLanduse eco:Pasture ;
+    calc:soilEmissionValue -66 .
+
+calc:soilRateWales20Arable
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Wales, 20%, Arable"@en ;
+    calc:forPreviousLanduse eco:Arable ;
+    calc:soilEmissionValue -51.33333333333334 .
+
+calc:soilEmissionNorthernIreland20
+    a calc:SoilEmissionLookupEntry ;
+    rdfs:label "Soil emission: Northern Ireland, 20% topsoil lost"@en ;
+    calc:soilEmissionCountry proj:NorthernIreland ;
+    calc:topsoilPercentageCode "20" ;
+    calc:hasSoilEmissionRate calc:soilRateNorthernIreland20Seminatural ;
+    calc:hasSoilEmissionRate calc:soilRateNorthernIreland20Pasture ;
+    calc:hasSoilEmissionRate calc:soilRateNorthernIreland20Arable .
+
+calc:soilRateNorthernIreland20Seminatural
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Northern Ireland, 20%, Seminatural"@en ;
+    calc:forPreviousLanduse eco:Seminatural ;
+    calc:soilEmissionValue -139.33333333333334 .
+
+calc:soilRateNorthernIreland20Pasture
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Northern Ireland, 20%, Pasture"@en ;
+    calc:forPreviousLanduse eco:Pasture ;
+    calc:soilEmissionValue -95.33333333333334 .
+
+calc:soilRateNorthernIreland20Arable
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Northern Ireland, 20%, Arable"@en ;
+    calc:forPreviousLanduse eco:Arable ;
+    calc:soilEmissionValue -73.33333333333334 .
+
+calc:soilEmissionEngland40
+    a calc:SoilEmissionLookupEntry ;
+    rdfs:label "Soil emission: England, 40% topsoil lost"@en ;
+    calc:soilEmissionCountry proj:England ;
+    calc:topsoilPercentageCode "40" ;
+    calc:hasSoilEmissionRate calc:soilRateEngland40Seminatural ;
+    calc:hasSoilEmissionRate calc:soilRateEngland40Pasture ;
+    calc:hasSoilEmissionRate calc:soilRateEngland40Arable .
+
+calc:soilRateEngland40Seminatural
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: England, 40%, Seminatural"@en ;
+    calc:forPreviousLanduse eco:Seminatural ;
+    calc:soilEmissionValue -176 .
+
+calc:soilRateEngland40Pasture
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: England, 40%, Pasture"@en ;
+    calc:forPreviousLanduse eco:Pasture ;
+    calc:soilEmissionValue -117.33333333333333 .
+
+calc:soilRateEngland40Arable
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: England, 40%, Arable"@en ;
+    calc:forPreviousLanduse eco:Arable ;
+    calc:soilEmissionValue -102.66666666666669 .
+
+calc:soilEmissionScotland40
+    a calc:SoilEmissionLookupEntry ;
+    rdfs:label "Soil emission: Scotland, 40% topsoil lost"@en ;
+    calc:soilEmissionCountry proj:Scotland ;
+    calc:topsoilPercentageCode "40" ;
+    calc:hasSoilEmissionRate calc:soilRateScotland40Seminatural ;
+    calc:hasSoilEmissionRate calc:soilRateScotland40Pasture ;
+    calc:hasSoilEmissionRate calc:soilRateScotland40Arable .
+
+calc:soilRateScotland40Seminatural
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Scotland, 40%, Seminatural"@en ;
+    calc:forPreviousLanduse eco:Seminatural ;
+    calc:soilEmissionValue -234.66666666666666 .
+
+calc:soilRateScotland40Pasture
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Scotland, 40%, Pasture"@en ;
+    calc:forPreviousLanduse eco:Pasture ;
+    calc:soilEmissionValue -234.66666666666666 .
+
+calc:soilRateScotland40Arable
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Scotland, 40%, Arable"@en ;
+    calc:forPreviousLanduse eco:Arable ;
+    calc:soilEmissionValue -176 .
+
+calc:soilEmissionWales40
+    a calc:SoilEmissionLookupEntry ;
+    rdfs:label "Soil emission: Wales, 40% topsoil lost"@en ;
+    calc:soilEmissionCountry proj:Wales ;
+    calc:topsoilPercentageCode "40" ;
+    calc:hasSoilEmissionRate calc:soilRateWales40Seminatural ;
+    calc:hasSoilEmissionRate calc:soilRateWales40Pasture ;
+    calc:hasSoilEmissionRate calc:soilRateWales40Arable .
+
+calc:soilRateWales40Seminatural
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Wales, 40%, Seminatural"@en ;
+    calc:forPreviousLanduse eco:Seminatural ;
+    calc:soilEmissionValue -161.33333333333334 .
+
+calc:soilRateWales40Pasture
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Wales, 40%, Pasture"@en ;
+    calc:forPreviousLanduse eco:Pasture ;
+    calc:soilEmissionValue -132 .
+
+calc:soilRateWales40Arable
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Wales, 40%, Arable"@en ;
+    calc:forPreviousLanduse eco:Arable ;
+    calc:soilEmissionValue -102.66666666666669 .
+
+calc:soilEmissionNorthernIreland40
+    a calc:SoilEmissionLookupEntry ;
+    rdfs:label "Soil emission: Northern Ireland, 40% topsoil lost"@en ;
+    calc:soilEmissionCountry proj:NorthernIreland ;
+    calc:topsoilPercentageCode "40" ;
+    calc:hasSoilEmissionRate calc:soilRateNorthernIreland40Seminatural ;
+    calc:hasSoilEmissionRate calc:soilRateNorthernIreland40Pasture ;
+    calc:hasSoilEmissionRate calc:soilRateNorthernIreland40Arable .
+
+calc:soilRateNorthernIreland40Seminatural
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Northern Ireland, 40%, Seminatural"@en ;
+    calc:forPreviousLanduse eco:Seminatural ;
+    calc:soilEmissionValue -278.6666666666667 .
+
+calc:soilRateNorthernIreland40Pasture
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Northern Ireland, 40%, Pasture"@en ;
+    calc:forPreviousLanduse eco:Pasture ;
+    calc:soilEmissionValue -190.66666666666669 .
+
+calc:soilRateNorthernIreland40Arable
+    a calc:SoilEmissionRate ;
+    rdfs:label "Soil rate: Northern Ireland, 40%, Arable"@en ;
+    calc:forPreviousLanduse eco:Arable ;
+    calc:soilEmissionValue -146.66666666666669 .

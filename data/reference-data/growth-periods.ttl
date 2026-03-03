@@ -1,0 +1,153 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix proj:   <https://data.carbon-calculator.co.uk/ontologies/project#> .
+
+# =============================================================================
+# Reference Data — Growth Periods
+# =============================================================================
+
+proj:periodYear0
+    a proj:GrowthPeriod ;
+    rdfs:label "Year 0"@en ;
+    proj:periodStartYear 0 ;
+    proj:periodEndYear 0 ;
+    proj:periodIndex 0 .
+
+proj:period0to5
+    a proj:GrowthPeriod ;
+    rdfs:label "0-5"@en ;
+    proj:periodStartYear 0 ;
+    proj:periodEndYear 5 ;
+    proj:periodIndex 1 .
+
+proj:period5to10
+    a proj:GrowthPeriod ;
+    rdfs:label "5-10"@en ;
+    proj:periodStartYear 5 ;
+    proj:periodEndYear 10 ;
+    proj:periodIndex 2 .
+
+proj:period10to15
+    a proj:GrowthPeriod ;
+    rdfs:label "10-15"@en ;
+    proj:periodStartYear 10 ;
+    proj:periodEndYear 15 ;
+    proj:periodIndex 3 .
+
+proj:period15to20
+    a proj:GrowthPeriod ;
+    rdfs:label "15-20"@en ;
+    proj:periodStartYear 15 ;
+    proj:periodEndYear 20 ;
+    proj:periodIndex 4 .
+
+proj:period20to25
+    a proj:GrowthPeriod ;
+    rdfs:label "20-25"@en ;
+    proj:periodStartYear 20 ;
+    proj:periodEndYear 25 ;
+    proj:periodIndex 5 .
+
+proj:period25to30
+    a proj:GrowthPeriod ;
+    rdfs:label "25-30"@en ;
+    proj:periodStartYear 25 ;
+    proj:periodEndYear 30 ;
+    proj:periodIndex 6 .
+
+proj:period30to35
+    a proj:GrowthPeriod ;
+    rdfs:label "30-35"@en ;
+    proj:periodStartYear 30 ;
+    proj:periodEndYear 35 ;
+    proj:periodIndex 7 .
+
+proj:period35to40
+    a proj:GrowthPeriod ;
+    rdfs:label "35-40"@en ;
+    proj:periodStartYear 35 ;
+    proj:periodEndYear 40 ;
+    proj:periodIndex 8 .
+
+proj:period40to45
+    a proj:GrowthPeriod ;
+    rdfs:label "40-45"@en ;
+    proj:periodStartYear 40 ;
+    proj:periodEndYear 45 ;
+    proj:periodIndex 9 .
+
+proj:period45to50
+    a proj:GrowthPeriod ;
+    rdfs:label "45-50"@en ;
+    proj:periodStartYear 45 ;
+    proj:periodEndYear 50 ;
+    proj:periodIndex 10 .
+
+proj:period50to55
+    a proj:GrowthPeriod ;
+    rdfs:label "50-55"@en ;
+    proj:periodStartYear 50 ;
+    proj:periodEndYear 55 ;
+    proj:periodIndex 11 .
+
+proj:period55to60
+    a proj:GrowthPeriod ;
+    rdfs:label "55-60"@en ;
+    proj:periodStartYear 55 ;
+    proj:periodEndYear 60 ;
+    proj:periodIndex 12 .
+
+proj:period60to65
+    a proj:GrowthPeriod ;
+    rdfs:label "60-65"@en ;
+    proj:periodStartYear 60 ;
+    proj:periodEndYear 65 ;
+    proj:periodIndex 13 .
+
+proj:period65to70
+    a proj:GrowthPeriod ;
+    rdfs:label "65-70"@en ;
+    proj:periodStartYear 65 ;
+    proj:periodEndYear 70 ;
+    proj:periodIndex 14 .
+
+proj:period70to75
+    a proj:GrowthPeriod ;
+    rdfs:label "70-75"@en ;
+    proj:periodStartYear 70 ;
+    proj:periodEndYear 75 ;
+    proj:periodIndex 15 .
+
+proj:period75to80
+    a proj:GrowthPeriod ;
+    rdfs:label "75-80"@en ;
+    proj:periodStartYear 75 ;
+    proj:periodEndYear 80 ;
+    proj:periodIndex 16 .
+
+proj:period80to85
+    a proj:GrowthPeriod ;
+    rdfs:label "80-85"@en ;
+    proj:periodStartYear 80 ;
+    proj:periodEndYear 85 ;
+    proj:periodIndex 17 .
+
+proj:period85to90
+    a proj:GrowthPeriod ;
+    rdfs:label "85-90"@en ;
+    proj:periodStartYear 85 ;
+    proj:periodEndYear 90 ;
+    proj:periodIndex 18 .
+
+proj:period90to95
+    a proj:GrowthPeriod ;
+    rdfs:label "90-95"@en ;
+    proj:periodStartYear 90 ;
+    proj:periodEndYear 95 ;
+    proj:periodIndex 19 .
+
+proj:period95to100
+    a proj:GrowthPeriod ;
+    rdfs:label "95-100"@en ;
+    proj:periodStartYear 95 ;
+    proj:periodEndYear 100 ;
+    proj:periodIndex 20 .

@@ -1,0 +1,24 @@
+{
+  "@context": {
+    "eco": "https://data.carbon-calculator.co.uk/ontologies/ecology#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "label": "rdfs:label"
+  },
+  "@graph": [
+    {
+      "@id": "eco:Arable",
+      "@type": "eco:PreviousLanduse",
+      "label": "Arable"
+    },
+    {
+      "@id": "eco:Pasture",
+      "@type": "eco:PreviousLanduse",
+      "label": "Pasture"
+    },
+    {
+      "@id": "eco:Seminatural",
+      "@type": "eco:PreviousLanduse",
+      "label": "Seminatural"
+    }
+  ]
+}

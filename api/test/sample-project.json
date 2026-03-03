@@ -1,0 +1,68 @@
+{
+  "@context": "https://data.carbon-calculator.co.uk/ontologies/project",
+  "@type": "WoodlandCreationProject",
+  "projectName": "Test Woodland Project",
+  "completedBy": "Test User",
+  "dateCompleted": "2025-03-01",
+  "calculatorVersion": "3.0",
+  "isWoodlandCarbonGuarantee": false,
+
+  "netArea": { "value": 10, "unit": "qty:hectare" },
+
+  "plantingSections": [
+    {
+      "@type": "PlantingSection",
+      "sectionNumber": 1,
+      "species": "eco:SitkaSpruce",
+      "plannedSpacing": { "value": 2.0, "unit": "qty:metre" },
+      "yieldClassValue": 12,
+      "managementRegime": "eco:NoThin",
+      "sectionArea": { "value": 6, "unit": "qty:hectare" },
+      "clearfellAge": { "value": 0, "unit": "qty:year" }
+    },
+    {
+      "@type": "PlantingSection",
+      "sectionNumber": 2,
+      "species": "eco:Beech",
+      "plannedSpacing": { "value": 2.5, "unit": "qty:metre" },
+      "yieldClassValue": 6,
+      "managementRegime": "eco:NoThin",
+      "sectionArea": { "value": 4, "unit": "qty:hectare" },
+      "clearfellAge": { "value": 0, "unit": "qty:year" }
+    }
+  ],
+
+  "establishmentEmissions": [
+    {
+      "@type": "EstablishmentEmissionItem",
+      "emissionType": "proj:MoundingEmission",
+      "inputQuantity": { "value": 10, "unit": "qty:hectare" }
+    },
+    {
+      "@type": "EstablishmentEmissionItem",
+      "emissionType": "proj:FencingEmission",
+      "inputQuantity": { "value": 2000, "unit": "qty:metre" }
+    }
+  ],
+
+  "soilCarbonEntries": [
+    {
+      "@type": "SoilCarbonEntry",
+      "country": "proj:Scotland",
+      "previousLanduse": "eco:Pasture",
+      "groundPreparation": "eco:MediumDisturbance",
+      "soilCarbonArea": { "value": 10, "unit": "qty:hectare" }
+    }
+  ],
+
+  "soilCarbonAccumulation": {
+    "@type": "SoilCarbonAccumulation",
+    "accumulationArea": { "value": 0, "unit": "qty:hectare" }
+  },
+
+  "baselineAndLeakage": {
+    "@type": "BaselineAndLeakage",
+    "isBaselineSignificant": false,
+    "isLeakageSignificant": false
+  }
+}

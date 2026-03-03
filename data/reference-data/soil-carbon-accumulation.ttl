@@ -1,0 +1,131 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix calc:  <https://data.carbon-calculator.co.uk/ontologies/calculation#> .
+@prefix proj:   <https://data.carbon-calculator.co.uk/ontologies/project#> .
+
+# =============================================================================
+# Reference Data — Soil Carbon Accumulation Rates
+# =============================================================================
+# Cumulative tCO2e/ha for previously-arable mineral soil under
+# minimum-intervention management, indexed by growth period.
+# =============================================================================
+
+calc:soilAccum0_5
+    a calc:SoilCarbonAccumulationRate ;
+    rdfs:label "Soil C accumulation: 0-5"@en ;
+    calc:accumulationForPeriod proj:period0to5 ;
+    calc:accumulationValue 2.75 .
+
+calc:soilAccum5_10
+    a calc:SoilCarbonAccumulationRate ;
+    rdfs:label "Soil C accumulation: 5-10"@en ;
+    calc:accumulationForPeriod proj:period5to10 ;
+    calc:accumulationValue 5.5 .
+
+calc:soilAccum10_15
+    a calc:SoilCarbonAccumulationRate ;
+    rdfs:label "Soil C accumulation: 10-15"@en ;
+    calc:accumulationForPeriod proj:period10to15 ;
+    calc:accumulationValue 8.25 .
+
+calc:soilAccum15_20
+    a calc:SoilCarbonAccumulationRate ;
+    rdfs:label "Soil C accumulation: 15-20"@en ;
+    calc:accumulationForPeriod proj:period15to20 ;
+    calc:accumulationValue 11.0 .
+
+calc:soilAccum20_25
+    a calc:SoilCarbonAccumulationRate ;
+    rdfs:label "Soil C accumulation: 20-25"@en ;
+    calc:accumulationForPeriod proj:period20to25 ;
+    calc:accumulationValue 13.75 .
+
+calc:soilAccum25_30
+    a calc:SoilCarbonAccumulationRate ;
+    rdfs:label "Soil C accumulation: 25-30"@en ;
+    calc:accumulationForPeriod proj:period25to30 ;
+    calc:accumulationValue 16.5 .
+
+calc:soilAccum30_35
+    a calc:SoilCarbonAccumulationRate ;
+    rdfs:label "Soil C accumulation: 30-35"@en ;
+    calc:accumulationForPeriod proj:period30to35 ;
+    calc:accumulationValue 19.25 .
+
+calc:soilAccum35_40
+    a calc:SoilCarbonAccumulationRate ;
+    rdfs:label "Soil C accumulation: 35-40"@en ;
+    calc:accumulationForPeriod proj:period35to40 ;
+    calc:accumulationValue 22.0 .
+
+calc:soilAccum40_45
+    a calc:SoilCarbonAccumulationRate ;
+    rdfs:label "Soil C accumulation: 40-45"@en ;
+    calc:accumulationForPeriod proj:period40to45 ;
+    calc:accumulationValue 24.75 .
+
+calc:soilAccum45_50
+    a calc:SoilCarbonAccumulationRate ;
+    rdfs:label "Soil C accumulation: 45-50"@en ;
+    calc:accumulationForPeriod proj:period45to50 ;
+    calc:accumulationValue 27.5 .
+
+calc:soilAccum50_55
+    a calc:SoilCarbonAccumulationRate ;
+    rdfs:label "Soil C accumulation: 50-55"@en ;
+    calc:accumulationForPeriod proj:period50to55 ;
+    calc:accumulationValue 29.3333 .
+
+calc:soilAccum55_60
+    a calc:SoilCarbonAccumulationRate ;
+    rdfs:label "Soil C accumulation: 55-60"@en ;
+    calc:accumulationForPeriod proj:period55to60 ;
+    calc:accumulationValue 31.1667 .
+
+calc:soilAccum60_65
+    a calc:SoilCarbonAccumulationRate ;
+    rdfs:label "Soil C accumulation: 60-65"@en ;
+    calc:accumulationForPeriod proj:period60to65 ;
+    calc:accumulationValue 33.0 .
+
+calc:soilAccum65_70
+    a calc:SoilCarbonAccumulationRate ;
+    rdfs:label "Soil C accumulation: 65-70"@en ;
+    calc:accumulationForPeriod proj:period65to70 ;
+    calc:accumulationValue 34.8333 .
+
+calc:soilAccum70_75
+    a calc:SoilCarbonAccumulationRate ;
+    rdfs:label "Soil C accumulation: 70-75"@en ;
+    calc:accumulationForPeriod proj:period70to75 ;
+    calc:accumulationValue 36.6667 .
+
+calc:soilAccum75_80
+    a calc:SoilCarbonAccumulationRate ;
+    rdfs:label "Soil C accumulation: 75-80"@en ;
+    calc:accumulationForPeriod proj:period75to80 ;
+    calc:accumulationValue 38.5 .
+
+calc:soilAccum80_85
+    a calc:SoilCarbonAccumulationRate ;
+    rdfs:label "Soil C accumulation: 80-85"@en ;
+    calc:accumulationForPeriod proj:period80to85 ;
+    calc:accumulationValue 40.3333 .
+
+calc:soilAccum85_90
+    a calc:SoilCarbonAccumulationRate ;
+    rdfs:label "Soil C accumulation: 85-90"@en ;
+    calc:accumulationForPeriod proj:period85to90 ;
+    calc:accumulationValue 42.1667 .
+
+calc:soilAccum90_95
+    a calc:SoilCarbonAccumulationRate ;
+    rdfs:label "Soil C accumulation: 90-95"@en ;
+    calc:accumulationForPeriod proj:period90to95 ;
+    calc:accumulationValue 44.0 .
+
+calc:soilAccum95_100
+    a calc:SoilCarbonAccumulationRate ;
+    rdfs:label "Soil C accumulation: 95-100"@en ;
+    calc:accumulationForPeriod proj:period95to100 ;
+    calc:accumulationValue 45.8333 .

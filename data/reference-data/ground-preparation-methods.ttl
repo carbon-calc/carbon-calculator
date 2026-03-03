@@ -1,0 +1,42 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix eco:   <https://data.carbon-calculator.co.uk/ontologies/ecology#> .
+
+# =============================================================================
+# Reference Data — Ground Preparation Methods
+# =============================================================================
+
+eco:NoPreparation
+    a eco:GroundPreparationMethod ;
+    rdfs:label "None"@en ;
+    eco:topsoilCarbonLostCode "00" .
+
+eco:NegligibleDisturbance
+    a eco:GroundPreparationMethod ;
+    rdfs:label "Negligible Disturbance"@en ;
+    skos:definition "Hand screefing only"@en ;
+    eco:topsoilCarbonLostCode "00" .
+
+eco:LowDisturbance
+    a eco:GroundPreparationMethod ;
+    rdfs:label "Low Disturbance"@en ;
+    skos:definition "Hand turfing, inverted, hinge & trench mounding, patch scarification, subsoiling, drains"@en ;
+    eco:topsoilCarbonLostCode "05" .
+
+eco:MediumDisturbance
+    a eco:GroundPreparationMethod ;
+    rdfs:label "Medium Disturbance"@en ;
+    skos:definition "Shallow/rotary (<30cm) plough, disc/linear mounding"@en ;
+    eco:topsoilCarbonLostCode "10" .
+
+eco:HighDisturbance
+    a eco:GroundPreparationMethod ;
+    rdfs:label "High Disturbance"@en ;
+    skos:definition "Deep (>30cm) plough, with or without tining"@en ;
+    eco:topsoilCarbonLostCode "20" .
+
+eco:VeryHighDisturbance
+    a eco:GroundPreparationMethod ;
+    rdfs:label "Very High Disturbance"@en ;
+    skos:definition "Agricultural ploughing"@en ;
+    eco:topsoilCarbonLostCode "40" .

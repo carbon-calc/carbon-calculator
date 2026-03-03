@@ -1,0 +1,89 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix proj:   <https://data.carbon-calculator.co.uk/ontologies/project#> .
+@prefix qty:   <https://data.carbon-calculator.co.uk/ontologies/quantity#> .
+
+# =============================================================================
+# Reference Data — Establishment Emission Types
+# =============================================================================
+# Types with spacing-dependent rates (seedlings, shelters, spiral guards,
+# voleguards, fertiliser) are looked up via proj:TreeSpacingOption.
+# Types with fixed rates carry proj:emissionRate and proj:emissionRateUnit.
+# =============================================================================
+
+proj:SeedlingEmission
+    a proj:EstablishmentEmissionType ;
+    rdfs:label "Seedlings"@en ;
+    rdfs:comment "Spacing-dependent rate — looked up via proj:TreeSpacingOption proj:seedlingRate."@en .
+
+proj:TreeShelterEmission
+    a proj:EstablishmentEmissionType ;
+    rdfs:label "Tree protection - Tree shelters"@en ;
+    rdfs:comment "Spacing-dependent rate — looked up via proj:TreeSpacingOption proj:hasShelterRate."@en .
+
+proj:SpiralGuardEmission
+    a proj:EstablishmentEmissionType ;
+    rdfs:label "Tree protection - Spiral guards"@en ;
+    rdfs:comment "Spacing-dependent rate — looked up via proj:TreeSpacingOption proj:hasSpiralGuardRate."@en .
+
+proj:VoleguardEmission
+    a proj:EstablishmentEmissionType ;
+    rdfs:label "Tree protection - Voleguards"@en ;
+    rdfs:comment "Spacing-dependent rate — looked up via proj:TreeSpacingOption proj:voleguardRate."@en .
+
+proj:FertiliserEmission
+    a proj:EstablishmentEmissionType ;
+    rdfs:label "Fertiliser"@en ;
+    rdfs:comment "Spacing-dependent rate — looked up via proj:TreeSpacingOption proj:fertiliserRate."@en .
+
+proj:MoundingEmission
+    a proj:EstablishmentEmissionType ;
+    rdfs:label "Ground preparation (fuel): Mounding"@en ;
+    proj:emissionRate -0.41987 ;
+    proj:emissionRateUnit qty:hectare .
+
+proj:ScarifyingEmission
+    a proj:EstablishmentEmissionType ;
+    rdfs:label "Ground preparation (fuel): Scarifying"@en ;
+    proj:emissionRate -0.05185 ;
+    proj:emissionRateUnit qty:hectare .
+
+proj:PloughingEmission
+    a proj:EstablishmentEmissionType ;
+    rdfs:label "Ground preparation (fuel): Ploughing"@en ;
+    proj:emissionRate -0.06874 ;
+    proj:emissionRateUnit qty:hectare .
+
+proj:SubsoilingEmission
+    a proj:EstablishmentEmissionType ;
+    rdfs:label "Ground preparation (fuel): Subsoiling"@en ;
+    proj:emissionRate -0.17296 ;
+    proj:emissionRateUnit qty:hectare .
+
+proj:HerbicideEmission
+    a proj:EstablishmentEmissionType ;
+    rdfs:label "Herbicide"@en ;
+    proj:emissionRate -0.04414 ;
+    proj:emissionRateUnit qty:hectare .
+
+proj:FencingEmission
+    a proj:EstablishmentEmissionType ;
+    rdfs:label "Fencing"@en ;
+    proj:emissionRate -0.0022 ;
+    proj:emissionRateUnit qty:metre .
+
+proj:GateEmission
+    a proj:EstablishmentEmissionType ;
+    rdfs:label "Gates"@en ;
+    proj:emissionRate -0.583 ;
+    proj:emissionRateUnit qty:each .
+
+proj:RoadBuildingEmission
+    a proj:EstablishmentEmissionType ;
+    rdfs:label "Road building"@en ;
+    proj:emissionRate -43.13 ;
+    proj:emissionRateUnit qty:kilometre .
+
+proj:VegetationRemovalEmission
+    a proj:EstablishmentEmissionType ;
+    rdfs:label "Emissions from removal of trees or other vegetation"@en ;
+    rdfs:comment "Manual entry — no fixed rate; total emissions entered directly by the user."@en .

@@ -1,0 +1,29 @@
+{
+  "@context": {
+    "proj": "https://data.carbon-calculator.co.uk/ontologies/project#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "label": "rdfs:label"
+  },
+  "@graph": [
+    {
+      "@id": "proj:England",
+      "@type": "proj:Country",
+      "label": "England"
+    },
+    {
+      "@id": "proj:Scotland",
+      "@type": "proj:Country",
+      "label": "Scotland"
+    },
+    {
+      "@id": "proj:Wales",
+      "@type": "proj:Country",
+      "label": "Wales"
+    },
+    {
+      "@id": "proj:NorthernIreland",
+      "@type": "proj:Country",
+      "label": "Northern Ireland"
+    }
+  ]
+}

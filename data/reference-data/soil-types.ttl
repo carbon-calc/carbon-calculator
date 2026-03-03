@@ -1,0 +1,14 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix eco:   <https://data.carbon-calculator.co.uk/ontologies/ecology#> .
+
+# =============================================================================
+# Reference Data — Soil Types
+# =============================================================================
+
+eco:MineralSoil
+    a eco:SoilType ;
+    rdfs:label "Mineral"@en .
+
+eco:OrganomineralSoil
+    a eco:SoilType ;
+    rdfs:label "Organomineral"@en .

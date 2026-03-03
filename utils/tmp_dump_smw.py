@@ -1,0 +1,16 @@
+import openpyxl
+import warnings
+warnings.filterwarnings("ignore")
+
+wb = openpyxl.load_workbook('docs/CarbonCalculator_Examples_V3.0_August2025.xlsx', data_only=True)
+ws = wb['Small Mixed Wood']
+
+# Dump all non-empty cells
+print(f"Sheet dimensions: {ws.dimensions}")
+print(f"Max row: {ws.max_row}, Max col: {ws.max_column}")
+
+print("\n=== ALL NON-EMPTY CELLS ===")
+for row in ws.iter_rows(min_row=1, max_row=ws.max_row, min_col=1, max_col=ws.max_column):
+    for cell in row:
+        if cell.value is not None:
+            print(f'{cell.coordinate}: {repr(cell.value)}')

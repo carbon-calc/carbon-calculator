@@ -1,0 +1,43 @@
+{
+  "@context": {
+    "eco": "https://data.carbon-calculator.co.uk/ontologies/ecology#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "chemicalFormula": "eco:chemicalFormula",
+    "globalWarmingPotential": {
+      "@id": "eco:globalWarmingPotential",
+      "@type": "xsd:double"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "eco:CarbonDioxide",
+      "@type": "eco:GreenhouseGas",
+      "label": "Carbon Dioxide",
+      "chemicalFormula": "CO2",
+      "globalWarmingPotential": 1.0
+    },
+    {
+      "@id": "eco:Methane",
+      "@type": "eco:GreenhouseGas",
+      "label": "Methane",
+      "chemicalFormula": "CH4",
+      "globalWarmingPotential": 28.0
+    },
+    {
+      "@id": "eco:NitrousOxide",
+      "@type": "eco:GreenhouseGas",
+      "label": "Nitrous Oxide",
+      "chemicalFormula": "N2O",
+      "globalWarmingPotential": 265.0
+    },
+    {
+      "@id": "eco:CO2Equivalent",
+      "@type": "eco:ChemicalSubstance",
+      "label": "CO2 Equivalent",
+      "chemicalFormula": "CO2e"
+    }
+  ]
+}

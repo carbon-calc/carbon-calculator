@@ -1,0 +1,82 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix eco:   <https://data.carbon-calculator.co.uk/ontologies/ecology#> .
+
+# =============================================================================
+# Reference Data — Yield Classes
+# =============================================================================
+
+eco:yieldClass2
+    a eco:YieldClass ;
+    rdfs:label "Yield Class 2"@en ;
+    eco:yieldClassValue 2 .
+
+eco:yieldClass4
+    a eco:YieldClass ;
+    rdfs:label "Yield Class 4"@en ;
+    eco:yieldClassValue 4 .
+
+eco:yieldClass6
+    a eco:YieldClass ;
+    rdfs:label "Yield Class 6"@en ;
+    eco:yieldClassValue 6 .
+
+eco:yieldClass8
+    a eco:YieldClass ;
+    rdfs:label "Yield Class 8"@en ;
+    eco:yieldClassValue 8 .
+
+eco:yieldClass10
+    a eco:YieldClass ;
+    rdfs:label "Yield Class 10"@en ;
+    eco:yieldClassValue 10 .
+
+eco:yieldClass12
+    a eco:YieldClass ;
+    rdfs:label "Yield Class 12"@en ;
+    eco:yieldClassValue 12 .
+
+eco:yieldClass14
+    a eco:YieldClass ;
+    rdfs:label "Yield Class 14"@en ;
+    eco:yieldClassValue 14 .
+
+eco:yieldClass16
+    a eco:YieldClass ;
+    rdfs:label "Yield Class 16"@en ;
+    eco:yieldClassValue 16 .
+
+eco:yieldClass18
+    a eco:YieldClass ;
+    rdfs:label "Yield Class 18"@en ;
+    eco:yieldClassValue 18 .
+
+eco:yieldClass20
+    a eco:YieldClass ;
+    rdfs:label "Yield Class 20"@en ;
+    eco:yieldClassValue 20 .
+
+eco:yieldClass22
+    a eco:YieldClass ;
+    rdfs:label "Yield Class 22"@en ;
+    eco:yieldClassValue 22 .
+
+eco:yieldClass24
+    a eco:YieldClass ;
+    rdfs:label "Yield Class 24"@en ;
+    eco:yieldClassValue 24 .
+
+eco:yieldClass26
+    a eco:YieldClass ;
+    rdfs:label "Yield Class 26"@en ;
+    eco:yieldClassValue 26 .
+
+eco:yieldClass28
+    a eco:YieldClass ;
+    rdfs:label "Yield Class 28"@en ;
+    eco:yieldClassValue 28 .
+
+eco:yieldClass30
+    a eco:YieldClass ;
+    rdfs:label "Yield Class 30"@en ;
+    eco:yieldClassValue 30 .

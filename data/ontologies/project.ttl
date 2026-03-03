@@ -1,0 +1,532 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix qty:   <https://data.carbon-calculator.co.uk/ontologies/quantity#> .
+@prefix eco:   <https://data.carbon-calculator.co.uk/ontologies/ecology#> .
+@prefix proj:  <https://data.carbon-calculator.co.uk/ontologies/project#> .
+
+# =============================================================================
+# Woodland Carbon Code — Project Ontology
+# =============================================================================
+# Encodes the operational project model for woodland creation: project
+# structure, planting sections, regeneration areas, establishment emissions,
+# soil carbon context, and baseline/leakage flags.
+# =============================================================================
+
+<https://data.carbon-calculator.co.uk/ontologies/project>
+    a owl:Ontology ;
+    rdfs:label "WCC Project Ontology"@en ;
+    rdfs:comment "Ontology for woodland creation project structure, planting sections, establishment emissions, soil carbon context, baseline/leakage flags, and project-level reference data (countries, growth periods, establishment emission types, verification schemes). Imports the WCC Ecology and Quantity ontologies."@en ;
+    owl:versionInfo "2.0.0" ;
+    owl:versionIRI <https://data.carbon-calculator.co.uk/ontologies/project/2.0.0> ;
+    owl:imports <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    owl:imports <https://data.carbon-calculator.co.uk/ontologies/quantity> .
+
+
+# =============================================================================
+# Classes
+# =============================================================================
+
+proj:WoodlandCreationProject
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "Woodland Creation Project"@en ;
+    rdfs:comment "A Woodland Carbon Code project registered in the UK Land Carbon Registry."@en .
+
+proj:PlantingSection
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "Planting Section"@en ;
+    rdfs:comment "One of up to 25 sections within a project, each defining a species, spacing, yield class, management regime, and area."@en .
+
+proj:NaturalRegeneration
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "Natural Regeneration"@en ;
+    rdfs:comment "An optional area of future claimable natural regeneration within a project (broadleaves, Scots pine, or both)."@en .
+
+proj:WoodyShrubs
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "Woody Shrubs"@en ;
+    rdfs:comment "An optional area of woody shrub species within a project (not modelled in carbon lookup tables)."@en .
+
+proj:EstablishmentEmissionItem
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "Establishment Emission Item"@en ;
+    rdfs:comment "A single line item contributing to establishment emissions, with an area or length, an emission rate, and a calculated emission total."@en .
+
+proj:SoilCarbonEntry
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "Soil Carbon Entry"@en ;
+    rdfs:comment "One of up to 6 entries describing a unique combination of previous landuse, soil type, and ground preparation, with associated area and soil carbon loss."@en .
+
+proj:SoilCarbonAccumulation
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "Soil Carbon Accumulation"@en ;
+    rdfs:comment "Area eligible for soil carbon accumulation (mineral soil, previously arable, managed with minimum intervention)."@en .
+
+proj:BaselineAndLeakage
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "Baseline and Leakage"@en ;
+    rdfs:comment "Flags indicating whether baseline sequestration or leakage adjustments apply to the project."@en .
+
+
+# =============================================================================
+# Object Properties — Project Structure
+# =============================================================================
+
+proj:hasPlantingSection
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has planting section"@en ;
+    rdfs:comment "Links a project to one of its planting sections."@en ;
+    rdfs:domain proj:WoodlandCreationProject ;
+    rdfs:range proj:PlantingSection .
+
+proj:sectionOfProject
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    owl:inverseOf proj:hasPlantingSection ;
+    rdfs:label "section of project"@en ;
+    rdfs:comment "Links a planting section back to its parent project."@en ;
+    rdfs:domain proj:PlantingSection ;
+    rdfs:range proj:WoodlandCreationProject .
+
+proj:hasNaturalRegeneration
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has natural regeneration"@en ;
+    rdfs:comment "Links a project to its natural regeneration area, if any."@en ;
+    rdfs:domain proj:WoodlandCreationProject ;
+    rdfs:range proj:NaturalRegeneration .
+
+proj:hasWoodyShrubs
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has woody shrubs"@en ;
+    rdfs:comment "Links a project to its woody shrub area, if any."@en ;
+    rdfs:domain proj:WoodlandCreationProject ;
+    rdfs:range proj:WoodyShrubs .
+
+proj:hasEstablishmentEmissionItem
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has establishment emission item"@en ;
+    rdfs:comment "Links a project to one of its establishment emission line items."@en ;
+    rdfs:domain proj:WoodlandCreationProject ;
+    rdfs:range proj:EstablishmentEmissionItem .
+
+proj:hasSoilCarbonEntry
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has soil carbon entry"@en ;
+    rdfs:comment "Links a project to one of its soil carbon entries."@en ;
+    rdfs:domain proj:WoodlandCreationProject ;
+    rdfs:range proj:SoilCarbonEntry .
+
+proj:hasSoilCarbonAccumulation
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has soil carbon accumulation"@en ;
+    rdfs:comment "Links a project to its soil carbon accumulation record."@en ;
+    rdfs:domain proj:WoodlandCreationProject ;
+    rdfs:range proj:SoilCarbonAccumulation .
+
+proj:hasBaselineAndLeakage
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has baseline and leakage"@en ;
+    rdfs:comment "Links a project to its baseline and leakage flags."@en ;
+    rdfs:domain proj:WoodlandCreationProject ;
+    rdfs:range proj:BaselineAndLeakage .
+
+
+# =============================================================================
+# Object Properties — Links to Reference Data
+# =============================================================================
+
+proj:hasSpecies
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has species"@en ;
+    rdfs:comment "The tree species selected for a planting section."@en ;
+    rdfs:domain proj:PlantingSection ;
+    rdfs:range eco:TreeSpecies .
+
+proj:hasCountry
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has country"@en ;
+    rdfs:comment "The UK country where the project is located."@en ;
+    rdfs:domain proj:WoodlandCreationProject ;
+    rdfs:range proj:Country .
+
+proj:hasPreviousLanduse
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has previous landuse"@en ;
+    rdfs:comment "The previous land use for this soil carbon entry."@en ;
+    rdfs:domain proj:SoilCarbonEntry ;
+    rdfs:range eco:PreviousLanduse .
+
+proj:hasSoilType
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has soil type"@en ;
+    rdfs:comment "The soil type for this soil carbon entry."@en ;
+    rdfs:domain proj:SoilCarbonEntry ;
+    rdfs:range eco:SoilType .
+
+proj:hasGroundPreparation
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has ground preparation"@en ;
+    rdfs:comment "The ground preparation method used for this soil carbon entry."@en ;
+    rdfs:domain proj:SoilCarbonEntry ;
+    rdfs:range eco:GroundPreparationMethod .
+
+proj:hasEmissionType
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has emission type"@en ;
+    rdfs:comment "The type of establishment activity for this emission item."@en ;
+    rdfs:domain proj:EstablishmentEmissionItem ;
+    rdfs:range proj:EstablishmentEmissionType .
+
+proj:hasRegenerationType
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has regeneration type"@en ;
+    rdfs:comment "The type of natural regeneration (broadleaves, Scots pine, or both)."@en ;
+    rdfs:domain proj:NaturalRegeneration ;
+    rdfs:range eco:RegenerationType .
+
+
+# =============================================================================
+# Object Properties — Establishment Emission Item Quantities
+# =============================================================================
+
+proj:hasEmissionRate
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has emission rate"@en ;
+    rdfs:comment "The emission rate (tCO2e per unit) for this emission item."@en ;
+    rdfs:domain proj:EstablishmentEmissionItem ;
+    rdfs:range qty:Rate .
+
+proj:hasInputQuantity
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has input quantity"@en ;
+    rdfs:comment "The area, length, or count input for this emission item."@en ;
+    rdfs:domain proj:EstablishmentEmissionItem ;
+    rdfs:range qty:Quantity .
+
+proj:hasEmissionTotal
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has emission total"@en ;
+    rdfs:comment "The total calculated emissions (tCO2e) for this emission item."@en ;
+    rdfs:domain proj:EstablishmentEmissionItem ;
+    rdfs:range qty:Quantity .
+
+
+# =============================================================================
+# Object Properties — Project-level Quantities
+# =============================================================================
+
+proj:hasNetArea
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has net area"@en ;
+    rdfs:comment "The total net area of woodland creation for the project."@en ;
+    rdfs:domain proj:WoodlandCreationProject ;
+    rdfs:range qty:Area .
+
+proj:hasProjectDuration
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has project duration"@en ;
+    rdfs:comment "The duration of the project (40–100 years)."@en ;
+    rdfs:domain proj:WoodlandCreationProject ;
+    rdfs:range qty:Duration .
+
+proj:hasTotalEstablishmentEmissions
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has total establishment emissions"@en ;
+    rdfs:comment "The sum total of all establishment emissions for the project."@en ;
+    rdfs:domain proj:WoodlandCreationProject ;
+    rdfs:range qty:Quantity .
+
+
+# =============================================================================
+# Object Properties — Section-level Quantities
+# =============================================================================
+
+proj:hasSectionArea
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has section area"@en ;
+    rdfs:comment "The area allocated to this planting section."@en ;
+    rdfs:domain proj:PlantingSection ;
+    rdfs:range qty:Area .
+
+proj:hasAreaPercentage
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has area percentage"@en ;
+    rdfs:comment "The percentage of total project area allocated to this planting section."@en ;
+    rdfs:domain proj:PlantingSection ;
+    rdfs:range qty:Percentage .
+
+proj:hasPlannedSpacing
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has planned spacing"@en ;
+    rdfs:comment "The user-entered planned tree spacing for this planting section."@en ;
+    rdfs:domain proj:PlantingSection ;
+    rdfs:range qty:Length .
+
+proj:hasClearfellAge
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has clearfell age"@en ;
+    rdfs:comment "The age at clearfell in years (must be a multiple of 5)."@en ;
+    rdfs:domain proj:PlantingSection ;
+    rdfs:range qty:Duration .
+
+
+# =============================================================================
+# Object Properties — Soil Carbon & Area Quantities
+# =============================================================================
+
+proj:hasSoilCarbonArea
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has soil carbon area"@en ;
+    rdfs:comment "The area covered by this soil carbon entry."@en ;
+    rdfs:domain proj:SoilCarbonEntry ;
+    rdfs:range qty:Area .
+
+proj:hasTopsoilCarbonLost
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has topsoil carbon lost"@en ;
+    rdfs:comment "The percentage of topsoil carbon (0–30cm) lost for a soil carbon entry."@en ;
+    rdfs:domain proj:SoilCarbonEntry ;
+    rdfs:range qty:Percentage .
+
+proj:hasAccumulationArea
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has accumulation area"@en ;
+    rdfs:comment "The area eligible for soil carbon accumulation."@en ;
+    rdfs:domain proj:SoilCarbonAccumulation ;
+    rdfs:range qty:Area .
+
+proj:hasNaturalRegenerationArea
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has natural regeneration area"@en ;
+    rdfs:comment "The area of natural regeneration."@en ;
+    rdfs:domain proj:NaturalRegeneration ;
+    rdfs:range qty:Area .
+
+proj:hasWoodyShrubArea
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "has woody shrub area"@en ;
+    rdfs:comment "The area of woody shrubs."@en ;
+    rdfs:domain proj:WoodyShrubs ;
+    rdfs:range qty:Area .
+
+
+# =============================================================================
+# Data Properties — Project
+# =============================================================================
+
+proj:projectName
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "project name"@en ;
+    rdfs:comment "The project name as registered in the UK Land Carbon Registry."@en ;
+    rdfs:domain proj:WoodlandCreationProject ;
+    rdfs:range xsd:string .
+
+proj:completedBy
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "completed by"@en ;
+    rdfs:comment "Name of the person who completed the carbon calculation."@en ;
+    rdfs:domain proj:WoodlandCreationProject ;
+    rdfs:range xsd:string .
+
+proj:dateCompleted
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "date completed"@en ;
+    rdfs:comment "The date the calculation was completed."@en ;
+    rdfs:domain proj:WoodlandCreationProject ;
+    rdfs:range xsd:date .
+
+proj:calculatorVersion
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "calculator version"@en ;
+    rdfs:comment "The version identifier of the carbon calculator used."@en ;
+    rdfs:domain proj:WoodlandCreationProject ;
+    rdfs:range xsd:string .
+
+proj:startDate
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "start date"@en ;
+    rdfs:comment "The project start date (last day of planting), which determines vintage periods."@en ;
+    rdfs:domain proj:WoodlandCreationProject ;
+    rdfs:range xsd:date .
+
+proj:isWoodlandCarbonGuarantee
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "is woodland carbon guarantee"@en ;
+    rdfs:comment "Whether the project uses the Woodland Carbon Guarantee (England only). Applicable only for projects in England; omit for projects in other countries."@en ;
+    rdfs:domain proj:WoodlandCreationProject ;
+    rdfs:range xsd:boolean .
+
+
+# =============================================================================
+# Data Properties — Planting Section
+# =============================================================================
+
+proj:sectionNumber
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "section number"@en ;
+    rdfs:comment "The ordinal number of this planting section within the project (1–25)."@en ;
+    rdfs:domain proj:PlantingSection ;
+    rdfs:range xsd:integer .
+
+
+# =============================================================================
+# Data Properties — Baseline & Leakage
+# =============================================================================
+
+proj:isBaselineSignificant
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "is baseline significant"@en ;
+    rdfs:comment "Whether the project area would sequester significant carbon without planting."@en ;
+    rdfs:domain proj:BaselineAndLeakage ;
+    rdfs:range xsd:boolean .
+
+proj:isLeakageSignificant
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "is leakage significant"@en ;
+    rdfs:comment "Whether the project will cause significant emissions outside the project area."@en ;
+    rdfs:domain proj:BaselineAndLeakage ;
+    rdfs:range xsd:boolean .
+
+
+# =============================================================================
+# Data Properties — Woody Shrubs
+# =============================================================================
+
+proj:shrubSpeciesDescription
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "shrub species description"@en ;
+    rdfs:comment "User-entered description of woody shrub species."@en ;
+    rdfs:domain proj:WoodyShrubs ;
+    rdfs:range xsd:string .
+
+
+# =============================================================================
+# Classes — Project-level Reference Data
+# =============================================================================
+
+proj:Country
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "Country"@en ;
+    rdfs:comment "A UK constituent country (England, Scotland, Wales, Northern Ireland) that determines which soil emission parameters apply."@en .
+
+proj:VerificationScheme
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "Verification Scheme"@en ;
+    rdfs:comment "The verification timing scheme for a WCC project: standard 10-yearly or 5-yearly (Woodland Carbon Guarantee)."@en .
+
+proj:EstablishmentEmissionType
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "Establishment Emission Type"@en ;
+    rdfs:comment "A type of establishment activity that produces carbon emissions (e.g. fencing, herbicide, mounding, road building)."@en .
+
+proj:GrowthPeriod
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "Growth Period"@en ;
+    rdfs:comment "A 5-year period in the project's carbon calculation timeline (Year 0, 0–5, 5–10, … 95–100)."@en .
+
+
+# =============================================================================
+# Object Properties — Establishment Emission Rate Unit
+# =============================================================================
+
+proj:emissionRateUnit
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "emission rate unit"@en ;
+    rdfs:comment "The denominator unit for the fixed emission rate (e.g. hectare, metre, each, kilometre)."@en ;
+    rdfs:domain proj:EstablishmentEmissionType ;
+    rdfs:range qty:UnitOfMeasurement .
+
+
+# =============================================================================
+# Data Properties — Establishment Emission Rates
+# =============================================================================
+
+proj:emissionRate
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "emission rate"@en ;
+    rdfs:comment "The fixed emission rate for this establishment activity, expressed in tCO2e per the unit given by emissionRateUnit (e.g. per hectare, per metre, per unit, per kilometre)."@en ;
+    rdfs:domain proj:EstablishmentEmissionType ;
+    rdfs:range xsd:double .
+
+
+# =============================================================================
+# Data Properties — Growth Period
+# =============================================================================
+
+proj:periodStartYear
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "period start year"@en ;
+    rdfs:comment "The start year of this growth period."@en ;
+    rdfs:domain proj:GrowthPeriod ;
+    rdfs:range xsd:integer .
+
+proj:periodEndYear
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "period end year"@en ;
+    rdfs:comment "The end year of this growth period."@en ;
+    rdfs:domain proj:GrowthPeriod ;
+    rdfs:range xsd:integer .
+
+proj:periodIndex
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    rdfs:label "period index"@en ;
+    rdfs:comment "Ordinal index of this period (0 = Year 0, 1 = 0-5, 2 = 5-10, etc.)."@en ;
+    rdfs:domain proj:GrowthPeriod ;
+    rdfs:range xsd:integer .

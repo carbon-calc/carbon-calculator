@@ -1,0 +1,53 @@
+{
+  "@context": {
+    "eco": "https://data.carbon-calculator.co.uk/ontologies/ecology#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "label": "rdfs:label",
+    "definition": "skos:definition",
+    "topsoilCarbonLostCode": "eco:topsoilCarbonLostCode"
+  },
+  "@graph": [
+    {
+      "@id": "eco:NoPreparation",
+      "@type": "eco:GroundPreparationMethod",
+      "label": "None",
+      "topsoilCarbonLostCode": "00"
+    },
+    {
+      "@id": "eco:NegligibleDisturbance",
+      "@type": "eco:GroundPreparationMethod",
+      "label": "Negligible Disturbance",
+      "definition": "Hand screefing only",
+      "topsoilCarbonLostCode": "00"
+    },
+    {
+      "@id": "eco:LowDisturbance",
+      "@type": "eco:GroundPreparationMethod",
+      "label": "Low Disturbance",
+      "definition": "Hand turfing, inverted, hinge & trench mounding, patch scarification, subsoiling, drains",
+      "topsoilCarbonLostCode": "05"
+    },
+    {
+      "@id": "eco:MediumDisturbance",
+      "@type": "eco:GroundPreparationMethod",
+      "label": "Medium Disturbance",
+      "definition": "Shallow/rotary (<30cm) plough, disc/linear mounding",
+      "topsoilCarbonLostCode": "10"
+    },
+    {
+      "@id": "eco:HighDisturbance",
+      "@type": "eco:GroundPreparationMethod",
+      "label": "High Disturbance",
+      "definition": "Deep (>30cm) plough, with or without tining",
+      "topsoilCarbonLostCode": "20"
+    },
+    {
+      "@id": "eco:VeryHighDisturbance",
+      "@type": "eco:GroundPreparationMethod",
+      "label": "Very High Disturbance",
+      "definition": "Agricultural ploughing",
+      "topsoilCarbonLostCode": "40"
+    }
+  ]
+}

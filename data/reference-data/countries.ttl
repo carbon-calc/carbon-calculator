@@ -1,0 +1,22 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix proj:   <https://data.carbon-calculator.co.uk/ontologies/project#> .
+
+# =============================================================================
+# Reference Data — Countries
+# =============================================================================
+
+proj:England
+    a proj:Country ;
+    rdfs:label "England"@en .
+
+proj:Scotland
+    a proj:Country ;
+    rdfs:label "Scotland"@en .
+
+proj:Wales
+    a proj:Country ;
+    rdfs:label "Wales"@en .
+
+proj:NorthernIreland
+    a proj:Country ;
+    rdfs:label "Northern Ireland"@en .

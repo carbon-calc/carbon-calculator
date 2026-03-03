@@ -1,0 +1,159 @@
+{
+  "@context": {
+    "carb": "https://data.carbon-calculator.co.uk/ontologies/calculation#",
+    "proj": "https://data.carbon-calculator.co.uk/ontologies/project#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "label": "rdfs:label",
+    "accumulationForPeriod": {
+      "@id": "calc:accumulationForPeriod",
+      "@type": "@id"
+    },
+    "accumulationValue": {
+      "@id": "calc:accumulationValue",
+      "@type": "xsd:double"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "calc:soilAccum0_5",
+      "@type": "calc:SoilCarbonAccumulationRate",
+      "label": "Soil C accumulation: 0-5",
+      "accumulationForPeriod": "proj:period0to5",
+      "accumulationValue": 2.75
+    },
+    {
+      "@id": "calc:soilAccum5_10",
+      "@type": "calc:SoilCarbonAccumulationRate",
+      "label": "Soil C accumulation: 5-10",
+      "accumulationForPeriod": "proj:period5to10",
+      "accumulationValue": 5.5
+    },
+    {
+      "@id": "calc:soilAccum10_15",
+      "@type": "calc:SoilCarbonAccumulationRate",
+      "label": "Soil C accumulation: 10-15",
+      "accumulationForPeriod": "proj:period10to15",
+      "accumulationValue": 8.25
+    },
+    {
+      "@id": "calc:soilAccum15_20",
+      "@type": "calc:SoilCarbonAccumulationRate",
+      "label": "Soil C accumulation: 15-20",
+      "accumulationForPeriod": "proj:period15to20",
+      "accumulationValue": 11.0
+    },
+    {
+      "@id": "calc:soilAccum20_25",
+      "@type": "calc:SoilCarbonAccumulationRate",
+      "label": "Soil C accumulation: 20-25",
+      "accumulationForPeriod": "proj:period20to25",
+      "accumulationValue": 13.75
+    },
+    {
+      "@id": "calc:soilAccum25_30",
+      "@type": "calc:SoilCarbonAccumulationRate",
+      "label": "Soil C accumulation: 25-30",
+      "accumulationForPeriod": "proj:period25to30",
+      "accumulationValue": 16.5
+    },
+    {
+      "@id": "calc:soilAccum30_35",
+      "@type": "calc:SoilCarbonAccumulationRate",
+      "label": "Soil C accumulation: 30-35",
+      "accumulationForPeriod": "proj:period30to35",
+      "accumulationValue": 19.25
+    },
+    {
+      "@id": "calc:soilAccum35_40",
+      "@type": "calc:SoilCarbonAccumulationRate",
+      "label": "Soil C accumulation: 35-40",
+      "accumulationForPeriod": "proj:period35to40",
+      "accumulationValue": 22.0
+    },
+    {
+      "@id": "calc:soilAccum40_45",
+      "@type": "calc:SoilCarbonAccumulationRate",
+      "label": "Soil C accumulation: 40-45",
+      "accumulationForPeriod": "proj:period40to45",
+      "accumulationValue": 24.75
+    },
+    {
+      "@id": "calc:soilAccum45_50",
+      "@type": "calc:SoilCarbonAccumulationRate",
+      "label": "Soil C accumulation: 45-50",
+      "accumulationForPeriod": "proj:period45to50",
+      "accumulationValue": 27.5
+    },
+    {
+      "@id": "calc:soilAccum50_55",
+      "@type": "calc:SoilCarbonAccumulationRate",
+      "label": "Soil C accumulation: 50-55",
+      "accumulationForPeriod": "proj:period50to55",
+      "accumulationValue": 29.3333
+    },
+    {
+      "@id": "calc:soilAccum55_60",
+      "@type": "calc:SoilCarbonAccumulationRate",
+      "label": "Soil C accumulation: 55-60",
+      "accumulationForPeriod": "proj:period55to60",
+      "accumulationValue": 31.1667
+    },
+    {
+      "@id": "calc:soilAccum60_65",
+      "@type": "calc:SoilCarbonAccumulationRate",
+      "label": "Soil C accumulation: 60-65",
+      "accumulationForPeriod": "proj:period60to65",
+      "accumulationValue": 33.0
+    },
+    {
+      "@id": "calc:soilAccum65_70",
+      "@type": "calc:SoilCarbonAccumulationRate",
+      "label": "Soil C accumulation: 65-70",
+      "accumulationForPeriod": "proj:period65to70",
+      "accumulationValue": 34.8333
+    },
+    {
+      "@id": "calc:soilAccum70_75",
+      "@type": "calc:SoilCarbonAccumulationRate",
+      "label": "Soil C accumulation: 70-75",
+      "accumulationForPeriod": "proj:period70to75",
+      "accumulationValue": 36.6667
+    },
+    {
+      "@id": "calc:soilAccum75_80",
+      "@type": "calc:SoilCarbonAccumulationRate",
+      "label": "Soil C accumulation: 75-80",
+      "accumulationForPeriod": "proj:period75to80",
+      "accumulationValue": 38.5
+    },
+    {
+      "@id": "calc:soilAccum80_85",
+      "@type": "calc:SoilCarbonAccumulationRate",
+      "label": "Soil C accumulation: 80-85",
+      "accumulationForPeriod": "proj:period80to85",
+      "accumulationValue": 40.3333
+    },
+    {
+      "@id": "calc:soilAccum85_90",
+      "@type": "calc:SoilCarbonAccumulationRate",
+      "label": "Soil C accumulation: 85-90",
+      "accumulationForPeriod": "proj:period85to90",
+      "accumulationValue": 42.1667
+    },
+    {
+      "@id": "calc:soilAccum90_95",
+      "@type": "calc:SoilCarbonAccumulationRate",
+      "label": "Soil C accumulation: 90-95",
+      "accumulationForPeriod": "proj:period90to95",
+      "accumulationValue": 44.0
+    },
+    {
+      "@id": "calc:soilAccum95_100",
+      "@type": "calc:SoilCarbonAccumulationRate",
+      "label": "Soil C accumulation: 95-100",
+      "accumulationForPeriod": "proj:period95to100",
+      "accumulationValue": 45.8333
+    }
+  ]
+}

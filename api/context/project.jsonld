@@ -1,0 +1,235 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "https://data.carbon-calculator.co.uk/ontologies/project#",
+    "proj": "https://data.carbon-calculator.co.uk/ontologies/project#",
+    "eco": "https://data.carbon-calculator.co.uk/ontologies/ecology#",
+    "qty": "https://data.carbon-calculator.co.uk/ontologies/quantity#",
+    "calc": "https://data.carbon-calculator.co.uk/ontologies/calculation#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+
+    "WoodlandCreationProject": "proj:WoodlandCreationProject",
+    "PlantingSection": "proj:PlantingSection",
+    "NaturalRegeneration": "proj:NaturalRegeneration",
+    "WoodyShrubs": "proj:WoodyShrubs",
+    "EstablishmentEmissionItem": "proj:EstablishmentEmissionItem",
+    "SoilCarbonEntry": "proj:SoilCarbonEntry",
+    "SoilCarbonAccumulation": "proj:SoilCarbonAccumulation",
+    "BaselineAndLeakage": "proj:BaselineAndLeakage",
+
+    "projectName": {
+      "@id": "proj:projectName",
+      "@type": "xsd:string"
+    },
+    "completedBy": {
+      "@id": "proj:completedBy",
+      "@type": "xsd:string"
+    },
+    "dateCompleted": {
+      "@id": "proj:dateCompleted",
+      "@type": "xsd:date"
+    },
+    "calculatorVersion": {
+      "@id": "proj:calculatorVersion",
+      "@type": "xsd:string"
+    },
+    "startDate": {
+      "@id": "proj:startDate",
+      "@type": "xsd:date"
+    },
+    "isWoodlandCarbonGuarantee": {
+      "@id": "proj:isWoodlandCarbonGuarantee",
+      "@type": "xsd:boolean"
+    },
+    "sectionNumber": {
+      "@id": "proj:sectionNumber",
+      "@type": "xsd:integer"
+    },
+    "isBaselineSignificant": {
+      "@id": "proj:isBaselineSignificant",
+      "@type": "xsd:boolean"
+    },
+    "isLeakageSignificant": {
+      "@id": "proj:isLeakageSignificant",
+      "@type": "xsd:boolean"
+    },
+    "shrubSpeciesDescription": {
+      "@id": "proj:shrubSpeciesDescription",
+      "@type": "xsd:string"
+    },
+
+    "plantingSections": {
+      "@id": "proj:hasPlantingSection",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "naturalRegeneration": {
+      "@id": "proj:hasNaturalRegeneration",
+      "@type": "@id"
+    },
+    "woodyShrubs": {
+      "@id": "proj:hasWoodyShrubs",
+      "@type": "@id"
+    },
+    "establishmentEmissions": {
+      "@id": "proj:hasEstablishmentEmissionItem",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "soilCarbonEntries": {
+      "@id": "proj:hasSoilCarbonEntry",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "soilCarbonAccumulation": {
+      "@id": "proj:hasSoilCarbonAccumulation",
+      "@type": "@id"
+    },
+    "baselineAndLeakage": {
+      "@id": "proj:hasBaselineAndLeakage",
+      "@type": "@id"
+    },
+
+    "species": {
+      "@id": "proj:hasSpecies",
+      "@type": "@id"
+    },
+    "country": {
+      "@id": "proj:hasCountry",
+      "@type": "@id"
+    },
+    "previousLanduse": {
+      "@id": "proj:hasPreviousLanduse",
+      "@type": "@id"
+    },
+    "soilType": {
+      "@id": "proj:hasSoilType",
+      "@type": "@id"
+    },
+    "groundPreparation": {
+      "@id": "proj:hasGroundPreparation",
+      "@type": "@id"
+    },
+    "emissionType": {
+      "@id": "proj:hasEmissionType",
+      "@type": "@id"
+    },
+    "regenerationType": {
+      "@id": "proj:hasRegenerationType",
+      "@type": "@id"
+    },
+
+    "emissionRate": {
+      "@id": "proj:hasEmissionRate",
+      "@type": "@id"
+    },
+    "inputQuantity": {
+      "@id": "proj:hasInputQuantity",
+      "@type": "@id"
+    },
+    "emissionTotal": {
+      "@id": "proj:hasEmissionTotal",
+      "@type": "@id"
+    },
+    "netArea": {
+      "@id": "proj:hasNetArea",
+      "@type": "@id"
+    },
+    "projectDuration": {
+      "@id": "proj:hasProjectDuration",
+      "@type": "@id"
+    },
+    "totalEstablishmentEmissions": {
+      "@id": "proj:hasTotalEstablishmentEmissions",
+      "@type": "@id"
+    },
+    "sectionArea": {
+      "@id": "proj:hasSectionArea",
+      "@type": "@id"
+    },
+    "areaPercentage": {
+      "@id": "proj:hasAreaPercentage",
+      "@type": "@id"
+    },
+    "plannedSpacing": {
+      "@id": "proj:hasPlannedSpacing",
+      "@type": "@id"
+    },
+    "clearfellAge": {
+      "@id": "proj:hasClearfellAge",
+      "@type": "@id"
+    },
+    "soilCarbonArea": {
+      "@id": "proj:hasSoilCarbonArea",
+      "@type": "@id"
+    },
+    "topsoilCarbonLost": {
+      "@id": "proj:hasTopsoilCarbonLost",
+      "@type": "@id"
+    },
+    "accumulationArea": {
+      "@id": "proj:hasAccumulationArea",
+      "@type": "@id"
+    },
+    "naturalRegenerationArea": {
+      "@id": "proj:hasNaturalRegenerationArea",
+      "@type": "@id"
+    },
+    "woodyShrubArea": {
+      "@id": "proj:hasWoodyShrubArea",
+      "@type": "@id"
+    },
+
+    "value": {
+      "@id": "qty:numericValue",
+      "@type": "xsd:double"
+    },
+    "unit": {
+      "@id": "qty:hasUnit",
+      "@type": "@id"
+    },
+    "percentageValue": {
+      "@id": "qty:percentageValue",
+      "@type": "xsd:double"
+    },
+
+    "label": "rdfs:label",
+
+    "speciesName": {
+      "@id": "eco:speciesName",
+      "@type": "xsd:string"
+    },
+    "yieldClass": {
+      "@id": "eco:hasYieldClass",
+      "@type": "@id"
+    },
+    "yieldClassValue": {
+      "@id": "eco:yieldClassValue",
+      "@type": "xsd:integer"
+    },
+    "managementRegime": {
+      "@id": "eco:hasManagementRegime",
+      "@type": "@id"
+    },
+    "managementRegimeCode": {
+      "@id": "eco:managementRegimeCode",
+      "@type": "xsd:string"
+    },
+    "spacingValue": {
+      "@id": "eco:spacingValue",
+      "@type": "xsd:double"
+    },
+    "verificationScheme": {
+      "@id": "calc:hasVerificationScheme",
+      "@type": "@id"
+    },
+
+    "hectare": "qty:hectare",
+    "squareMetre": "qty:squareMetre",
+    "metre": "qty:metre",
+    "kilometre": "qty:kilometre",
+    "year": "qty:year",
+    "tonnesCO2e": "qty:tonnesCO2e"
+  }
+}

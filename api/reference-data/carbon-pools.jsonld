@@ -1,0 +1,34 @@
+{
+  "@context": {
+    "eco": "https://data.carbon-calculator.co.uk/ontologies/ecology#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment"
+  },
+  "@graph": [
+    {
+      "@id": "eco:StandingBiomass",
+      "@type": "eco:CarbonPool",
+      "label": "Standing Biomass",
+      "comment": "Carbon standing in living trees."
+    },
+    {
+      "@id": "eco:Debris",
+      "@type": "eco:CarbonPool",
+      "label": "Debris",
+      "comment": "Carbon in deadwood, litter, and forest floor debris."
+    },
+    {
+      "@id": "eco:SoilCarbon",
+      "@type": "eco:CarbonPool",
+      "label": "Soil Carbon",
+      "comment": "Carbon stored in soil organic matter (topsoil 0-30cm)."
+    },
+    {
+      "@id": "eco:HarvestedWoodProducts",
+      "@type": "eco:CarbonPool",
+      "label": "Harvested Wood Products",
+      "comment": "Carbon removed from forest in harvested timber."
+    }
+  ]
+}

@@ -1,0 +1,3260 @@
+{
+  "Natural regeneration": {
+    "projectName": "Natural regeneration project 1",
+    "completedBy": "Firsname Lastname",
+    "dateCompleted": "2025-07-01 00:00:00",
+    "calculatorVersion": "Verson 3.0 August 2025",
+    "startDate": "2026-03-31 00:00:00",
+    "projectDuration": 100,
+    "netArea": 100,
+    "country": "England",
+    "woodlandCarbonGuarantee": "No",
+    "verificationFrequency": "N/A",
+    "plantingSections": [
+      {
+        "sectionNumber": 1,
+        "species": "Nat Regen - Scots Pine",
+        "plannedSpacing": 5,
+        "modelCode": "NPI",
+        "spacingLookup": 5,
+        "yieldClassESC": 3,
+        "yieldClassLookup": 2,
+        "management": "No_thin",
+        "percentArea": 0.6,
+        "areaHectares": 60,
+        "clearfellAge": 0,
+        "clearfellCap": 0,
+        "lookupKey": "NP5.002No_thin"
+      },
+      {
+        "sectionNumber": 1,
+        "species": "Nat Regen - Mixed Broadleaves",
+        "plannedSpacing": 5,
+        "modelCode": "NBL",
+        "spacingLookup": 5,
+        "yieldClassESC": 3,
+        "yieldClassLookup": 2,
+        "management": "No_thin",
+        "percentArea": 0.2,
+        "areaHectares": 20,
+        "clearfellAge": 0,
+        "clearfellCap": 0,
+        "lookupKey": "NB5.002No_thin"
+      }
+    ],
+    "futureNatRegenArea": 20,
+    "futureNatRegenDesc": "Broadleaves and Scots pine",
+    "woodyShrubsArea": 0,
+    "totalAreaCheck": 100,
+    "establishmentEmissions": [],
+    "totalEstablishmentEmissions": 0,
+    "soilCarbonAccumulationArea": 0,
+    "baselineSignificant": "No",
+    "leakageSignificant": "No",
+    "soilCarbonEntries": [
+      {
+        "previousLanduse": "Seminatural",
+        "soilType": "Organomineral",
+        "groundPreparation": "Negligible Disturbance:  Hand screefing only",
+        "areaHectares": 10,
+        "percentTopsoilLost": "00",
+        "soilEmissionsRate": 0,
+        "soilEmissionsTotal": 0
+      },
+      {
+        "previousLanduse": "Seminatural",
+        "soilType": "Organomineral",
+        "groundPreparation": "None",
+        "areaHectares": 90,
+        "percentTopsoilLost": "00",
+        "soilEmissionsRate": 0,
+        "soilEmissionsTotal": 0
+      }
+    ],
+    "soilTotalArea": 100,
+    "soilTotalEmissions": 0,
+    "biomassPerHaTable": [
+      {
+        "period": "0-5",
+        "species_0_perHa": 0,
+        "species_1_perHa": 0,
+        "soilAccumPerHa": 2.75
+      },
+      {
+        "period": "5-10",
+        "species_0_perHa": 0.0296,
+        "species_1_perHa": 0.38343834,
+        "soilAccumPerHa": 5.5
+      },
+      {
+        "period": "10-15",
+        "species_0_perHa": 0.0696,
+        "species_1_perHa": 1.8919892,
+        "soilAccumPerHa": 8.25
+      },
+      {
+        "period": "15-20",
+        "species_0_perHa": 0.12,
+        "species_1_perHa": 7.27452745,
+        "soilAccumPerHa": 11.0
+      },
+      {
+        "period": "20-25",
+        "species_0_perHa": 0.204,
+        "species_1_perHa": 23.38613861,
+        "soilAccumPerHa": 13.75
+      },
+      {
+        "period": "25-30",
+        "species_0_perHa": 0.3888,
+        "species_1_perHa": 43.42394239,
+        "soilAccumPerHa": 16.5
+      },
+      {
+        "period": "30-35",
+        "species_0_perHa": 0.8808,
+        "species_1_perHa": 57.48154815,
+        "soilAccumPerHa": 19.25
+      },
+      {
+        "period": "35-40",
+        "species_0_perHa": 2.312,
+        "species_1_perHa": 67.69936994,
+        "soilAccumPerHa": 22.0
+      },
+      {
+        "period": "40-45",
+        "species_0_perHa": 6.6088,
+        "species_1_perHa": 75.9009901,
+        "soilAccumPerHa": 24.75
+      },
+      {
+        "period": "45-50",
+        "species_0_perHa": 13.82,
+        "species_1_perHa": 82.89468947,
+        "soilAccumPerHa": 27.5
+      },
+      {
+        "period": "50-55",
+        "species_0_perHa": 17.2392,
+        "species_1_perHa": 90.90009001,
+        "soilAccumPerHa": 29.33333333
+      },
+      {
+        "period": "55-60",
+        "species_0_perHa": 20.5592,
+        "species_1_perHa": 94.79927993,
+        "soilAccumPerHa": 31.16666667
+      },
+      {
+        "period": "60-65",
+        "species_0_perHa": 23.7528,
+        "species_1_perHa": 97.43474347,
+        "soilAccumPerHa": 33.0
+      },
+      {
+        "period": "65-70",
+        "species_0_perHa": 26.8928,
+        "species_1_perHa": 99.66516652,
+        "soilAccumPerHa": 34.83333333
+      },
+      {
+        "period": "70-75",
+        "species_0_perHa": 29.8088,
+        "species_1_perHa": 100.77767777,
+        "soilAccumPerHa": 36.66666667
+      },
+      {
+        "period": "75-80",
+        "species_0_perHa": 32.4176,
+        "species_1_perHa": 102.0540054,
+        "soilAccumPerHa": 38.5
+      },
+      {
+        "period": "80-85",
+        "species_0_perHa": 34.8928,
+        "species_1_perHa": 103.35193519,
+        "soilAccumPerHa": 40.33333333
+      },
+      {
+        "period": "85-90",
+        "species_0_perHa": 37.1104,
+        "species_1_perHa": 104.38523852,
+        "soilAccumPerHa": 42.16666667
+      },
+      {
+        "period": "90-95",
+        "species_0_perHa": 38.856,
+        "species_1_perHa": 105.40234023,
+        "soilAccumPerHa": 44.0
+      },
+      {
+        "period": "95-100",
+        "species_0_perHa": 40.2224,
+        "species_1_perHa": 108.78487849,
+        "soilAccumPerHa": 45.83333333
+      }
+    ],
+    "sequestrationPerProject": [
+      {
+        "species_0_total": 0,
+        "species_1_total": 0
+      },
+      {
+        "species_0_total": 1.776,
+        "species_1_total": 7.66876688
+      },
+      {
+        "species_0_total": 4.176,
+        "species_1_total": 37.83978398
+      },
+      {
+        "species_0_total": 7.2,
+        "species_1_total": 145.49054905
+      },
+      {
+        "species_0_total": 12.24,
+        "species_1_total": 467.72277228
+      },
+      {
+        "species_0_total": 23.328,
+        "species_1_total": 868.47884788
+      },
+      {
+        "species_0_total": 52.848,
+        "species_1_total": 1149.6309631
+      },
+      {
+        "species_0_total": 138.72,
+        "species_1_total": 1353.98739874
+      },
+      {
+        "species_0_total": 396.528,
+        "species_1_total": 1518.01980198
+      },
+      {
+        "species_0_total": 829.2,
+        "species_1_total": 1657.89378938
+      },
+      {
+        "species_0_total": 1034.352,
+        "species_1_total": 1818.00180018
+      },
+      {
+        "species_0_total": 1233.552,
+        "species_1_total": 1895.98559856
+      },
+      {
+        "species_0_total": 1425.168,
+        "species_1_total": 1948.69486949
+      },
+      {
+        "species_0_total": 1613.568,
+        "species_1_total": 1993.30333033
+      },
+      {
+        "species_0_total": 1788.528,
+        "species_1_total": 2015.55355536
+      },
+      {
+        "species_0_total": 1945.056,
+        "species_1_total": 2041.08010801
+      },
+      {
+        "species_0_total": 2093.568,
+        "species_1_total": 2067.03870387
+      },
+      {
+        "species_0_total": 2226.624,
+        "species_1_total": 2087.70477048
+      },
+      {
+        "species_0_total": 2331.36,
+        "species_1_total": 2108.04680468
+      },
+      {
+        "species_0_total": 2413.344,
+        "species_1_total": 2175.69756976
+      }
+    ],
+    "results": [
+      {
+        "cumulativeToYear": 0,
+        "A_biomassCarbon": 0,
+        "B_adjustedBiomass": 0,
+        "C_establishmentEmissions": 0,
+        "D_soilCarbon": 0,
+        "E_grossSequestration": 0,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 0,
+        "I_bufferContribution": 0,
+        "J_claimableCarbon": 0,
+        "K_perHectare": 0
+      },
+      {
+        "cumulativeToYear": 5,
+        "A_biomassCarbon": 0,
+        "B_adjustedBiomass": 0,
+        "C_establishmentEmissions": 0,
+        "D_soilCarbon": 0,
+        "E_grossSequestration": 0,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 0,
+        "I_bufferContribution": 0,
+        "J_claimableCarbon": 0,
+        "K_perHectare": 0
+      },
+      {
+        "cumulativeToYear": 10,
+        "A_biomassCarbon": 9.44476688,
+        "B_adjustedBiomass": 7.5558135,
+        "C_establishmentEmissions": 0,
+        "D_soilCarbon": 0,
+        "E_grossSequestration": 8,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 8,
+        "I_bufferContribution": 2,
+        "J_claimableCarbon": 6,
+        "K_perHectare": 0.06
+      },
+      {
+        "cumulativeToYear": 15,
+        "A_biomassCarbon": 42.01578398,
+        "B_adjustedBiomass": 33.61262718,
+        "C_establishmentEmissions": 0,
+        "D_soilCarbon": 0,
+        "E_grossSequestration": 34,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 34,
+        "I_bufferContribution": 7,
+        "J_claimableCarbon": 27,
+        "K_perHectare": 0.27
+      },
+      {
+        "cumulativeToYear": 20,
+        "A_biomassCarbon": 152.69054905,
+        "B_adjustedBiomass": 122.15243924,
+        "C_establishmentEmissions": 0,
+        "D_soilCarbon": 0,
+        "E_grossSequestration": 122,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 122,
+        "I_bufferContribution": 24,
+        "J_claimableCarbon": 98,
+        "K_perHectare": 0.98
+      },
+      {
+        "cumulativeToYear": 25,
+        "A_biomassCarbon": 479.96277228,
+        "B_adjustedBiomass": 383.97021782,
+        "C_establishmentEmissions": 0,
+        "D_soilCarbon": 0,
+        "E_grossSequestration": 384,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 384,
+        "I_bufferContribution": 77,
+        "J_claimableCarbon": 307,
+        "K_perHectare": 3.07
+      },
+      {
+        "cumulativeToYear": 30,
+        "A_biomassCarbon": 891.80684788,
+        "B_adjustedBiomass": 713.44547831,
+        "C_establishmentEmissions": 0,
+        "D_soilCarbon": 0,
+        "E_grossSequestration": 713,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 713,
+        "I_bufferContribution": 143,
+        "J_claimableCarbon": 570,
+        "K_perHectare": 5.7
+      },
+      {
+        "cumulativeToYear": 35,
+        "A_biomassCarbon": 1202.4789631,
+        "B_adjustedBiomass": 961.98317048,
+        "C_establishmentEmissions": 0,
+        "D_soilCarbon": 0,
+        "E_grossSequestration": 962,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 962,
+        "I_bufferContribution": 192,
+        "J_claimableCarbon": 770,
+        "K_perHectare": 7.7
+      },
+      {
+        "cumulativeToYear": 40,
+        "A_biomassCarbon": 1492.70739874,
+        "B_adjustedBiomass": 1194.16591899,
+        "C_establishmentEmissions": 0,
+        "D_soilCarbon": 0,
+        "E_grossSequestration": 1194,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 1194,
+        "I_bufferContribution": 239,
+        "J_claimableCarbon": 955,
+        "K_perHectare": 9.55
+      },
+      {
+        "cumulativeToYear": 45,
+        "A_biomassCarbon": 1914.54780198,
+        "B_adjustedBiomass": 1531.63824158,
+        "C_establishmentEmissions": 0,
+        "D_soilCarbon": 0,
+        "E_grossSequestration": 1532,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 1532,
+        "I_bufferContribution": 306,
+        "J_claimableCarbon": 1226,
+        "K_perHectare": 12.26
+      },
+      {
+        "cumulativeToYear": 50,
+        "A_biomassCarbon": 2487.09378938,
+        "B_adjustedBiomass": 1989.6750315,
+        "C_establishmentEmissions": 0,
+        "D_soilCarbon": 0,
+        "E_grossSequestration": 1990,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 1990,
+        "I_bufferContribution": 398,
+        "J_claimableCarbon": 1592,
+        "K_perHectare": 15.92
+      },
+      {
+        "cumulativeToYear": 55,
+        "A_biomassCarbon": 2852.35380018,
+        "B_adjustedBiomass": 2281.88304014,
+        "C_establishmentEmissions": 0,
+        "D_soilCarbon": 0,
+        "E_grossSequestration": 2282,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 2282,
+        "I_bufferContribution": 456,
+        "J_claimableCarbon": 1826,
+        "K_perHectare": 18.26
+      },
+      {
+        "cumulativeToYear": 60,
+        "A_biomassCarbon": 3129.53759856,
+        "B_adjustedBiomass": 2503.63007885,
+        "C_establishmentEmissions": 0,
+        "D_soilCarbon": 0,
+        "E_grossSequestration": 2504,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 2504,
+        "I_bufferContribution": 501,
+        "J_claimableCarbon": 2003,
+        "K_perHectare": 20.03
+      },
+      {
+        "cumulativeToYear": 65,
+        "A_biomassCarbon": 3373.86286949,
+        "B_adjustedBiomass": 2699.09029559,
+        "C_establishmentEmissions": 0,
+        "D_soilCarbon": 0,
+        "E_grossSequestration": 2699,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 2699,
+        "I_bufferContribution": 540,
+        "J_claimableCarbon": 2159,
+        "K_perHectare": 21.59
+      },
+      {
+        "cumulativeToYear": 70,
+        "A_biomassCarbon": 3606.87133033,
+        "B_adjustedBiomass": 2885.49706427,
+        "C_establishmentEmissions": 0,
+        "D_soilCarbon": 0,
+        "E_grossSequestration": 2885,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 2885,
+        "I_bufferContribution": 577,
+        "J_claimableCarbon": 2308,
+        "K_perHectare": 23.08
+      },
+      {
+        "cumulativeToYear": 75,
+        "A_biomassCarbon": 3804.08155536,
+        "B_adjustedBiomass": 3043.26524428,
+        "C_establishmentEmissions": 0,
+        "D_soilCarbon": 0,
+        "E_grossSequestration": 3043,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 3043,
+        "I_bufferContribution": 609,
+        "J_claimableCarbon": 2434,
+        "K_perHectare": 24.34
+      },
+      {
+        "cumulativeToYear": 80,
+        "A_biomassCarbon": 3986.13610801,
+        "B_adjustedBiomass": 3188.90888641,
+        "C_establishmentEmissions": 0,
+        "D_soilCarbon": 0,
+        "E_grossSequestration": 3189,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 3189,
+        "I_bufferContribution": 638,
+        "J_claimableCarbon": 2551,
+        "K_perHectare": 25.51
+      },
+      {
+        "cumulativeToYear": 85,
+        "A_biomassCarbon": 4160.60670387,
+        "B_adjustedBiomass": 3328.4853631,
+        "C_establishmentEmissions": 0,
+        "D_soilCarbon": 0,
+        "E_grossSequestration": 3328,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 3328,
+        "I_bufferContribution": 666,
+        "J_claimableCarbon": 2662,
+        "K_perHectare": 26.62
+      },
+      {
+        "cumulativeToYear": 90,
+        "A_biomassCarbon": 4314.32877048,
+        "B_adjustedBiomass": 3451.46301638,
+        "C_establishmentEmissions": 0,
+        "D_soilCarbon": 0,
+        "E_grossSequestration": 3451,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 3451,
+        "I_bufferContribution": 690,
+        "J_claimableCarbon": 2761,
+        "K_perHectare": 27.61
+      },
+      {
+        "cumulativeToYear": 95,
+        "A_biomassCarbon": 4439.40680468,
+        "B_adjustedBiomass": 3551.52544374,
+        "C_establishmentEmissions": 0,
+        "D_soilCarbon": 0,
+        "E_grossSequestration": 3552,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 3552,
+        "I_bufferContribution": 710,
+        "J_claimableCarbon": 2842,
+        "K_perHectare": 28.42
+      },
+      {
+        "cumulativeToYear": 100,
+        "A_biomassCarbon": 4589.04156976,
+        "B_adjustedBiomass": 3671.23325581,
+        "C_establishmentEmissions": 0,
+        "D_soilCarbon": 0,
+        "E_grossSequestration": 3671,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 3671,
+        "I_bufferContribution": 734,
+        "J_claimableCarbon": 2937,
+        "K_perHectare": 29.37
+      }
+    ]
+  },
+  "Broadleaved min intervention": {
+    "projectName": "Broadleaved Wood Phase 1",
+    "completedBy": "Firstname Lastname",
+    "dateCompleted": "2025-07-01 00:00:00",
+    "calculatorVersion": "Verson 3.0 August 2025",
+    "startDate": "2026-03-31 00:00:00",
+    "projectDuration": 100,
+    "netArea": 100,
+    "country": "Northern Ireland",
+    "woodlandCarbonGuarantee": "N/A",
+    "verificationFrequency": "N/A",
+    "plantingSections": [
+      {
+        "sectionNumber": 1,
+        "species": "Oak (robur/petraea)",
+        "plannedSpacing": 3,
+        "modelCode": "OK",
+        "spacingLookup": 3,
+        "yieldClassESC": 4,
+        "yieldClassLookup": 4,
+        "management": "No_thin",
+        "percentArea": 0.5,
+        "areaHectares": 50,
+        "clearfellAge": 0,
+        "clearfellCap": 0,
+        "lookupKey": "OK3.004No_thin"
+      },
+      {
+        "sectionNumber": 1,
+        "species": "Birch (downy/silver)",
+        "plannedSpacing": 3,
+        "modelCode": "SAB",
+        "spacingLookup": 3,
+        "yieldClassESC": 6,
+        "yieldClassLookup": 6,
+        "management": "No_thin",
+        "percentArea": 0.3,
+        "areaHectares": 30,
+        "clearfellAge": 0,
+        "clearfellCap": 0,
+        "lookupKey": "SA3.006No_thin"
+      },
+      {
+        "sectionNumber": 1,
+        "species": "Common alder",
+        "plannedSpacing": 3,
+        "modelCode": "SAB",
+        "spacingLookup": 3,
+        "yieldClassESC": 2,
+        "yieldClassLookup": 2,
+        "management": "No_thin",
+        "percentArea": 0.1,
+        "areaHectares": 10,
+        "clearfellAge": 0,
+        "clearfellCap": 0,
+        "lookupKey": "SA3.002No_thin"
+      },
+      {
+        "sectionNumber": 1,
+        "species": "Sweet chestnut",
+        "plannedSpacing": 3,
+        "modelCode": "BE",
+        "spacingLookup": 3,
+        "yieldClassESC": 6,
+        "yieldClassLookup": 6,
+        "management": "No_thin",
+        "percentArea": 0.1,
+        "areaHectares": 10,
+        "clearfellAge": 0,
+        "clearfellCap": 0,
+        "lookupKey": "BE3.006No_thin"
+      }
+    ],
+    "futureNatRegenArea": 0,
+    "futureNatRegenDesc": "State whether broadleaves, Scots pine, or both",
+    "woodyShrubsArea": 0,
+    "totalAreaCheck": 100,
+    "establishmentEmissions": [
+      {
+        "type": "Seedlings",
+        "fullLabel": "Seedlings",
+        "spacing": 3,
+        "quantity": 100,
+        "rate": -0.16666667,
+        "totalTCO2e": -16.66666667
+      },
+      {
+        "type": "Tree shelters (1.2m)",
+        "fullLabel": "Tree protection - Tree shelters (1.2m)",
+        "spacing": 3,
+        "quantity": 50,
+        "rate": -9.45555556,
+        "totalTCO2e": -472.77777778
+      },
+      {
+        "type": "Spiral guards (0.6m)",
+        "fullLabel": "Tree protection - Spiral guards (0.6m)",
+        "spacing": 3,
+        "quantity": 50,
+        "rate": -1.24444444,
+        "totalTCO2e": -62.22222222
+      },
+      {
+        "type": "Herbicide",
+        "fullLabel": "Herbicide",
+        "spacing": null,
+        "quantity": 100,
+        "rate": -0.04414,
+        "totalTCO2e": -4.414
+      }
+    ],
+    "totalEstablishmentEmissions": -556.08066667,
+    "soilCarbonAccumulationArea": 0,
+    "baselineSignificant": "No",
+    "leakageSignificant": "No",
+    "soilCarbonEntries": [
+      {
+        "previousLanduse": "Pasture",
+        "soilType": "Mineral",
+        "groundPreparation": "Low disturbance:  Hand turfing, inverted, hinge & trench mounding, patch scarification, subsoiling, drains",
+        "areaHectares": 50,
+        "percentTopsoilLost": "00",
+        "soilEmissionsRate": 0,
+        "soilEmissionsTotal": 0
+      },
+      {
+        "previousLanduse": "Pasture",
+        "soilType": "Organomineral",
+        "groundPreparation": "Low disturbance:  Hand turfing, inverted, hinge & trench mounding, patch scarification, subsoiling, drains",
+        "areaHectares": 50,
+        "percentTopsoilLost": "05",
+        "soilEmissionsRate": -23.83333333,
+        "soilEmissionsTotal": -1191.66666667
+      }
+    ],
+    "soilTotalArea": 100,
+    "soilTotalEmissions": -1191.66666667,
+    "biomassPerHaTable": [
+      {
+        "period": "0-5",
+        "species_0_perHa": 0.49,
+        "species_1_perHa": 3.27,
+        "species_2_perHa": 1.065,
+        "species_3_perHa": 0.8,
+        "soilAccumPerHa": 2.75
+      },
+      {
+        "period": "5-10",
+        "species_0_perHa": 1.79,
+        "species_1_perHa": 16.34,
+        "species_2_perHa": 5.255,
+        "species_3_perHa": 3.35,
+        "soilAccumPerHa": 5.5
+      },
+      {
+        "period": "10-15",
+        "species_0_perHa": 4.96,
+        "species_1_perHa": 63.55,
+        "species_2_perHa": 20.205,
+        "species_3_perHa": 10.79,
+        "soilAccumPerHa": 8.25
+      },
+      {
+        "period": "15-20",
+        "species_0_perHa": 13.83,
+        "species_1_perHa": 195.61,
+        "species_2_perHa": 64.955,
+        "species_3_perHa": 34.54,
+        "soilAccumPerHa": 11.0
+      },
+      {
+        "period": "20-25",
+        "species_0_perHa": 41.88,
+        "species_1_perHa": 337.32,
+        "species_2_perHa": 120.61,
+        "species_3_perHa": 114.68,
+        "soilAccumPerHa": 13.75
+      },
+      {
+        "period": "25-30",
+        "species_0_perHa": 135.31,
+        "species_1_perHa": 417.91,
+        "species_2_perHa": 159.655,
+        "species_3_perHa": 287.18,
+        "soilAccumPerHa": 16.5
+      },
+      {
+        "period": "30-35",
+        "species_0_perHa": 311.25,
+        "species_1_perHa": 488.77,
+        "species_2_perHa": 188.035,
+        "species_3_perHa": 426.07,
+        "soilAccumPerHa": 19.25
+      },
+      {
+        "period": "35-40",
+        "species_0_perHa": 409.54,
+        "species_1_perHa": 558.16,
+        "species_2_perHa": 210.815,
+        "species_3_perHa": 504.69,
+        "soilAccumPerHa": 22.0
+      },
+      {
+        "period": "40-45",
+        "species_0_perHa": 469.98,
+        "species_1_perHa": 599.35,
+        "species_2_perHa": 230.24,
+        "species_3_perHa": 551.21,
+        "soilAccumPerHa": 24.75
+      },
+      {
+        "period": "45-50",
+        "species_0_perHa": 509.9,
+        "species_1_perHa": 626.73,
+        "species_2_perHa": 252.475,
+        "species_3_perHa": 597.26,
+        "soilAccumPerHa": 27.5
+      },
+      {
+        "period": "50-55",
+        "species_0_perHa": 540.91,
+        "species_1_perHa": 646.86,
+        "species_2_perHa": 263.305,
+        "species_3_perHa": 639.99,
+        "soilAccumPerHa": 29.33333333
+      },
+      {
+        "period": "55-60",
+        "species_0_perHa": 567.84,
+        "species_1_perHa": 663.09,
+        "species_2_perHa": 270.625,
+        "species_3_perHa": 678.34,
+        "soilAccumPerHa": 31.16666667
+      },
+      {
+        "period": "60-65",
+        "species_0_perHa": 594.41,
+        "species_1_perHa": 678.14,
+        "species_2_perHa": 276.82,
+        "species_3_perHa": 718.74,
+        "soilAccumPerHa": 33.0
+      },
+      {
+        "period": "65-70",
+        "species_0_perHa": 621.66,
+        "species_1_perHa": 688.74,
+        "species_2_perHa": 279.91,
+        "species_3_perHa": 760.76,
+        "soilAccumPerHa": 34.83333333
+      },
+      {
+        "period": "70-75",
+        "species_0_perHa": 646.7,
+        "species_1_perHa": 700.66,
+        "species_2_perHa": 283.455,
+        "species_3_perHa": 800.82,
+        "soilAccumPerHa": 36.66666667
+      },
+      {
+        "period": "75-80",
+        "species_0_perHa": 669.77,
+        "species_1_perHa": 710.78,
+        "species_2_perHa": 287.06,
+        "species_3_perHa": 839.32,
+        "soilAccumPerHa": 38.5
+      },
+      {
+        "period": "80-85",
+        "species_0_perHa": 693.35,
+        "species_1_perHa": 719.48,
+        "species_2_perHa": 289.93,
+        "species_3_perHa": 876.07,
+        "soilAccumPerHa": 40.33333333
+      },
+      {
+        "period": "85-90",
+        "species_0_perHa": 715.76,
+        "species_1_perHa": 729.1,
+        "species_2_perHa": 292.755,
+        "species_3_perHa": 911.54,
+        "soilAccumPerHa": 42.16666667
+      },
+      {
+        "period": "90-95",
+        "species_0_perHa": 737.65,
+        "species_1_perHa": 737.66,
+        "species_2_perHa": 302.15,
+        "species_3_perHa": 944.54,
+        "soilAccumPerHa": 44.0
+      },
+      {
+        "period": "95-100",
+        "species_0_perHa": 757.79,
+        "species_1_perHa": 743.7,
+        "species_2_perHa": 303.07,
+        "species_3_perHa": 975.22,
+        "soilAccumPerHa": 45.83333333
+      }
+    ],
+    "sequestrationPerProject": [
+      {
+        "species_0_total": 24.5,
+        "species_1_total": 98.1,
+        "species_2_total": 10.65,
+        "species_3_total": 8
+      },
+      {
+        "species_0_total": 89.5,
+        "species_1_total": 490.2,
+        "species_2_total": 52.55,
+        "species_3_total": 33.5
+      },
+      {
+        "species_0_total": 248,
+        "species_1_total": 1906.5,
+        "species_2_total": 202.05,
+        "species_3_total": 107.9
+      },
+      {
+        "species_0_total": 691.5,
+        "species_1_total": 5868.3,
+        "species_2_total": 649.55,
+        "species_3_total": 345.4
+      },
+      {
+        "species_0_total": 2094,
+        "species_1_total": 10119.6,
+        "species_2_total": 1206.1,
+        "species_3_total": 1146.8
+      },
+      {
+        "species_0_total": 6765.5,
+        "species_1_total": 12537.3,
+        "species_2_total": 1596.55,
+        "species_3_total": 2871.8
+      },
+      {
+        "species_0_total": 15562.5,
+        "species_1_total": 14663.1,
+        "species_2_total": 1880.35,
+        "species_3_total": 4260.7
+      },
+      {
+        "species_0_total": 20477,
+        "species_1_total": 16744.8,
+        "species_2_total": 2108.15,
+        "species_3_total": 5046.9
+      },
+      {
+        "species_0_total": 23499,
+        "species_1_total": 17980.5,
+        "species_2_total": 2302.4,
+        "species_3_total": 5512.1
+      },
+      {
+        "species_0_total": 25495,
+        "species_1_total": 18801.9,
+        "species_2_total": 2524.75,
+        "species_3_total": 5972.6
+      },
+      {
+        "species_0_total": 27045.5,
+        "species_1_total": 19405.8,
+        "species_2_total": 2633.05,
+        "species_3_total": 6399.9
+      },
+      {
+        "species_0_total": 28392,
+        "species_1_total": 19892.7,
+        "species_2_total": 2706.25,
+        "species_3_total": 6783.4
+      },
+      {
+        "species_0_total": 29720.5,
+        "species_1_total": 20344.2,
+        "species_2_total": 2768.2,
+        "species_3_total": 7187.4
+      },
+      {
+        "species_0_total": 31083,
+        "species_1_total": 20662.2,
+        "species_2_total": 2799.1,
+        "species_3_total": 7607.6
+      },
+      {
+        "species_0_total": 32335.0,
+        "species_1_total": 21019.8,
+        "species_2_total": 2834.55,
+        "species_3_total": 8008.2
+      },
+      {
+        "species_0_total": 33488.5,
+        "species_1_total": 21323.4,
+        "species_2_total": 2870.6,
+        "species_3_total": 8393.2
+      },
+      {
+        "species_0_total": 34667.5,
+        "species_1_total": 21584.4,
+        "species_2_total": 2899.3,
+        "species_3_total": 8760.7
+      },
+      {
+        "species_0_total": 35788,
+        "species_1_total": 21873,
+        "species_2_total": 2927.55,
+        "species_3_total": 9115.4
+      },
+      {
+        "species_0_total": 36882.5,
+        "species_1_total": 22129.8,
+        "species_2_total": 3021.5,
+        "species_3_total": 9445.4
+      },
+      {
+        "species_0_total": 37889.5,
+        "species_1_total": 22311,
+        "species_2_total": 3030.7,
+        "species_3_total": 9752.2
+      }
+    ],
+    "results": [
+      {
+        "cumulativeToYear": 0,
+        "A_biomassCarbon": 0,
+        "B_adjustedBiomass": 0,
+        "C_establishmentEmissions": -556.08066667,
+        "D_soilCarbon": -1191.66666667,
+        "E_grossSequestration": -1748,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": -1748,
+        "I_bufferContribution": -350,
+        "J_claimableCarbon": -1398,
+        "K_perHectare": -13.98
+      },
+      {
+        "cumulativeToYear": 5,
+        "A_biomassCarbon": 141.25,
+        "B_adjustedBiomass": 113,
+        "C_establishmentEmissions": -556.08066667,
+        "D_soilCarbon": -1191.66666667,
+        "E_grossSequestration": -1635,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": -1635,
+        "I_bufferContribution": -327,
+        "J_claimableCarbon": -1308,
+        "K_perHectare": -13.08
+      },
+      {
+        "cumulativeToYear": 10,
+        "A_biomassCarbon": 665.75,
+        "B_adjustedBiomass": 532.6,
+        "C_establishmentEmissions": -556.08066667,
+        "D_soilCarbon": -1191.66666667,
+        "E_grossSequestration": -1215,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": -1215,
+        "I_bufferContribution": -243,
+        "J_claimableCarbon": -972,
+        "K_perHectare": -9.72
+      },
+      {
+        "cumulativeToYear": 15,
+        "A_biomassCarbon": 2464.45,
+        "B_adjustedBiomass": 1971.56,
+        "C_establishmentEmissions": -556.08066667,
+        "D_soilCarbon": -1191.66666667,
+        "E_grossSequestration": 224,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 224,
+        "I_bufferContribution": 45,
+        "J_claimableCarbon": 179,
+        "K_perHectare": 1.79
+      },
+      {
+        "cumulativeToYear": 20,
+        "A_biomassCarbon": 7554.75,
+        "B_adjustedBiomass": 6043.8,
+        "C_establishmentEmissions": -556.08066667,
+        "D_soilCarbon": -1191.66666667,
+        "E_grossSequestration": 4296,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 4296,
+        "I_bufferContribution": 859,
+        "J_claimableCarbon": 3437,
+        "K_perHectare": 34.37
+      },
+      {
+        "cumulativeToYear": 25,
+        "A_biomassCarbon": 14566.5,
+        "B_adjustedBiomass": 11653.2,
+        "C_establishmentEmissions": -556.08066667,
+        "D_soilCarbon": -1191.66666667,
+        "E_grossSequestration": 9905,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 9905,
+        "I_bufferContribution": 1981,
+        "J_claimableCarbon": 7924,
+        "K_perHectare": 79.24
+      },
+      {
+        "cumulativeToYear": 30,
+        "A_biomassCarbon": 23771.15,
+        "B_adjustedBiomass": 19016.92,
+        "C_establishmentEmissions": -556.08066667,
+        "D_soilCarbon": -1191.66666667,
+        "E_grossSequestration": 17269,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 17269,
+        "I_bufferContribution": 3454,
+        "J_claimableCarbon": 13815,
+        "K_perHectare": 138.15
+      },
+      {
+        "cumulativeToYear": 35,
+        "A_biomassCarbon": 36366.65,
+        "B_adjustedBiomass": 29093.32,
+        "C_establishmentEmissions": -556.08066667,
+        "D_soilCarbon": -1191.66666667,
+        "E_grossSequestration": 27346,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 27346,
+        "I_bufferContribution": 5469,
+        "J_claimableCarbon": 21877,
+        "K_perHectare": 218.77
+      },
+      {
+        "cumulativeToYear": 40,
+        "A_biomassCarbon": 44376.85,
+        "B_adjustedBiomass": 35501.48,
+        "C_establishmentEmissions": -556.08066667,
+        "D_soilCarbon": -1191.66666667,
+        "E_grossSequestration": 33754,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 33754,
+        "I_bufferContribution": 6751,
+        "J_claimableCarbon": 27003,
+        "K_perHectare": 270.03
+      },
+      {
+        "cumulativeToYear": 45,
+        "A_biomassCarbon": 49294,
+        "B_adjustedBiomass": 39435.2,
+        "C_establishmentEmissions": -556.08066667,
+        "D_soilCarbon": -1191.66666667,
+        "E_grossSequestration": 37687,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 37687,
+        "I_bufferContribution": 7537,
+        "J_claimableCarbon": 30150,
+        "K_perHectare": 301.5
+      },
+      {
+        "cumulativeToYear": 50,
+        "A_biomassCarbon": 52794.25,
+        "B_adjustedBiomass": 42235.4,
+        "C_establishmentEmissions": -556.08066667,
+        "D_soilCarbon": -1191.66666667,
+        "E_grossSequestration": 40488,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 40488,
+        "I_bufferContribution": 8098,
+        "J_claimableCarbon": 32390,
+        "K_perHectare": 323.9
+      },
+      {
+        "cumulativeToYear": 55,
+        "A_biomassCarbon": 55484.25,
+        "B_adjustedBiomass": 44387.4,
+        "C_establishmentEmissions": -556.08066667,
+        "D_soilCarbon": -1191.66666667,
+        "E_grossSequestration": 42640,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 42640,
+        "I_bufferContribution": 8528,
+        "J_claimableCarbon": 34112,
+        "K_perHectare": 341.12
+      },
+      {
+        "cumulativeToYear": 60,
+        "A_biomassCarbon": 57774.35,
+        "B_adjustedBiomass": 46219.48,
+        "C_establishmentEmissions": -556.08066667,
+        "D_soilCarbon": -1191.66666667,
+        "E_grossSequestration": 44472,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 44472,
+        "I_bufferContribution": 8894,
+        "J_claimableCarbon": 35578,
+        "K_perHectare": 355.78
+      },
+      {
+        "cumulativeToYear": 65,
+        "A_biomassCarbon": 60020.3,
+        "B_adjustedBiomass": 48016.24,
+        "C_establishmentEmissions": -556.08066667,
+        "D_soilCarbon": -1191.66666667,
+        "E_grossSequestration": 46268,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 46268,
+        "I_bufferContribution": 9254,
+        "J_claimableCarbon": 37014,
+        "K_perHectare": 370.14
+      },
+      {
+        "cumulativeToYear": 70,
+        "A_biomassCarbon": 62151.9,
+        "B_adjustedBiomass": 49721.52,
+        "C_establishmentEmissions": -556.08066667,
+        "D_soilCarbon": -1191.66666667,
+        "E_grossSequestration": 47974,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 47974,
+        "I_bufferContribution": 9595,
+        "J_claimableCarbon": 38379,
+        "K_perHectare": 383.79
+      },
+      {
+        "cumulativeToYear": 75,
+        "A_biomassCarbon": 64197.55,
+        "B_adjustedBiomass": 51358.04,
+        "C_establishmentEmissions": -556.08066667,
+        "D_soilCarbon": -1191.66666667,
+        "E_grossSequestration": 49610,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 49610,
+        "I_bufferContribution": 9922,
+        "J_claimableCarbon": 39688,
+        "K_perHectare": 396.88
+      },
+      {
+        "cumulativeToYear": 80,
+        "A_biomassCarbon": 66075.7,
+        "B_adjustedBiomass": 52860.56,
+        "C_establishmentEmissions": -556.08066667,
+        "D_soilCarbon": -1191.66666667,
+        "E_grossSequestration": 51113,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 51113,
+        "I_bufferContribution": 10223,
+        "J_claimableCarbon": 40890,
+        "K_perHectare": 408.9
+      },
+      {
+        "cumulativeToYear": 85,
+        "A_biomassCarbon": 67911.9,
+        "B_adjustedBiomass": 54329.52,
+        "C_establishmentEmissions": -556.08066667,
+        "D_soilCarbon": -1191.66666667,
+        "E_grossSequestration": 52582,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 52582,
+        "I_bufferContribution": 10516,
+        "J_claimableCarbon": 42066,
+        "K_perHectare": 420.66
+      },
+      {
+        "cumulativeToYear": 90,
+        "A_biomassCarbon": 69703.95,
+        "B_adjustedBiomass": 55763.16,
+        "C_establishmentEmissions": -556.08066667,
+        "D_soilCarbon": -1191.66666667,
+        "E_grossSequestration": 54015,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 54015,
+        "I_bufferContribution": 10803,
+        "J_claimableCarbon": 43212,
+        "K_perHectare": 432.12
+      },
+      {
+        "cumulativeToYear": 95,
+        "A_biomassCarbon": 71479.2,
+        "B_adjustedBiomass": 57183.36,
+        "C_establishmentEmissions": -556.08066667,
+        "D_soilCarbon": -1191.66666667,
+        "E_grossSequestration": 55436,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 55436,
+        "I_bufferContribution": 11087,
+        "J_claimableCarbon": 44349,
+        "K_perHectare": 443.49
+      },
+      {
+        "cumulativeToYear": 100,
+        "A_biomassCarbon": 72983.4,
+        "B_adjustedBiomass": 58386.72,
+        "C_establishmentEmissions": -556.08066667,
+        "D_soilCarbon": -1191.66666667,
+        "E_grossSequestration": 56639,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 56639,
+        "I_bufferContribution": 11328,
+        "J_claimableCarbon": 45311,
+        "K_perHectare": 453.11
+      }
+    ]
+  },
+  "Mixed conifer thin": {
+    "projectName": "Mixed conifer wood phase 1",
+    "completedBy": "Firstname Lastname",
+    "dateCompleted": "2025-07-01 00:00:00",
+    "calculatorVersion": "Verson 3.0 August 2025",
+    "startDate": "2026-03-31 00:00:00",
+    "projectDuration": 100,
+    "netArea": 100,
+    "country": "Wales",
+    "woodlandCarbonGuarantee": "N/A",
+    "verificationFrequency": "N/A",
+    "plantingSections": [
+      {
+        "sectionNumber": 1,
+        "species": "Sitka spruce",
+        "plannedSpacing": 2,
+        "modelCode": "SS",
+        "spacingLookup": 2,
+        "yieldClassESC": 24,
+        "yieldClassLookup": 24,
+        "management": "Thinned",
+        "percentArea": 0.3,
+        "areaHectares": 30,
+        "clearfellAge": 0,
+        "clearfellCap": 0,
+        "lookupKey": "SS2.024Thinned"
+      },
+      {
+        "sectionNumber": 1,
+        "species": "Douglas fir",
+        "plannedSpacing": 2,
+        "modelCode": "DF",
+        "spacingLookup": 1.7,
+        "yieldClassESC": 19,
+        "yieldClassLookup": 18,
+        "management": "Thinned",
+        "percentArea": 0.2,
+        "areaHectares": 20,
+        "clearfellAge": 0,
+        "clearfellCap": 0,
+        "lookupKey": "DF1.718Thinned"
+      },
+      {
+        "sectionNumber": 1,
+        "species": "Hybrid larch",
+        "plannedSpacing": 2,
+        "modelCode": "HL",
+        "spacingLookup": 1.7,
+        "yieldClassESC": 14,
+        "yieldClassLookup": 14,
+        "management": "Thinned",
+        "percentArea": 0.1,
+        "areaHectares": 10,
+        "clearfellAge": 0,
+        "clearfellCap": 0,
+        "lookupKey": "HL1.714Thinned"
+      },
+      {
+        "sectionNumber": 2,
+        "species": "Oak (robur/petraea)",
+        "plannedSpacing": 3,
+        "modelCode": "OK",
+        "spacingLookup": 3,
+        "yieldClassESC": 5,
+        "yieldClassLookup": 4,
+        "management": "No_thin",
+        "percentArea": 0.2,
+        "areaHectares": 20,
+        "clearfellAge": 0,
+        "clearfellCap": 0,
+        "lookupKey": "OK3.004No_thin"
+      },
+      {
+        "sectionNumber": 2,
+        "species": "Birch (downy/silver)",
+        "plannedSpacing": 3,
+        "modelCode": "SAB",
+        "spacingLookup": 3,
+        "yieldClassESC": 4,
+        "yieldClassLookup": 4,
+        "management": "No_thin",
+        "percentArea": 0.2,
+        "areaHectares": 20,
+        "clearfellAge": 0,
+        "clearfellCap": 0,
+        "lookupKey": "SA3.004No_thin"
+      }
+    ],
+    "futureNatRegenArea": 0,
+    "futureNatRegenDesc": "State whether broadleaves, Scots pine, or both",
+    "woodyShrubsArea": 0,
+    "totalAreaCheck": 100,
+    "establishmentEmissions": [
+      {
+        "type": "Seedlings",
+        "fullLabel": "Seedlings",
+        "spacing": 2.5,
+        "quantity": 100,
+        "rate": -0.24,
+        "totalTCO2e": -24
+      },
+      {
+        "type": "Fertiliser",
+        "fullLabel": "Fertiliser",
+        "spacing": 2,
+        "quantity": 60,
+        "rate": -0.03925,
+        "totalTCO2e": -2.355
+      },
+      {
+        "type": "Mounding",
+        "fullLabel": "Ground preparation (fuel): Mounding",
+        "spacing": null,
+        "quantity": 50,
+        "rate": -0.41987,
+        "totalTCO2e": -20.9935
+      },
+      {
+        "type": "Subsoiling",
+        "fullLabel": "Ground preparation (fuel): Subsoiling",
+        "spacing": null,
+        "quantity": 50,
+        "rate": -0.17296,
+        "totalTCO2e": -8.648
+      },
+      {
+        "type": "Herbicide",
+        "fullLabel": "Herbicide",
+        "spacing": null,
+        "quantity": 200,
+        "rate": -0.04414,
+        "totalTCO2e": -8.828
+      },
+      {
+        "type": "Fencing",
+        "fullLabel": "Length of fence in metres",
+        "spacing": null,
+        "quantity": 4400,
+        "rate": -0.0022,
+        "totalTCO2e": -9.68
+      },
+      {
+        "type": "Gates",
+        "fullLabel": "Number of gates",
+        "spacing": null,
+        "quantity": 4,
+        "rate": -0.583,
+        "totalTCO2e": -2.332
+      },
+      {
+        "type": "Road building",
+        "fullLabel": "Length of road in kilometres",
+        "spacing": null,
+        "quantity": 1,
+        "rate": -43.13,
+        "totalTCO2e": -43.13
+      }
+    ],
+    "totalEstablishmentEmissions": -119.9665,
+    "soilCarbonAccumulationArea": 0,
+    "baselineSignificant": "No",
+    "leakageSignificant": "No",
+    "soilCarbonEntries": [
+      {
+        "previousLanduse": "Pasture",
+        "soilType": "Mineral",
+        "groundPreparation": "Low disturbance:  Hand turfing, inverted, hinge & trench mounding, patch scarification, subsoiling, drains",
+        "areaHectares": 30,
+        "percentTopsoilLost": "00",
+        "soilEmissionsRate": 0,
+        "soilEmissionsTotal": 0
+      },
+      {
+        "previousLanduse": "Pasture",
+        "soilType": "Organomineral",
+        "groundPreparation": "Low disturbance:  Hand turfing, inverted, hinge & trench mounding, patch scarification, subsoiling, drains",
+        "areaHectares": 20,
+        "percentTopsoilLost": "05",
+        "soilEmissionsRate": -16.5,
+        "soilEmissionsTotal": -330
+      },
+      {
+        "previousLanduse": "Pasture",
+        "soilType": "Organomineral",
+        "groundPreparation": "High Disturbance:  Deep (>30cm) plough, with or without tine",
+        "areaHectares": 50,
+        "percentTopsoilLost": "20",
+        "soilEmissionsRate": -66,
+        "soilEmissionsTotal": -3300
+      }
+    ],
+    "soilTotalArea": 100,
+    "soilTotalEmissions": -3630,
+    "biomassPerHaTable": [
+      {
+        "period": "0-5",
+        "species_0_perHa": 14.94,
+        "species_1_perHa": 27.23,
+        "species_2_perHa": 39.38,
+        "species_3_perHa": 0.49,
+        "species_4_perHa": 2.13,
+        "soilAccumPerHa": 2.75
+      },
+      {
+        "period": "5-10",
+        "species_0_perHa": 57.72,
+        "species_1_perHa": 90.18,
+        "species_2_perHa": 127.53,
+        "species_3_perHa": 1.79,
+        "species_4_perHa": 10.51,
+        "soilAccumPerHa": 5.5
+      },
+      {
+        "period": "10-15",
+        "species_0_perHa": 182.22,
+        "species_1_perHa": 243.35,
+        "species_2_perHa": 170.85,
+        "species_3_perHa": 4.96,
+        "species_4_perHa": 40.41,
+        "soilAccumPerHa": 8.25
+      },
+      {
+        "period": "15-20",
+        "species_0_perHa": 269.56,
+        "species_1_perHa": 282.83,
+        "species_2_perHa": 194.41,
+        "species_3_perHa": 13.83,
+        "species_4_perHa": 129.91,
+        "soilAccumPerHa": 11.0
+      },
+      {
+        "period": "20-25",
+        "species_0_perHa": 346.96,
+        "species_1_perHa": 320.59,
+        "species_2_perHa": 235.07,
+        "species_3_perHa": 41.88,
+        "species_4_perHa": 241.22,
+        "soilAccumPerHa": 13.75
+      },
+      {
+        "period": "25-30",
+        "species_0_perHa": 435.03,
+        "species_1_perHa": 399.4,
+        "species_2_perHa": 268.69,
+        "species_3_perHa": 135.31,
+        "species_4_perHa": 319.31,
+        "soilAccumPerHa": 16.5
+      },
+      {
+        "period": "30-35",
+        "species_0_perHa": 523.29,
+        "species_1_perHa": 471.13,
+        "species_2_perHa": 295.16,
+        "species_3_perHa": 311.25,
+        "species_4_perHa": 376.07,
+        "soilAccumPerHa": 19.25
+      },
+      {
+        "period": "35-40",
+        "species_0_perHa": 595.02,
+        "species_1_perHa": 528.04,
+        "species_2_perHa": 317.25,
+        "species_3_perHa": 409.54,
+        "species_4_perHa": 421.63,
+        "soilAccumPerHa": 22.0
+      },
+      {
+        "period": "40-45",
+        "species_0_perHa": 652.17,
+        "species_1_perHa": 570.02,
+        "species_2_perHa": 334.17,
+        "species_3_perHa": 469.98,
+        "species_4_perHa": 460.48,
+        "soilAccumPerHa": 24.75
+      },
+      {
+        "period": "45-50",
+        "species_0_perHa": 702.01,
+        "species_1_perHa": 605.71,
+        "species_2_perHa": 356.11,
+        "species_3_perHa": 509.9,
+        "species_4_perHa": 504.95,
+        "soilAccumPerHa": 27.5
+      },
+      {
+        "period": "50-55",
+        "species_0_perHa": 742.58,
+        "species_1_perHa": 641.63,
+        "species_2_perHa": 375.28,
+        "species_3_perHa": 540.91,
+        "species_4_perHa": 526.61,
+        "soilAccumPerHa": 29.33333333
+      },
+      {
+        "period": "55-60",
+        "species_0_perHa": 784.5,
+        "species_1_perHa": 677.39,
+        "species_2_perHa": 393.79,
+        "species_3_perHa": 567.84,
+        "species_4_perHa": 541.25,
+        "soilAccumPerHa": 31.16666667
+      },
+      {
+        "period": "60-65",
+        "species_0_perHa": 820.75,
+        "species_1_perHa": 709.3,
+        "species_2_perHa": 412.23,
+        "species_3_perHa": 594.41,
+        "species_4_perHa": 553.64,
+        "soilAccumPerHa": 33.0
+      },
+      {
+        "period": "65-70",
+        "species_0_perHa": 849.95,
+        "species_1_perHa": 742.11,
+        "species_2_perHa": 425.18,
+        "species_3_perHa": 621.66,
+        "species_4_perHa": 559.82,
+        "soilAccumPerHa": 34.83333333
+      },
+      {
+        "period": "70-75",
+        "species_0_perHa": 874.9,
+        "species_1_perHa": 766.81,
+        "species_2_perHa": 437.62,
+        "species_3_perHa": 646.7,
+        "species_4_perHa": 566.91,
+        "soilAccumPerHa": 36.66666667
+      },
+      {
+        "period": "75-80",
+        "species_0_perHa": 897.38,
+        "species_1_perHa": 789.68,
+        "species_2_perHa": 448.01,
+        "species_3_perHa": 669.77,
+        "species_4_perHa": 574.12,
+        "soilAccumPerHa": 38.5
+      },
+      {
+        "period": "80-85",
+        "species_0_perHa": 914,
+        "species_1_perHa": 808.91,
+        "species_2_perHa": 455.34,
+        "species_3_perHa": 693.35,
+        "species_4_perHa": 579.86,
+        "soilAccumPerHa": 40.33333333
+      },
+      {
+        "period": "85-90",
+        "species_0_perHa": 927.02,
+        "species_1_perHa": 824.77,
+        "species_2_perHa": 458.66,
+        "species_3_perHa": 715.76,
+        "species_4_perHa": 585.51,
+        "soilAccumPerHa": 42.16666667
+      },
+      {
+        "period": "90-95",
+        "species_0_perHa": 937.33,
+        "species_1_perHa": 837.72,
+        "species_2_perHa": 459.84,
+        "species_3_perHa": 737.65,
+        "species_4_perHa": 604.3,
+        "soilAccumPerHa": 44.0
+      },
+      {
+        "period": "95-100",
+        "species_0_perHa": 945.45,
+        "species_1_perHa": 847.9,
+        "species_2_perHa": 460.54,
+        "species_3_perHa": 757.79,
+        "species_4_perHa": 606.14,
+        "soilAccumPerHa": 45.83333333
+      }
+    ],
+    "sequestrationPerProject": [
+      {
+        "species_0_total": 448.2,
+        "species_1_total": 544.6,
+        "species_2_total": 393.8,
+        "species_3_total": 9.8,
+        "species_4_total": 42.6
+      },
+      {
+        "species_0_total": 1731.6,
+        "species_1_total": 1803.6,
+        "species_2_total": 1275.3,
+        "species_3_total": 35.8,
+        "species_4_total": 210.2
+      },
+      {
+        "species_0_total": 5466.6,
+        "species_1_total": 4867,
+        "species_2_total": 1708.5,
+        "species_3_total": 99.2,
+        "species_4_total": 808.2
+      },
+      {
+        "species_0_total": 8086.8,
+        "species_1_total": 5656.6,
+        "species_2_total": 1944.1,
+        "species_3_total": 276.6,
+        "species_4_total": 2598.2
+      },
+      {
+        "species_0_total": 10408.8,
+        "species_1_total": 6411.8,
+        "species_2_total": 2350.7,
+        "species_3_total": 837.6,
+        "species_4_total": 4824.4
+      },
+      {
+        "species_0_total": 13050.9,
+        "species_1_total": 7988,
+        "species_2_total": 2686.9,
+        "species_3_total": 2706.2,
+        "species_4_total": 6386.2
+      },
+      {
+        "species_0_total": 15698.7,
+        "species_1_total": 9422.6,
+        "species_2_total": 2951.6,
+        "species_3_total": 6225,
+        "species_4_total": 7521.4
+      },
+      {
+        "species_0_total": 17850.6,
+        "species_1_total": 10560.8,
+        "species_2_total": 3172.5,
+        "species_3_total": 8190.8,
+        "species_4_total": 8432.6
+      },
+      {
+        "species_0_total": 19565.1,
+        "species_1_total": 11400.4,
+        "species_2_total": 3341.7,
+        "species_3_total": 9399.6,
+        "species_4_total": 9209.6
+      },
+      {
+        "species_0_total": 21060.3,
+        "species_1_total": 12114.2,
+        "species_2_total": 3561.1,
+        "species_3_total": 10198,
+        "species_4_total": 10099
+      },
+      {
+        "species_0_total": 22277.4,
+        "species_1_total": 12832.6,
+        "species_2_total": 3752.8,
+        "species_3_total": 10818.2,
+        "species_4_total": 10532.2
+      },
+      {
+        "species_0_total": 23535,
+        "species_1_total": 13547.8,
+        "species_2_total": 3937.9,
+        "species_3_total": 11356.8,
+        "species_4_total": 10825
+      },
+      {
+        "species_0_total": 24622.5,
+        "species_1_total": 14186,
+        "species_2_total": 4122.3,
+        "species_3_total": 11888.2,
+        "species_4_total": 11072.8
+      },
+      {
+        "species_0_total": 25498.5,
+        "species_1_total": 14842.2,
+        "species_2_total": 4251.8,
+        "species_3_total": 12433.2,
+        "species_4_total": 11196.4
+      },
+      {
+        "species_0_total": 26247,
+        "species_1_total": 15336.2,
+        "species_2_total": 4376.2,
+        "species_3_total": 12934,
+        "species_4_total": 11338.2
+      },
+      {
+        "species_0_total": 26921.4,
+        "species_1_total": 15793.6,
+        "species_2_total": 4480.1,
+        "species_3_total": 13395.4,
+        "species_4_total": 11482.4
+      },
+      {
+        "species_0_total": 27420,
+        "species_1_total": 16178.2,
+        "species_2_total": 4553.4,
+        "species_3_total": 13867,
+        "species_4_total": 11597.2
+      },
+      {
+        "species_0_total": 27810.6,
+        "species_1_total": 16495.4,
+        "species_2_total": 4586.6,
+        "species_3_total": 14315.2,
+        "species_4_total": 11710.2
+      },
+      {
+        "species_0_total": 28119.9,
+        "species_1_total": 16754.4,
+        "species_2_total": 4598.4,
+        "species_3_total": 14753,
+        "species_4_total": 12086
+      },
+      {
+        "species_0_total": 28363.5,
+        "species_1_total": 16958,
+        "species_2_total": 4605.4,
+        "species_3_total": 15155.8,
+        "species_4_total": 12122.8
+      }
+    ],
+    "results": [
+      {
+        "cumulativeToYear": 0,
+        "A_biomassCarbon": 0,
+        "B_adjustedBiomass": 0,
+        "C_establishmentEmissions": -119.9665,
+        "D_soilCarbon": -3630,
+        "E_grossSequestration": -3750,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": -3750,
+        "I_bufferContribution": -750,
+        "J_claimableCarbon": -3000,
+        "K_perHectare": -30
+      },
+      {
+        "cumulativeToYear": 5,
+        "A_biomassCarbon": 1439.0,
+        "B_adjustedBiomass": 1151.2,
+        "C_establishmentEmissions": -119.9665,
+        "D_soilCarbon": -3630,
+        "E_grossSequestration": -2599,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": -2599,
+        "I_bufferContribution": -520,
+        "J_claimableCarbon": -2079,
+        "K_perHectare": -20.79
+      },
+      {
+        "cumulativeToYear": 10,
+        "A_biomassCarbon": 5056.5,
+        "B_adjustedBiomass": 4045.2,
+        "C_establishmentEmissions": -119.9665,
+        "D_soilCarbon": -3630,
+        "E_grossSequestration": 295,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 295,
+        "I_bufferContribution": 59,
+        "J_claimableCarbon": 236,
+        "K_perHectare": 2.36
+      },
+      {
+        "cumulativeToYear": 15,
+        "A_biomassCarbon": 12949.5,
+        "B_adjustedBiomass": 10359.6,
+        "C_establishmentEmissions": -119.9665,
+        "D_soilCarbon": -3630,
+        "E_grossSequestration": 6610,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 6610,
+        "I_bufferContribution": 1322,
+        "J_claimableCarbon": 5288,
+        "K_perHectare": 52.88
+      },
+      {
+        "cumulativeToYear": 20,
+        "A_biomassCarbon": 18562.3,
+        "B_adjustedBiomass": 14849.84,
+        "C_establishmentEmissions": -119.9665,
+        "D_soilCarbon": -3630,
+        "E_grossSequestration": 11100,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 11100,
+        "I_bufferContribution": 2220,
+        "J_claimableCarbon": 8880,
+        "K_perHectare": 88.8
+      },
+      {
+        "cumulativeToYear": 25,
+        "A_biomassCarbon": 24833.3,
+        "B_adjustedBiomass": 19866.64,
+        "C_establishmentEmissions": -119.9665,
+        "D_soilCarbon": -3630,
+        "E_grossSequestration": 16117,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 16117,
+        "I_bufferContribution": 3223,
+        "J_claimableCarbon": 12894,
+        "K_perHectare": 128.94
+      },
+      {
+        "cumulativeToYear": 30,
+        "A_biomassCarbon": 32818.2,
+        "B_adjustedBiomass": 26254.56,
+        "C_establishmentEmissions": -119.9665,
+        "D_soilCarbon": -3630,
+        "E_grossSequestration": 22505,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 22505,
+        "I_bufferContribution": 4501,
+        "J_claimableCarbon": 18004,
+        "K_perHectare": 180.04
+      },
+      {
+        "cumulativeToYear": 35,
+        "A_biomassCarbon": 41819.3,
+        "B_adjustedBiomass": 33455.44,
+        "C_establishmentEmissions": -119.9665,
+        "D_soilCarbon": -3630,
+        "E_grossSequestration": 29705,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 29705,
+        "I_bufferContribution": 5941,
+        "J_claimableCarbon": 23764,
+        "K_perHectare": 237.64
+      },
+      {
+        "cumulativeToYear": 40,
+        "A_biomassCarbon": 48207.3,
+        "B_adjustedBiomass": 38565.84,
+        "C_establishmentEmissions": -119.9665,
+        "D_soilCarbon": -3630,
+        "E_grossSequestration": 34816,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 34816,
+        "I_bufferContribution": 6963,
+        "J_claimableCarbon": 27853,
+        "K_perHectare": 278.53
+      },
+      {
+        "cumulativeToYear": 45,
+        "A_biomassCarbon": 52916.4,
+        "B_adjustedBiomass": 42333.12,
+        "C_establishmentEmissions": -119.9665,
+        "D_soilCarbon": -3630,
+        "E_grossSequestration": 38583,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 38583,
+        "I_bufferContribution": 7717,
+        "J_claimableCarbon": 30866,
+        "K_perHectare": 308.66
+      },
+      {
+        "cumulativeToYear": 50,
+        "A_biomassCarbon": 57032.6,
+        "B_adjustedBiomass": 45626.08,
+        "C_establishmentEmissions": -119.9665,
+        "D_soilCarbon": -3630,
+        "E_grossSequestration": 41876,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 41876,
+        "I_bufferContribution": 8375,
+        "J_claimableCarbon": 33501,
+        "K_perHectare": 335.01
+      },
+      {
+        "cumulativeToYear": 55,
+        "A_biomassCarbon": 60213.2,
+        "B_adjustedBiomass": 48170.56,
+        "C_establishmentEmissions": -119.9665,
+        "D_soilCarbon": -3630,
+        "E_grossSequestration": 44421,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 44421,
+        "I_bufferContribution": 8884,
+        "J_claimableCarbon": 35537,
+        "K_perHectare": 355.37
+      },
+      {
+        "cumulativeToYear": 60,
+        "A_biomassCarbon": 63202.5,
+        "B_adjustedBiomass": 50562.0,
+        "C_establishmentEmissions": -119.9665,
+        "D_soilCarbon": -3630,
+        "E_grossSequestration": 46812,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 46812,
+        "I_bufferContribution": 9362,
+        "J_claimableCarbon": 37450,
+        "K_perHectare": 374.5
+      },
+      {
+        "cumulativeToYear": 65,
+        "A_biomassCarbon": 65891.8,
+        "B_adjustedBiomass": 52713.44,
+        "C_establishmentEmissions": -119.9665,
+        "D_soilCarbon": -3630,
+        "E_grossSequestration": 48963,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 48963,
+        "I_bufferContribution": 9793,
+        "J_claimableCarbon": 39170,
+        "K_perHectare": 391.7
+      },
+      {
+        "cumulativeToYear": 70,
+        "A_biomassCarbon": 68222.1,
+        "B_adjustedBiomass": 54577.68,
+        "C_establishmentEmissions": -119.9665,
+        "D_soilCarbon": -3630,
+        "E_grossSequestration": 50828,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 50828,
+        "I_bufferContribution": 10166,
+        "J_claimableCarbon": 40662,
+        "K_perHectare": 406.62
+      },
+      {
+        "cumulativeToYear": 75,
+        "A_biomassCarbon": 70231.6,
+        "B_adjustedBiomass": 56185.28,
+        "C_establishmentEmissions": -119.9665,
+        "D_soilCarbon": -3630,
+        "E_grossSequestration": 52435,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 52435,
+        "I_bufferContribution": 10487,
+        "J_claimableCarbon": 41948,
+        "K_perHectare": 419.48
+      },
+      {
+        "cumulativeToYear": 80,
+        "A_biomassCarbon": 72072.9,
+        "B_adjustedBiomass": 57658.32,
+        "C_establishmentEmissions": -119.9665,
+        "D_soilCarbon": -3630,
+        "E_grossSequestration": 53908,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 53908,
+        "I_bufferContribution": 10782,
+        "J_claimableCarbon": 43126,
+        "K_perHectare": 431.26
+      },
+      {
+        "cumulativeToYear": 85,
+        "A_biomassCarbon": 73615.8,
+        "B_adjustedBiomass": 58892.64,
+        "C_establishmentEmissions": -119.9665,
+        "D_soilCarbon": -3630,
+        "E_grossSequestration": 55143,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 55143,
+        "I_bufferContribution": 11029,
+        "J_claimableCarbon": 44114,
+        "K_perHectare": 441.14
+      },
+      {
+        "cumulativeToYear": 90,
+        "A_biomassCarbon": 74918,
+        "B_adjustedBiomass": 59934.4,
+        "C_establishmentEmissions": -119.9665,
+        "D_soilCarbon": -3630,
+        "E_grossSequestration": 56184,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 56184,
+        "I_bufferContribution": 11237,
+        "J_claimableCarbon": 44947,
+        "K_perHectare": 449.47
+      },
+      {
+        "cumulativeToYear": 95,
+        "A_biomassCarbon": 76311.7,
+        "B_adjustedBiomass": 61049.36,
+        "C_establishmentEmissions": -119.9665,
+        "D_soilCarbon": -3630,
+        "E_grossSequestration": 57299,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 57299,
+        "I_bufferContribution": 11460,
+        "J_claimableCarbon": 45839,
+        "K_perHectare": 458.39
+      },
+      {
+        "cumulativeToYear": 100,
+        "A_biomassCarbon": 77205.5,
+        "B_adjustedBiomass": 61764.4,
+        "C_establishmentEmissions": -119.9665,
+        "D_soilCarbon": -3630,
+        "E_grossSequestration": 58014,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 58014,
+        "I_bufferContribution": 11603,
+        "J_claimableCarbon": 46411,
+        "K_perHectare": 464.11
+      }
+    ]
+  },
+  "Conifer clearfell": {
+    "projectName": "Conifer clearfell wood phase 1",
+    "completedBy": "Firstname Lastname",
+    "dateCompleted": "2025-07-01 00:00:00",
+    "calculatorVersion": "Verson 3.0 August 2025",
+    "startDate": "2026-03-31 00:00:00",
+    "projectDuration": 100,
+    "netArea": 100,
+    "country": "Scotland",
+    "woodlandCarbonGuarantee": "N/A",
+    "verificationFrequency": "N/A",
+    "plantingSections": [
+      {
+        "sectionNumber": 1,
+        "species": "Sitka spruce",
+        "plannedSpacing": 2,
+        "modelCode": "SS",
+        "spacingLookup": 2,
+        "yieldClassESC": 24,
+        "yieldClassLookup": 24,
+        "management": "Thinned",
+        "percentArea": 0.3,
+        "areaHectares": 30,
+        "clearfellAge": 40,
+        "clearfellCap": 253,
+        "lookupKey": "SS2.024Thinned"
+      },
+      {
+        "sectionNumber": 2,
+        "species": "Douglas fir",
+        "plannedSpacing": 2,
+        "modelCode": "DF",
+        "spacingLookup": 1.7,
+        "yieldClassESC": 18,
+        "yieldClassLookup": 18,
+        "management": "Thinned",
+        "percentArea": 0.2,
+        "areaHectares": 20,
+        "clearfellAge": 50,
+        "clearfellCap": 311,
+        "lookupKey": "DF1.718Thinned"
+      },
+      {
+        "sectionNumber": 3,
+        "species": "Oak (robur/petraea)",
+        "plannedSpacing": 3,
+        "modelCode": "OK",
+        "spacingLookup": 3,
+        "yieldClassESC": 5,
+        "yieldClassLookup": 4,
+        "management": "No_thin",
+        "percentArea": 0.25,
+        "areaHectares": 25,
+        "clearfellAge": 0,
+        "clearfellCap": 0,
+        "lookupKey": "OK3.004No_thin"
+      },
+      {
+        "sectionNumber": 3,
+        "species": "Birch (downy/silver)",
+        "plannedSpacing": 3,
+        "modelCode": "SAB",
+        "spacingLookup": 3,
+        "yieldClassESC": 4,
+        "yieldClassLookup": 4,
+        "management": "No_thin",
+        "percentArea": 0.25,
+        "areaHectares": 25,
+        "clearfellAge": 0,
+        "clearfellCap": 0,
+        "lookupKey": "SA3.004No_thin"
+      }
+    ],
+    "futureNatRegenArea": 0,
+    "futureNatRegenDesc": "State whether broadleaves, Scots pine, or both",
+    "woodyShrubsArea": 0,
+    "totalAreaCheck": 100,
+    "establishmentEmissions": [
+      {
+        "type": "Seedlings",
+        "fullLabel": "Seedlings",
+        "spacing": 2.5,
+        "quantity": 100,
+        "rate": -0.24,
+        "totalTCO2e": -24
+      },
+      {
+        "type": "Spiral guards (0.6m)",
+        "fullLabel": "Tree protection - Spiral guards (0.6m)",
+        "spacing": 3,
+        "quantity": 20,
+        "rate": -1.24444444,
+        "totalTCO2e": -24.88888889
+      },
+      {
+        "type": "Voleguards",
+        "fullLabel": "Tree protection - Voleguards",
+        "spacing": 3,
+        "quantity": 20,
+        "rate": -0.34444444,
+        "totalTCO2e": -6.88888889
+      },
+      {
+        "type": "Mounding",
+        "fullLabel": "Ground preparation (fuel): Mounding",
+        "spacing": null,
+        "quantity": 100,
+        "rate": -0.41987,
+        "totalTCO2e": -41.987
+      },
+      {
+        "type": "Herbicide",
+        "fullLabel": "Herbicide",
+        "spacing": null,
+        "quantity": 200,
+        "rate": -0.04414,
+        "totalTCO2e": -8.828
+      },
+      {
+        "type": "Fencing",
+        "fullLabel": "Length of fence in metres",
+        "spacing": null,
+        "quantity": 4400,
+        "rate": -0.0022,
+        "totalTCO2e": -9.68
+      },
+      {
+        "type": "Gates",
+        "fullLabel": "Number of gates",
+        "spacing": null,
+        "quantity": 4,
+        "rate": -0.583,
+        "totalTCO2e": -2.332
+      },
+      {
+        "type": "Road building",
+        "fullLabel": "Length of road in kilometres",
+        "spacing": null,
+        "quantity": 1,
+        "rate": -43.13,
+        "totalTCO2e": -43.13
+      }
+    ],
+    "totalEstablishmentEmissions": -161.73477778,
+    "soilCarbonAccumulationArea": 0,
+    "baselineSignificant": "No",
+    "leakageSignificant": "No",
+    "soilCarbonEntries": [
+      {
+        "previousLanduse": "Pasture",
+        "soilType": "Organomineral",
+        "groundPreparation": "Low disturbance:  Hand turfing, inverted, hinge & trench mounding, patch scarification, subsoiling, drains",
+        "areaHectares": 100,
+        "percentTopsoilLost": "05",
+        "soilEmissionsRate": -29.33333333,
+        "soilEmissionsTotal": -2933.33333333
+      }
+    ],
+    "soilTotalArea": 100,
+    "soilTotalEmissions": -2933.33333333,
+    "biomassPerHaTable": [
+      {
+        "period": "0-5",
+        "species_0_perHa": 14.94,
+        "species_1_perHa": 27.23,
+        "species_2_perHa": 0.49,
+        "species_3_perHa": 2.13,
+        "soilAccumPerHa": 2.75
+      },
+      {
+        "period": "5-10",
+        "species_0_perHa": 57.72,
+        "species_1_perHa": 90.18,
+        "species_2_perHa": 1.79,
+        "species_3_perHa": 10.51,
+        "soilAccumPerHa": 5.5
+      },
+      {
+        "period": "10-15",
+        "species_0_perHa": 182.22,
+        "species_1_perHa": 243.35,
+        "species_2_perHa": 4.96,
+        "species_3_perHa": 40.41,
+        "soilAccumPerHa": 8.25
+      },
+      {
+        "period": "15-20",
+        "species_0_perHa": 253,
+        "species_1_perHa": 282.83,
+        "species_2_perHa": 13.83,
+        "species_3_perHa": 129.91,
+        "soilAccumPerHa": 11.0
+      },
+      {
+        "period": "20-25",
+        "species_0_perHa": 253,
+        "species_1_perHa": 311,
+        "species_2_perHa": 41.88,
+        "species_3_perHa": 241.22,
+        "soilAccumPerHa": 13.75
+      },
+      {
+        "period": "25-30",
+        "species_0_perHa": 253,
+        "species_1_perHa": 311,
+        "species_2_perHa": 135.31,
+        "species_3_perHa": 319.31,
+        "soilAccumPerHa": 16.5
+      },
+      {
+        "period": "30-35",
+        "species_0_perHa": 253,
+        "species_1_perHa": 311,
+        "species_2_perHa": 311.25,
+        "species_3_perHa": 376.07,
+        "soilAccumPerHa": 19.25
+      },
+      {
+        "period": "35-40",
+        "species_0_perHa": 253,
+        "species_1_perHa": 311,
+        "species_2_perHa": 409.54,
+        "species_3_perHa": 421.63,
+        "soilAccumPerHa": 22.0
+      },
+      {
+        "period": "40-45",
+        "species_0_perHa": 253,
+        "species_1_perHa": 311,
+        "species_2_perHa": 469.98,
+        "species_3_perHa": 460.48,
+        "soilAccumPerHa": 24.75
+      },
+      {
+        "period": "45-50",
+        "species_0_perHa": 253,
+        "species_1_perHa": 311,
+        "species_2_perHa": 509.9,
+        "species_3_perHa": 504.95,
+        "soilAccumPerHa": 27.5
+      },
+      {
+        "period": "50-55",
+        "species_0_perHa": 253,
+        "species_1_perHa": 311,
+        "species_2_perHa": 540.91,
+        "species_3_perHa": 526.61,
+        "soilAccumPerHa": 29.33333333
+      },
+      {
+        "period": "55-60",
+        "species_0_perHa": 253,
+        "species_1_perHa": 311,
+        "species_2_perHa": 567.84,
+        "species_3_perHa": 541.25,
+        "soilAccumPerHa": 31.16666667
+      },
+      {
+        "period": "60-65",
+        "species_0_perHa": 253,
+        "species_1_perHa": 311,
+        "species_2_perHa": 594.41,
+        "species_3_perHa": 553.64,
+        "soilAccumPerHa": 33.0
+      },
+      {
+        "period": "65-70",
+        "species_0_perHa": 253,
+        "species_1_perHa": 311,
+        "species_2_perHa": 621.66,
+        "species_3_perHa": 559.82,
+        "soilAccumPerHa": 34.83333333
+      },
+      {
+        "period": "70-75",
+        "species_0_perHa": 253,
+        "species_1_perHa": 311,
+        "species_2_perHa": 646.7,
+        "species_3_perHa": 566.91,
+        "soilAccumPerHa": 36.66666667
+      },
+      {
+        "period": "75-80",
+        "species_0_perHa": 253,
+        "species_1_perHa": 311,
+        "species_2_perHa": 669.77,
+        "species_3_perHa": 574.12,
+        "soilAccumPerHa": 38.5
+      },
+      {
+        "period": "80-85",
+        "species_0_perHa": 253,
+        "species_1_perHa": 311,
+        "species_2_perHa": 693.35,
+        "species_3_perHa": 579.86,
+        "soilAccumPerHa": 40.33333333
+      },
+      {
+        "period": "85-90",
+        "species_0_perHa": 253,
+        "species_1_perHa": 311,
+        "species_2_perHa": 715.76,
+        "species_3_perHa": 585.51,
+        "soilAccumPerHa": 42.16666667
+      },
+      {
+        "period": "90-95",
+        "species_0_perHa": 253,
+        "species_1_perHa": 311,
+        "species_2_perHa": 737.65,
+        "species_3_perHa": 604.3,
+        "soilAccumPerHa": 44.0
+      },
+      {
+        "period": "95-100",
+        "species_0_perHa": 253,
+        "species_1_perHa": 311,
+        "species_2_perHa": 757.79,
+        "species_3_perHa": 606.14,
+        "soilAccumPerHa": 45.83333333
+      }
+    ],
+    "sequestrationPerProject": [
+      {
+        "species_0_total": 448.2,
+        "species_1_total": 544.6,
+        "species_2_total": 12.25,
+        "species_3_total": 53.25
+      },
+      {
+        "species_0_total": 1731.6,
+        "species_1_total": 1803.6,
+        "species_2_total": 44.75,
+        "species_3_total": 262.75
+      },
+      {
+        "species_0_total": 5466.6,
+        "species_1_total": 4867,
+        "species_2_total": 124,
+        "species_3_total": 1010.25
+      },
+      {
+        "species_0_total": 7590,
+        "species_1_total": 5656.6,
+        "species_2_total": 345.75,
+        "species_3_total": 3247.75
+      },
+      {
+        "species_0_total": 7590,
+        "species_1_total": 6220,
+        "species_2_total": 1047,
+        "species_3_total": 6030.5
+      },
+      {
+        "species_0_total": 7590,
+        "species_1_total": 6220,
+        "species_2_total": 3382.75,
+        "species_3_total": 7982.75
+      },
+      {
+        "species_0_total": 7590,
+        "species_1_total": 6220,
+        "species_2_total": 7781.25,
+        "species_3_total": 9401.75
+      },
+      {
+        "species_0_total": 7590,
+        "species_1_total": 6220,
+        "species_2_total": 10238.5,
+        "species_3_total": 10540.75
+      },
+      {
+        "species_0_total": 7590,
+        "species_1_total": 6220,
+        "species_2_total": 11749.5,
+        "species_3_total": 11512
+      },
+      {
+        "species_0_total": 7590,
+        "species_1_total": 6220,
+        "species_2_total": 12747.5,
+        "species_3_total": 12623.75
+      },
+      {
+        "species_0_total": 7590,
+        "species_1_total": 6220,
+        "species_2_total": 13522.75,
+        "species_3_total": 13165.25
+      },
+      {
+        "species_0_total": 7590,
+        "species_1_total": 6220,
+        "species_2_total": 14196,
+        "species_3_total": 13531.25
+      },
+      {
+        "species_0_total": 7590,
+        "species_1_total": 6220,
+        "species_2_total": 14860.25,
+        "species_3_total": 13841
+      },
+      {
+        "species_0_total": 7590,
+        "species_1_total": 6220,
+        "species_2_total": 15541.5,
+        "species_3_total": 13995.5
+      },
+      {
+        "species_0_total": 7590,
+        "species_1_total": 6220,
+        "species_2_total": 16167.5,
+        "species_3_total": 14172.75
+      },
+      {
+        "species_0_total": 7590,
+        "species_1_total": 6220,
+        "species_2_total": 16744.25,
+        "species_3_total": 14353
+      },
+      {
+        "species_0_total": 7590,
+        "species_1_total": 6220,
+        "species_2_total": 17333.75,
+        "species_3_total": 14496.5
+      },
+      {
+        "species_0_total": 7590,
+        "species_1_total": 6220,
+        "species_2_total": 17894,
+        "species_3_total": 14637.75
+      },
+      {
+        "species_0_total": 7590,
+        "species_1_total": 6220,
+        "species_2_total": 18441.25,
+        "species_3_total": 15107.5
+      },
+      {
+        "species_0_total": 7590,
+        "species_1_total": 6220,
+        "species_2_total": 18944.75,
+        "species_3_total": 15153.5
+      }
+    ],
+    "results": [
+      {
+        "cumulativeToYear": 0,
+        "A_biomassCarbon": 0,
+        "B_adjustedBiomass": 0,
+        "C_establishmentEmissions": -161.73477778,
+        "D_soilCarbon": -2933.33333333,
+        "E_grossSequestration": -3095,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": -3095,
+        "I_bufferContribution": -619,
+        "J_claimableCarbon": -2476,
+        "K_perHectare": -24.76
+      },
+      {
+        "cumulativeToYear": 5,
+        "A_biomassCarbon": 1058.3,
+        "B_adjustedBiomass": 846.64,
+        "C_establishmentEmissions": -161.73477778,
+        "D_soilCarbon": -2933.33333333,
+        "E_grossSequestration": -2248,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": -2248,
+        "I_bufferContribution": -450,
+        "J_claimableCarbon": -1798,
+        "K_perHectare": -17.98
+      },
+      {
+        "cumulativeToYear": 10,
+        "A_biomassCarbon": 3842.7,
+        "B_adjustedBiomass": 3074.16,
+        "C_establishmentEmissions": -161.73477778,
+        "D_soilCarbon": -2933.33333333,
+        "E_grossSequestration": -21,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": -21,
+        "I_bufferContribution": -4,
+        "J_claimableCarbon": -17,
+        "K_perHectare": -0.17
+      },
+      {
+        "cumulativeToYear": 15,
+        "A_biomassCarbon": 11467.85,
+        "B_adjustedBiomass": 9174.28,
+        "C_establishmentEmissions": -161.73477778,
+        "D_soilCarbon": -2933.33333333,
+        "E_grossSequestration": 6079,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 6079,
+        "I_bufferContribution": 1216,
+        "J_claimableCarbon": 4863,
+        "K_perHectare": 48.63
+      },
+      {
+        "cumulativeToYear": 20,
+        "A_biomassCarbon": 16840.1,
+        "B_adjustedBiomass": 13472.08,
+        "C_establishmentEmissions": -161.73477778,
+        "D_soilCarbon": -2933.33333333,
+        "E_grossSequestration": 10377,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 10377,
+        "I_bufferContribution": 2075,
+        "J_claimableCarbon": 8302,
+        "K_perHectare": 83.02
+      },
+      {
+        "cumulativeToYear": 25,
+        "A_biomassCarbon": 20887.5,
+        "B_adjustedBiomass": 16710,
+        "C_establishmentEmissions": -161.73477778,
+        "D_soilCarbon": -2933.33333333,
+        "E_grossSequestration": 13615,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 13615,
+        "I_bufferContribution": 2723,
+        "J_claimableCarbon": 10892,
+        "K_perHectare": 108.92
+      },
+      {
+        "cumulativeToYear": 30,
+        "A_biomassCarbon": 25175.5,
+        "B_adjustedBiomass": 20140.4,
+        "C_establishmentEmissions": -161.73477778,
+        "D_soilCarbon": -2933.33333333,
+        "E_grossSequestration": 17045,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 17045,
+        "I_bufferContribution": 3409,
+        "J_claimableCarbon": 13636,
+        "K_perHectare": 136.36
+      },
+      {
+        "cumulativeToYear": 35,
+        "A_biomassCarbon": 30993,
+        "B_adjustedBiomass": 24794.4,
+        "C_establishmentEmissions": -161.73477778,
+        "D_soilCarbon": -2933.33333333,
+        "E_grossSequestration": 21699,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 21699,
+        "I_bufferContribution": 4340,
+        "J_claimableCarbon": 17359,
+        "K_perHectare": 173.59
+      },
+      {
+        "cumulativeToYear": 40,
+        "A_biomassCarbon": 34589.25,
+        "B_adjustedBiomass": 27671.4,
+        "C_establishmentEmissions": -161.73477778,
+        "D_soilCarbon": -2933.33333333,
+        "E_grossSequestration": 24576,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 24576,
+        "I_bufferContribution": 4915,
+        "J_claimableCarbon": 19661,
+        "K_perHectare": 196.61
+      },
+      {
+        "cumulativeToYear": 45,
+        "A_biomassCarbon": 37071.5,
+        "B_adjustedBiomass": 29657.2,
+        "C_establishmentEmissions": -161.73477778,
+        "D_soilCarbon": -2933.33333333,
+        "E_grossSequestration": 26562,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 26562,
+        "I_bufferContribution": 5312,
+        "J_claimableCarbon": 21250,
+        "K_perHectare": 212.5
+      },
+      {
+        "cumulativeToYear": 50,
+        "A_biomassCarbon": 39181.25,
+        "B_adjustedBiomass": 31345,
+        "C_establishmentEmissions": -161.73477778,
+        "D_soilCarbon": -2933.33333333,
+        "E_grossSequestration": 28250,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 28250,
+        "I_bufferContribution": 5650,
+        "J_claimableCarbon": 22600,
+        "K_perHectare": 226
+      },
+      {
+        "cumulativeToYear": 55,
+        "A_biomassCarbon": 40498,
+        "B_adjustedBiomass": 32398.4,
+        "C_establishmentEmissions": -161.73477778,
+        "D_soilCarbon": -2933.33333333,
+        "E_grossSequestration": 29303,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 29303,
+        "I_bufferContribution": 5861,
+        "J_claimableCarbon": 23442,
+        "K_perHectare": 234.42
+      },
+      {
+        "cumulativeToYear": 60,
+        "A_biomassCarbon": 41537.25,
+        "B_adjustedBiomass": 33229.8,
+        "C_establishmentEmissions": -161.73477778,
+        "D_soilCarbon": -2933.33333333,
+        "E_grossSequestration": 30135,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 30135,
+        "I_bufferContribution": 6027,
+        "J_claimableCarbon": 24108,
+        "K_perHectare": 241.08
+      },
+      {
+        "cumulativeToYear": 65,
+        "A_biomassCarbon": 42511.25,
+        "B_adjustedBiomass": 34009,
+        "C_establishmentEmissions": -161.73477778,
+        "D_soilCarbon": -2933.33333333,
+        "E_grossSequestration": 30914,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 30914,
+        "I_bufferContribution": 6183,
+        "J_claimableCarbon": 24731,
+        "K_perHectare": 247.31
+      },
+      {
+        "cumulativeToYear": 70,
+        "A_biomassCarbon": 43347,
+        "B_adjustedBiomass": 34677.6,
+        "C_establishmentEmissions": -161.73477778,
+        "D_soilCarbon": -2933.33333333,
+        "E_grossSequestration": 31583,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 31583,
+        "I_bufferContribution": 6317,
+        "J_claimableCarbon": 25266,
+        "K_perHectare": 252.66
+      },
+      {
+        "cumulativeToYear": 75,
+        "A_biomassCarbon": 44150.25,
+        "B_adjustedBiomass": 35320.2,
+        "C_establishmentEmissions": -161.73477778,
+        "D_soilCarbon": -2933.33333333,
+        "E_grossSequestration": 32225,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 32225,
+        "I_bufferContribution": 6445,
+        "J_claimableCarbon": 25780,
+        "K_perHectare": 257.8
+      },
+      {
+        "cumulativeToYear": 80,
+        "A_biomassCarbon": 44907.25,
+        "B_adjustedBiomass": 35925.8,
+        "C_establishmentEmissions": -161.73477778,
+        "D_soilCarbon": -2933.33333333,
+        "E_grossSequestration": 32831,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 32831,
+        "I_bufferContribution": 6566,
+        "J_claimableCarbon": 26265,
+        "K_perHectare": 262.65
+      },
+      {
+        "cumulativeToYear": 85,
+        "A_biomassCarbon": 45640.25,
+        "B_adjustedBiomass": 36512.2,
+        "C_establishmentEmissions": -161.73477778,
+        "D_soilCarbon": -2933.33333333,
+        "E_grossSequestration": 33417,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 33417,
+        "I_bufferContribution": 6683,
+        "J_claimableCarbon": 26734,
+        "K_perHectare": 267.34
+      },
+      {
+        "cumulativeToYear": 90,
+        "A_biomassCarbon": 46341.75,
+        "B_adjustedBiomass": 37073.4,
+        "C_establishmentEmissions": -161.73477778,
+        "D_soilCarbon": -2933.33333333,
+        "E_grossSequestration": 33978,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 33978,
+        "I_bufferContribution": 6796,
+        "J_claimableCarbon": 27182,
+        "K_perHectare": 271.82
+      },
+      {
+        "cumulativeToYear": 95,
+        "A_biomassCarbon": 47358.75,
+        "B_adjustedBiomass": 37887,
+        "C_establishmentEmissions": -161.73477778,
+        "D_soilCarbon": -2933.33333333,
+        "E_grossSequestration": 34792,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 34792,
+        "I_bufferContribution": 6958,
+        "J_claimableCarbon": 27834,
+        "K_perHectare": 278.34
+      },
+      {
+        "cumulativeToYear": 100,
+        "A_biomassCarbon": 47908.25,
+        "B_adjustedBiomass": 38326.6,
+        "C_establishmentEmissions": -161.73477778,
+        "D_soilCarbon": -2933.33333333,
+        "E_grossSequestration": 35232,
+        "F_baseline": 0,
+        "G_leakage": 0,
+        "H_netCarbon": 35232,
+        "I_bufferContribution": 7046,
+        "J_claimableCarbon": 28186,
+        "K_perHectare": 281.86
+      }
+    ]
+  },
+  "Small Mixed Wood": {
+    "projectName": "Mixed wood using small project process phase 1",
+    "completedBy": "Firstname Lastname",
+    "dateCompleted": "2025-08-01 00:00:00",
+    "startDate": "2026-03-31 00:00:00",
+    "country": "England",
+    "woodlandCarbonGuarantee": "No",
+    "verificationFrequency": "N/A",
+    "broadleafMinIntervention": 6,
+    "broadleafThinned": 3,
+    "broadleafClearfell": 0,
+    "natRegenUpfront": 0,
+    "scotsPineMinIntervention": 0,
+    "coniferThinned": 0,
+    "coniferClearfell": 0,
+    "netArea": 9,
+    "plantingSections": [
+      {
+        "sectionNumber": 1,
+        "species": "Oak (robur/petraea)",
+        "spacing": 3,
+        "management": "Thinned",
+        "percentArea": 0.33333333,
+        "areaHectares": 3
+      },
+      {
+        "sectionNumber": 1,
+        "species": "Alder",
+        "spacing": 3,
+        "management": "Select mgmt regime",
+        "percentArea": 0.33333333,
+        "areaHectares": 3
+      },
+      {
+        "sectionNumber": 1,
+        "species": "Beech",
+        "spacing": 3,
+        "management": "Select mgmt regime",
+        "percentArea": 0.33333333,
+        "areaHectares": 3
+      }
+    ],
+    "establishmentEmissions": {
+      "fencingLength": 1500,
+      "fencingRate": -0.0022,
+      "fencingTotal": -3.3,
+      "otherEmissionsLabel": "Other emissions (CO2e per hectare)",
+      "otherEmissionsRate": -17.15,
+      "otherEmissionsTotal": -154.35
+    },
+    "totalEstablishmentEmissions": -157.65,
+    "soilType": "Mineral",
+    "previousLanduse": "Arable",
+    "groundPreparation": "Low disturbance:  Hand turfing, inverted, hinge & trench mounding, patch scarification, subsoiling, drains",
+    "topsoilPercentLost": "00",
+    "soilArea": 10,
+    "soilEmissionsRate": 0,
+    "soilEmissionsTotal": 0,
+    "biomassLookupTable": [
+      {
+        "year": 5,
+        "SAB_YC4_2p5_NoThin": 2.6,
+        "SAB_YC4_2p5_Thinned": 2.6,
+        "SAB_YC4_2p5_Clearfell50": 2.6,
+        "NatRegen_SAB_YC2_5m": 0,
+        "SP_YC4_NoThin": 0.37,
+        "SS_YC12_2m_Thinned": 3.12,
+        "SS_YC12_2m_Clearfell50": 3.12
+      },
+      {
+        "year": 10,
+        "SAB_YC4_2p5_NoThin": 11.77,
+        "SAB_YC4_2p5_Thinned": 11.77,
+        "SAB_YC4_2p5_Clearfell50": 11.77,
+        "NatRegen_SAB_YC2_5m": 0.38343834,
+        "SP_YC4_NoThin": 0.87,
+        "SS_YC12_2m_Thinned": 10.99,
+        "SS_YC12_2m_Clearfell50": 10.99
+      },
+      {
+        "year": 15,
+        "SAB_YC4_2p5_NoThin": 42.95,
+        "SAB_YC4_2p5_Thinned": 42.95,
+        "SAB_YC4_2p5_Clearfell50": 42.95,
+        "NatRegen_SAB_YC2_5m": 1.8919892,
+        "SP_YC4_NoThin": 1.5,
+        "SS_YC12_2m_Thinned": 32.7,
+        "SS_YC12_2m_Clearfell50": 32.7
+      },
+      {
+        "year": 20,
+        "SAB_YC4_2p5_NoThin": 133.27,
+        "SAB_YC4_2p5_Thinned": 123.20331089,
+        "SAB_YC4_2p5_Clearfell50": 133.27,
+        "NatRegen_SAB_YC2_5m": 7.27452745,
+        "SP_YC4_NoThin": 2.55,
+        "SS_YC12_2m_Thinned": 96.64,
+        "SS_YC12_2m_Clearfell50": 96.64
+      },
+      {
+        "year": 25,
+        "SAB_YC4_2p5_NoThin": 241.22,
+        "SAB_YC4_2p5_Thinned": 182.21396071,
+        "SAB_YC4_2p5_Clearfell50": 216,
+        "NatRegen_SAB_YC2_5m": 23.38613861,
+        "SP_YC4_NoThin": 4.86,
+        "SS_YC12_2m_Thinned": 187.05,
+        "SS_YC12_2m_Clearfell50": 223.76
+      },
+      {
+        "year": 30,
+        "SAB_YC4_2p5_NoThin": 319.31,
+        "SAB_YC4_2p5_Thinned": 220.95691884,
+        "SAB_YC4_2p5_Clearfell50": 216,
+        "NatRegen_SAB_YC2_5m": 43.42394239,
+        "SP_YC4_NoThin": 11.01,
+        "SS_YC12_2m_Thinned": 226.57,
+        "SS_YC12_2m_Clearfell50": 235
+      },
+      {
+        "year": 35,
+        "SAB_YC4_2p5_NoThin": 376.07,
+        "SAB_YC4_2p5_Thinned": 252.57584567,
+        "SAB_YC4_2p5_Clearfell50": 216,
+        "NatRegen_SAB_YC2_5m": 57.48154815,
+        "SP_YC4_NoThin": 28.9,
+        "SS_YC12_2m_Thinned": 276.48,
+        "SS_YC12_2m_Clearfell50": 235
+      },
+      {
+        "year": 40,
+        "SAB_YC4_2p5_NoThin": 421.63,
+        "SAB_YC4_2p5_Thinned": 280.8763905,
+        "SAB_YC4_2p5_Clearfell50": 216,
+        "NatRegen_SAB_YC2_5m": 67.69936994,
+        "SP_YC4_NoThin": 82.61,
+        "SS_YC12_2m_Thinned": 328.52,
+        "SS_YC12_2m_Clearfell50": 235
+      },
+      {
+        "year": 45,
+        "SAB_YC4_2p5_NoThin": 460.48,
+        "SAB_YC4_2p5_Thinned": 309.38638303,
+        "SAB_YC4_2p5_Clearfell50": 216,
+        "NatRegen_SAB_YC2_5m": 75.9009901,
+        "SP_YC4_NoThin": 172.75,
+        "SS_YC12_2m_Thinned": 372.39,
+        "SS_YC12_2m_Clearfell50": 235
+      },
+      {
+        "year": 50,
+        "SAB_YC4_2p5_NoThin": 504.95,
+        "SAB_YC4_2p5_Thinned": 337.45679286,
+        "SAB_YC4_2p5_Clearfell50": 216,
+        "NatRegen_SAB_YC2_5m": 82.89468947,
+        "SP_YC4_NoThin": 215.49,
+        "SS_YC12_2m_Thinned": 413.27,
+        "SS_YC12_2m_Clearfell50": 235
+      },
+      {
+        "year": 55,
+        "SAB_YC4_2p5_NoThin": 526.61,
+        "SAB_YC4_2p5_Thinned": 353.87261964,
+        "SAB_YC4_2p5_Clearfell50": 216,
+        "NatRegen_SAB_YC2_5m": 90.90009001,
+        "SP_YC4_NoThin": 256.99,
+        "SS_YC12_2m_Thinned": 440.24,
+        "SS_YC12_2m_Clearfell50": 235
+      },
+      {
+        "year": 60,
+        "SAB_YC4_2p5_NoThin": 541.25,
+        "SAB_YC4_2p5_Thinned": 362.60880773,
+        "SAB_YC4_2p5_Clearfell50": 216,
+        "NatRegen_SAB_YC2_5m": 94.79927993,
+        "SP_YC4_NoThin": 296.91,
+        "SS_YC12_2m_Thinned": 467.37,
+        "SS_YC12_2m_Clearfell50": 235
+      },
+      {
+        "year": 65,
+        "SAB_YC4_2p5_NoThin": 553.64,
+        "SAB_YC4_2p5_Thinned": 368.63174686,
+        "SAB_YC4_2p5_Clearfell50": 216,
+        "NatRegen_SAB_YC2_5m": 97.43474347,
+        "SP_YC4_NoThin": 336.16,
+        "SS_YC12_2m_Thinned": 485.95,
+        "SS_YC12_2m_Clearfell50": 235
+      },
+      {
+        "year": 70,
+        "SAB_YC4_2p5_NoThin": 559.82,
+        "SAB_YC4_2p5_Thinned": 368.63174686,
+        "SAB_YC4_2p5_Clearfell50": 216,
+        "NatRegen_SAB_YC2_5m": 99.66516652,
+        "SP_YC4_NoThin": 372.61,
+        "SS_YC12_2m_Thinned": 507.85,
+        "SS_YC12_2m_Clearfell50": 235
+      },
+      {
+        "year": 75,
+        "SAB_YC4_2p5_NoThin": 566.91,
+        "SAB_YC4_2p5_Thinned": 368.63174686,
+        "SAB_YC4_2p5_Clearfell50": 216,
+        "NatRegen_SAB_YC2_5m": 100.77767777,
+        "SP_YC4_NoThin": 405.22,
+        "SS_YC12_2m_Thinned": 527.96,
+        "SS_YC12_2m_Clearfell50": 235
+      },
+      {
+        "year": 80,
+        "SAB_YC4_2p5_NoThin": 574.12,
+        "SAB_YC4_2p5_Thinned": 368.63174686,
+        "SAB_YC4_2p5_Clearfell50": 216,
+        "NatRegen_SAB_YC2_5m": 102.0540054,
+        "SP_YC4_NoThin": 436.16,
+        "SS_YC12_2m_Thinned": 541.1,
+        "SS_YC12_2m_Clearfell50": 235
+      },
+      {
+        "year": 85,
+        "SAB_YC4_2p5_NoThin": 579.86,
+        "SAB_YC4_2p5_Thinned": 368.63174686,
+        "SAB_YC4_2p5_Clearfell50": 216,
+        "NatRegen_SAB_YC2_5m": 103.35193519,
+        "SP_YC4_NoThin": 463.88,
+        "SS_YC12_2m_Thinned": 552.2,
+        "SS_YC12_2m_Clearfell50": 235
+      },
+      {
+        "year": 90,
+        "SAB_YC4_2p5_NoThin": 585.51,
+        "SAB_YC4_2p5_Thinned": 368.63174686,
+        "SAB_YC4_2p5_Clearfell50": 216,
+        "NatRegen_SAB_YC2_5m": 104.38523852,
+        "SP_YC4_NoThin": 485.7,
+        "SS_YC12_2m_Thinned": 561.9,
+        "SS_YC12_2m_Clearfell50": 235
+      },
+      {
+        "year": 95,
+        "SAB_YC4_2p5_NoThin": 604.3,
+        "SAB_YC4_2p5_Thinned": 368.63174686,
+        "SAB_YC4_2p5_Clearfell50": 216,
+        "NatRegen_SAB_YC2_5m": 105.40234023,
+        "SP_YC4_NoThin": 502.78,
+        "SS_YC12_2m_Thinned": 570.64,
+        "SS_YC12_2m_Clearfell50": 235
+      },
+      {
+        "year": 100,
+        "SAB_YC4_2p5_NoThin": 606.14,
+        "SAB_YC4_2p5_Thinned": 368.63174686,
+        "SAB_YC4_2p5_Clearfell50": 216,
+        "NatRegen_SAB_YC2_5m": 108.78487849,
+        "SP_YC4_NoThin": 517.84,
+        "SS_YC12_2m_Thinned": 577.47,
+        "SS_YC12_2m_Clearfell50": 235
+      }
+    ],
+    "results": [
+      {
+        "cumulativeToYear": 0,
+        "H_netCarbon": -157.65,
+        "I_bufferContribution": -32,
+        "J_claimableCarbon": -125.65,
+        "K_perHectare": -13.96111111
+      },
+      {
+        "cumulativeToYear": 5,
+        "H_netCarbon": -139,
+        "I_bufferContribution": -28,
+        "J_claimableCarbon": -111,
+        "K_perHectare": -12.33333333
+      },
+      {
+        "cumulativeToYear": 10,
+        "H_netCarbon": -70,
+        "I_bufferContribution": -14,
+        "J_claimableCarbon": -56,
+        "K_perHectare": -6.22222222
+      },
+      {
+        "cumulativeToYear": 15,
+        "H_netCarbon": 155,
+        "I_bufferContribution": 31,
+        "J_claimableCarbon": 124,
+        "K_perHectare": 13.77777778
+      },
+      {
+        "cumulativeToYear": 20,
+        "H_netCarbon": 781,
+        "I_bufferContribution": 156,
+        "J_claimableCarbon": 625,
+        "K_perHectare": 69.44444444
+      },
+      {
+        "cumulativeToYear": 25,
+        "H_netCarbon": 1441,
+        "I_bufferContribution": 288,
+        "J_claimableCarbon": 1153,
+        "K_perHectare": 128.11111111
+      },
+      {
+        "cumulativeToYear": 30,
+        "H_netCarbon": 1909,
+        "I_bufferContribution": 382,
+        "J_claimableCarbon": 1527,
+        "K_perHectare": 169.66666667
+      },
+      {
+        "cumulativeToYear": 35,
+        "H_netCarbon": 2257,
+        "I_bufferContribution": 451,
+        "J_claimableCarbon": 1806,
+        "K_perHectare": 200.66666667
+      },
+      {
+        "cumulativeToYear": 40,
+        "H_netCarbon": 2544,
+        "I_bufferContribution": 509,
+        "J_claimableCarbon": 2035,
+        "K_perHectare": 226.11111111
+      },
+      {
+        "cumulativeToYear": 45,
+        "H_netCarbon": 2798,
+        "I_bufferContribution": 560,
+        "J_claimableCarbon": 2238,
+        "K_perHectare": 248.66666667
+      },
+      {
+        "cumulativeToYear": 50,
+        "H_netCarbon": 3079,
+        "I_bufferContribution": 616,
+        "J_claimableCarbon": 2463,
+        "K_perHectare": 273.66666667
+      },
+      {
+        "cumulativeToYear": 55,
+        "H_netCarbon": 3223,
+        "I_bufferContribution": 645,
+        "J_claimableCarbon": 2578,
+        "K_perHectare": 286.44444444
+      },
+      {
+        "cumulativeToYear": 60,
+        "H_netCarbon": 3314,
+        "I_bufferContribution": 663,
+        "J_claimableCarbon": 2651,
+        "K_perHectare": 294.55555556
+      },
+      {
+        "cumulativeToYear": 65,
+        "H_netCarbon": 3388,
+        "I_bufferContribution": 678,
+        "J_claimableCarbon": 2710,
+        "K_perHectare": 301.11111111
+      },
+      {
+        "cumulativeToYear": 70,
+        "H_netCarbon": 3418,
+        "I_bufferContribution": 684,
+        "J_claimableCarbon": 2734,
+        "K_perHectare": 303.77777778
+      },
+      {
+        "cumulativeToYear": 75,
+        "H_netCarbon": 3452,
+        "I_bufferContribution": 690,
+        "J_claimableCarbon": 2762,
+        "K_perHectare": 306.88888889
+      },
+      {
+        "cumulativeToYear": 80,
+        "H_netCarbon": 3486,
+        "I_bufferContribution": 697,
+        "J_claimableCarbon": 2789,
+        "K_perHectare": 309.88888889
+      },
+      {
+        "cumulativeToYear": 85,
+        "H_netCarbon": 3514,
+        "I_bufferContribution": 703,
+        "J_claimableCarbon": 2811,
+        "K_perHectare": 312.33333333
+      },
+      {
+        "cumulativeToYear": 90,
+        "H_netCarbon": 3541,
+        "I_bufferContribution": 708,
+        "J_claimableCarbon": 2833,
+        "K_perHectare": 314.77777778
+      },
+      {
+        "cumulativeToYear": 95,
+        "H_netCarbon": 3631,
+        "I_bufferContribution": 726,
+        "J_claimableCarbon": 2905,
+        "K_perHectare": 322.77777778
+      },
+      {
+        "cumulativeToYear": 100,
+        "H_netCarbon": 3640,
+        "I_bufferContribution": 728,
+        "J_claimableCarbon": 2912,
+        "K_perHectare": 323.55555556
+      }
+    ]
+  }
+}

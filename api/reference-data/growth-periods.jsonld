@@ -1,0 +1,190 @@
+{
+  "@context": {
+    "proj": "https://data.carbon-calculator.co.uk/ontologies/project#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "label": "rdfs:label",
+    "periodStartYear": {
+      "@id": "proj:periodStartYear",
+      "@type": "xsd:integer"
+    },
+    "periodEndYear": {
+      "@id": "proj:periodEndYear",
+      "@type": "xsd:integer"
+    },
+    "periodIndex": {
+      "@id": "proj:periodIndex",
+      "@type": "xsd:integer"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "proj:periodYear0",
+      "@type": "proj:GrowthPeriod",
+      "label": "Year 0",
+      "periodStartYear": 0,
+      "periodEndYear": 0,
+      "periodIndex": 0
+    },
+    {
+      "@id": "proj:period0to5",
+      "@type": "proj:GrowthPeriod",
+      "label": "0-5",
+      "periodStartYear": 0,
+      "periodEndYear": 5,
+      "periodIndex": 1
+    },
+    {
+      "@id": "proj:period5to10",
+      "@type": "proj:GrowthPeriod",
+      "label": "5-10",
+      "periodStartYear": 5,
+      "periodEndYear": 10,
+      "periodIndex": 2
+    },
+    {
+      "@id": "proj:period10to15",
+      "@type": "proj:GrowthPeriod",
+      "label": "10-15",
+      "periodStartYear": 10,
+      "periodEndYear": 15,
+      "periodIndex": 3
+    },
+    {
+      "@id": "proj:period15to20",
+      "@type": "proj:GrowthPeriod",
+      "label": "15-20",
+      "periodStartYear": 15,
+      "periodEndYear": 20,
+      "periodIndex": 4
+    },
+    {
+      "@id": "proj:period20to25",
+      "@type": "proj:GrowthPeriod",
+      "label": "20-25",
+      "periodStartYear": 20,
+      "periodEndYear": 25,
+      "periodIndex": 5
+    },
+    {
+      "@id": "proj:period25to30",
+      "@type": "proj:GrowthPeriod",
+      "label": "25-30",
+      "periodStartYear": 25,
+      "periodEndYear": 30,
+      "periodIndex": 6
+    },
+    {
+      "@id": "proj:period30to35",
+      "@type": "proj:GrowthPeriod",
+      "label": "30-35",
+      "periodStartYear": 30,
+      "periodEndYear": 35,
+      "periodIndex": 7
+    },
+    {
+      "@id": "proj:period35to40",
+      "@type": "proj:GrowthPeriod",
+      "label": "35-40",
+      "periodStartYear": 35,
+      "periodEndYear": 40,
+      "periodIndex": 8
+    },
+    {
+      "@id": "proj:period40to45",
+      "@type": "proj:GrowthPeriod",
+      "label": "40-45",
+      "periodStartYear": 40,
+      "periodEndYear": 45,
+      "periodIndex": 9
+    },
+    {
+      "@id": "proj:period45to50",
+      "@type": "proj:GrowthPeriod",
+      "label": "45-50",
+      "periodStartYear": 45,
+      "periodEndYear": 50,
+      "periodIndex": 10
+    },
+    {
+      "@id": "proj:period50to55",
+      "@type": "proj:GrowthPeriod",
+      "label": "50-55",
+      "periodStartYear": 50,
+      "periodEndYear": 55,
+      "periodIndex": 11
+    },
+    {
+      "@id": "proj:period55to60",
+      "@type": "proj:GrowthPeriod",
+      "label": "55-60",
+      "periodStartYear": 55,
+      "periodEndYear": 60,
+      "periodIndex": 12
+    },
+    {
+      "@id": "proj:period60to65",
+      "@type": "proj:GrowthPeriod",
+      "label": "60-65",
+      "periodStartYear": 60,
+      "periodEndYear": 65,
+      "periodIndex": 13
+    },
+    {
+      "@id": "proj:period65to70",
+      "@type": "proj:GrowthPeriod",
+      "label": "65-70",
+      "periodStartYear": 65,
+      "periodEndYear": 70,
+      "periodIndex": 14
+    },
+    {
+      "@id": "proj:period70to75",
+      "@type": "proj:GrowthPeriod",
+      "label": "70-75",
+      "periodStartYear": 70,
+      "periodEndYear": 75,
+      "periodIndex": 15
+    },
+    {
+      "@id": "proj:period75to80",
+      "@type": "proj:GrowthPeriod",
+      "label": "75-80",
+      "periodStartYear": 75,
+      "periodEndYear": 80,
+      "periodIndex": 16
+    },
+    {
+      "@id": "proj:period80to85",
+      "@type": "proj:GrowthPeriod",
+      "label": "80-85",
+      "periodStartYear": 80,
+      "periodEndYear": 85,
+      "periodIndex": 17
+    },
+    {
+      "@id": "proj:period85to90",
+      "@type": "proj:GrowthPeriod",
+      "label": "85-90",
+      "periodStartYear": 85,
+      "periodEndYear": 90,
+      "periodIndex": 18
+    },
+    {
+      "@id": "proj:period90to95",
+      "@type": "proj:GrowthPeriod",
+      "label": "90-95",
+      "periodStartYear": 90,
+      "periodEndYear": 95,
+      "periodIndex": 19
+    },
+    {
+      "@id": "proj:period95to100",
+      "@type": "proj:GrowthPeriod",
+      "label": "95-100",
+      "periodStartYear": 95,
+      "periodEndYear": 100,
+      "periodIndex": 20
+    }
+  ]
+}

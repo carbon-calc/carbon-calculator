@@ -1,0 +1,104 @@
+{
+  "@context": {
+    "eco": "https://data.carbon-calculator.co.uk/ontologies/ecology#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "label": "rdfs:label",
+    "yieldClassValue": {
+      "@id": "eco:yieldClassValue",
+      "@type": "xsd:integer"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "eco:yieldClass2",
+      "@type": "eco:YieldClass",
+      "label": "Yield Class 2",
+      "yieldClassValue": 2
+    },
+    {
+      "@id": "eco:yieldClass4",
+      "@type": "eco:YieldClass",
+      "label": "Yield Class 4",
+      "yieldClassValue": 4
+    },
+    {
+      "@id": "eco:yieldClass6",
+      "@type": "eco:YieldClass",
+      "label": "Yield Class 6",
+      "yieldClassValue": 6
+    },
+    {
+      "@id": "eco:yieldClass8",
+      "@type": "eco:YieldClass",
+      "label": "Yield Class 8",
+      "yieldClassValue": 8
+    },
+    {
+      "@id": "eco:yieldClass10",
+      "@type": "eco:YieldClass",
+      "label": "Yield Class 10",
+      "yieldClassValue": 10
+    },
+    {
+      "@id": "eco:yieldClass12",
+      "@type": "eco:YieldClass",
+      "label": "Yield Class 12",
+      "yieldClassValue": 12
+    },
+    {
+      "@id": "eco:yieldClass14",
+      "@type": "eco:YieldClass",
+      "label": "Yield Class 14",
+      "yieldClassValue": 14
+    },
+    {
+      "@id": "eco:yieldClass16",
+      "@type": "eco:YieldClass",
+      "label": "Yield Class 16",
+      "yieldClassValue": 16
+    },
+    {
+      "@id": "eco:yieldClass18",
+      "@type": "eco:YieldClass",
+      "label": "Yield Class 18",
+      "yieldClassValue": 18
+    },
+    {
+      "@id": "eco:yieldClass20",
+      "@type": "eco:YieldClass",
+      "label": "Yield Class 20",
+      "yieldClassValue": 20
+    },
+    {
+      "@id": "eco:yieldClass22",
+      "@type": "eco:YieldClass",
+      "label": "Yield Class 22",
+      "yieldClassValue": 22
+    },
+    {
+      "@id": "eco:yieldClass24",
+      "@type": "eco:YieldClass",
+      "label": "Yield Class 24",
+      "yieldClassValue": 24
+    },
+    {
+      "@id": "eco:yieldClass26",
+      "@type": "eco:YieldClass",
+      "label": "Yield Class 26",
+      "yieldClassValue": 26
+    },
+    {
+      "@id": "eco:yieldClass28",
+      "@type": "eco:YieldClass",
+      "label": "Yield Class 28",
+      "yieldClassValue": 28
+    },
+    {
+      "@id": "eco:yieldClass30",
+      "@type": "eco:YieldClass",
+      "label": "Yield Class 30",
+      "yieldClassValue": 30
+    }
+  ]
+}

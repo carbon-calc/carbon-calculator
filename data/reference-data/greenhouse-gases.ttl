@@ -1,0 +1,30 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix eco:   <https://data.carbon-calculator.co.uk/ontologies/ecology#> .
+
+# =============================================================================
+# Reference Data — Greenhouse Gases
+# =============================================================================
+
+eco:CarbonDioxide
+    a eco:GreenhouseGas ;
+    rdfs:label "Carbon Dioxide"@en ;
+    eco:chemicalFormula "CO2" ;
+    eco:globalWarmingPotential 1.0 .
+
+eco:Methane
+    a eco:GreenhouseGas ;
+    rdfs:label "Methane"@en ;
+    eco:chemicalFormula "CH4" ;
+    eco:globalWarmingPotential 28.0 .
+
+eco:NitrousOxide
+    a eco:GreenhouseGas ;
+    rdfs:label "Nitrous Oxide"@en ;
+    eco:chemicalFormula "N2O" ;
+    eco:globalWarmingPotential 265.0 .
+
+eco:CO2Equivalent
+    a eco:ChemicalSubstance ;
+    rdfs:label "CO₂ Equivalent"@en ;
+    rdfs:comment "A composite metric expressing the warming impact of all greenhouse gases in terms equivalent to CO2."@en ;
+    eco:chemicalFormula "CO2e" .

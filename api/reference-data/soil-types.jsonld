@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "eco": "https://data.carbon-calculator.co.uk/ontologies/ecology#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "label": "rdfs:label"
+  },
+  "@graph": [
+    {
+      "@id": "eco:MineralSoil",
+      "@type": "eco:SoilType",
+      "label": "Mineral"
+    },
+    {
+      "@id": "eco:OrganomineralSoil",
+      "@type": "eco:SoilType",
+      "label": "Organomineral"
+    }
+  ]
+}

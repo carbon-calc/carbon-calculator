@@ -1,0 +1,821 @@
+{
+  "@context": {
+    "carb": "https://data.carbon-calculator.co.uk/ontologies/calculation#",
+    "eco": "https://data.carbon-calculator.co.uk/ontologies/ecology#", "proj": "https://data.carbon-calculator.co.uk/ontologies/project#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "label": "rdfs:label",
+    "soilEmissionCountry": {
+      "@id": "calc:soilEmissionCountry",
+      "@type": "@id"
+    },
+    "topsoilPercentageCode": "calc:topsoilPercentageCode",
+    "hasSoilEmissionRate": {
+      "@id": "calc:hasSoilEmissionRate",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "forPreviousLanduse": {
+      "@id": "calc:forPreviousLanduse",
+      "@type": "@id"
+    },
+    "soilEmissionValue": {
+      "@id": "calc:soilEmissionValue",
+      "@type": "xsd:double"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "calc:soilEmissionEngland00",
+      "@type": "calc:SoilEmissionLookupEntry",
+      "label": "Soil emission: England, 00% topsoil lost",
+      "soilEmissionCountry": "proj:England",
+      "topsoilPercentageCode": "00",
+      "hasSoilEmissionRate": [
+        "calc:soilRateEngland00Seminatural",
+        "calc:soilRateEngland00Pasture",
+        "calc:soilRateEngland00Arable"
+      ]
+    },
+    {
+      "@id": "calc:soilRateEngland00Seminatural",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: England, 00%, Seminatural",
+      "forPreviousLanduse": "eco:Seminatural",
+      "soilEmissionValue": 0.0
+    },
+    {
+      "@id": "calc:soilRateEngland00Pasture",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: England, 00%, Pasture",
+      "forPreviousLanduse": "eco:Pasture",
+      "soilEmissionValue": 0.0
+    },
+    {
+      "@id": "calc:soilRateEngland00Arable",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: England, 00%, Arable",
+      "forPreviousLanduse": "eco:Arable",
+      "soilEmissionValue": 0.0
+    },
+    {
+      "@id": "calc:soilEmissionScotland00",
+      "@type": "calc:SoilEmissionLookupEntry",
+      "label": "Soil emission: Scotland, 00% topsoil lost",
+      "soilEmissionCountry": "proj:Scotland",
+      "topsoilPercentageCode": "00",
+      "hasSoilEmissionRate": [
+        "calc:soilRateScotland00Seminatural",
+        "calc:soilRateScotland00Pasture",
+        "calc:soilRateScotland00Arable"
+      ]
+    },
+    {
+      "@id": "calc:soilRateScotland00Seminatural",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Scotland, 00%, Seminatural",
+      "forPreviousLanduse": "eco:Seminatural",
+      "soilEmissionValue": 0.0
+    },
+    {
+      "@id": "calc:soilRateScotland00Pasture",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Scotland, 00%, Pasture",
+      "forPreviousLanduse": "eco:Pasture",
+      "soilEmissionValue": 0.0
+    },
+    {
+      "@id": "calc:soilRateScotland00Arable",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Scotland, 00%, Arable",
+      "forPreviousLanduse": "eco:Arable",
+      "soilEmissionValue": 0.0
+    },
+    {
+      "@id": "calc:soilEmissionWales00",
+      "@type": "calc:SoilEmissionLookupEntry",
+      "label": "Soil emission: Wales, 00% topsoil lost",
+      "soilEmissionCountry": "proj:Wales",
+      "topsoilPercentageCode": "00",
+      "hasSoilEmissionRate": [
+        "calc:soilRateWales00Seminatural",
+        "calc:soilRateWales00Pasture",
+        "calc:soilRateWales00Arable"
+      ]
+    },
+    {
+      "@id": "calc:soilRateWales00Seminatural",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Wales, 00%, Seminatural",
+      "forPreviousLanduse": "eco:Seminatural",
+      "soilEmissionValue": 0.0
+    },
+    {
+      "@id": "calc:soilRateWales00Pasture",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Wales, 00%, Pasture",
+      "forPreviousLanduse": "eco:Pasture",
+      "soilEmissionValue": 0.0
+    },
+    {
+      "@id": "calc:soilRateWales00Arable",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Wales, 00%, Arable",
+      "forPreviousLanduse": "eco:Arable",
+      "soilEmissionValue": 0.0
+    },
+    {
+      "@id": "calc:soilEmissionNorthernIreland00",
+      "@type": "calc:SoilEmissionLookupEntry",
+      "label": "Soil emission: Northern Ireland, 00% topsoil lost",
+      "soilEmissionCountry": "proj:NorthernIreland",
+      "topsoilPercentageCode": "00",
+      "hasSoilEmissionRate": [
+        "calc:soilRateNorthernIreland00Seminatural",
+        "calc:soilRateNorthernIreland00Pasture",
+        "calc:soilRateNorthernIreland00Arable"
+      ]
+    },
+    {
+      "@id": "calc:soilRateNorthernIreland00Seminatural",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Northern Ireland, 00%, Seminatural",
+      "forPreviousLanduse": "eco:Seminatural",
+      "soilEmissionValue": 0.0
+    },
+    {
+      "@id": "calc:soilRateNorthernIreland00Pasture",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Northern Ireland, 00%, Pasture",
+      "forPreviousLanduse": "eco:Pasture",
+      "soilEmissionValue": 0.0
+    },
+    {
+      "@id": "calc:soilRateNorthernIreland00Arable",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Northern Ireland, 00%, Arable",
+      "forPreviousLanduse": "eco:Arable",
+      "soilEmissionValue": 0.0
+    },
+    {
+      "@id": "calc:soilEmissionEngland02",
+      "@type": "calc:SoilEmissionLookupEntry",
+      "label": "Soil emission: England, 02% topsoil lost",
+      "soilEmissionCountry": "proj:England",
+      "topsoilPercentageCode": "02",
+      "hasSoilEmissionRate": [
+        "calc:soilRateEngland02Seminatural",
+        "calc:soilRateEngland02Pasture",
+        "calc:soilRateEngland02Arable"
+      ]
+    },
+    {
+      "@id": "calc:soilRateEngland02Seminatural",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: England, 02%, Seminatural",
+      "forPreviousLanduse": "eco:Seminatural",
+      "soilEmissionValue": -8.8
+    },
+    {
+      "@id": "calc:soilRateEngland02Pasture",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: England, 02%, Pasture",
+      "forPreviousLanduse": "eco:Pasture",
+      "soilEmissionValue": -5.866666666666666
+    },
+    {
+      "@id": "calc:soilRateEngland02Arable",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: England, 02%, Arable",
+      "forPreviousLanduse": "eco:Arable",
+      "soilEmissionValue": -5.133333333333334
+    },
+    {
+      "@id": "calc:soilEmissionScotland02",
+      "@type": "calc:SoilEmissionLookupEntry",
+      "label": "Soil emission: Scotland, 02% topsoil lost",
+      "soilEmissionCountry": "proj:Scotland",
+      "topsoilPercentageCode": "02",
+      "hasSoilEmissionRate": [
+        "calc:soilRateScotland02Seminatural",
+        "calc:soilRateScotland02Pasture",
+        "calc:soilRateScotland02Arable"
+      ]
+    },
+    {
+      "@id": "calc:soilRateScotland02Seminatural",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Scotland, 02%, Seminatural",
+      "forPreviousLanduse": "eco:Seminatural",
+      "soilEmissionValue": -11.733333333333333
+    },
+    {
+      "@id": "calc:soilRateScotland02Pasture",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Scotland, 02%, Pasture",
+      "forPreviousLanduse": "eco:Pasture",
+      "soilEmissionValue": -11.733333333333333
+    },
+    {
+      "@id": "calc:soilRateScotland02Arable",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Scotland, 02%, Arable",
+      "forPreviousLanduse": "eco:Arable",
+      "soilEmissionValue": -8.8
+    },
+    {
+      "@id": "calc:soilEmissionWales02",
+      "@type": "calc:SoilEmissionLookupEntry",
+      "label": "Soil emission: Wales, 02% topsoil lost",
+      "soilEmissionCountry": "proj:Wales",
+      "topsoilPercentageCode": "02",
+      "hasSoilEmissionRate": [
+        "calc:soilRateWales02Seminatural",
+        "calc:soilRateWales02Pasture",
+        "calc:soilRateWales02Arable"
+      ]
+    },
+    {
+      "@id": "calc:soilRateWales02Seminatural",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Wales, 02%, Seminatural",
+      "forPreviousLanduse": "eco:Seminatural",
+      "soilEmissionValue": -8.066666666666666
+    },
+    {
+      "@id": "calc:soilRateWales02Pasture",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Wales, 02%, Pasture",
+      "forPreviousLanduse": "eco:Pasture",
+      "soilEmissionValue": -6.6
+    },
+    {
+      "@id": "calc:soilRateWales02Arable",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Wales, 02%, Arable",
+      "forPreviousLanduse": "eco:Arable",
+      "soilEmissionValue": -5.133333333333334
+    },
+    {
+      "@id": "calc:soilEmissionNorthernIreland02",
+      "@type": "calc:SoilEmissionLookupEntry",
+      "label": "Soil emission: Northern Ireland, 02% topsoil lost",
+      "soilEmissionCountry": "proj:NorthernIreland",
+      "topsoilPercentageCode": "02",
+      "hasSoilEmissionRate": [
+        "calc:soilRateNorthernIreland02Seminatural",
+        "calc:soilRateNorthernIreland02Pasture",
+        "calc:soilRateNorthernIreland02Arable"
+      ]
+    },
+    {
+      "@id": "calc:soilRateNorthernIreland02Seminatural",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Northern Ireland, 02%, Seminatural",
+      "forPreviousLanduse": "eco:Seminatural",
+      "soilEmissionValue": -13.933333333333334
+    },
+    {
+      "@id": "calc:soilRateNorthernIreland02Pasture",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Northern Ireland, 02%, Pasture",
+      "forPreviousLanduse": "eco:Pasture",
+      "soilEmissionValue": -9.533333333333333
+    },
+    {
+      "@id": "calc:soilRateNorthernIreland02Arable",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Northern Ireland, 02%, Arable",
+      "forPreviousLanduse": "eco:Arable",
+      "soilEmissionValue": -7.333333333333334
+    },
+    {
+      "@id": "calc:soilEmissionEngland05",
+      "@type": "calc:SoilEmissionLookupEntry",
+      "label": "Soil emission: England, 05% topsoil lost",
+      "soilEmissionCountry": "proj:England",
+      "topsoilPercentageCode": "05",
+      "hasSoilEmissionRate": [
+        "calc:soilRateEngland05Seminatural",
+        "calc:soilRateEngland05Pasture",
+        "calc:soilRateEngland05Arable"
+      ]
+    },
+    {
+      "@id": "calc:soilRateEngland05Seminatural",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: England, 05%, Seminatural",
+      "forPreviousLanduse": "eco:Seminatural",
+      "soilEmissionValue": -22.0
+    },
+    {
+      "@id": "calc:soilRateEngland05Pasture",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: England, 05%, Pasture",
+      "forPreviousLanduse": "eco:Pasture",
+      "soilEmissionValue": -14.666666666666666
+    },
+    {
+      "@id": "calc:soilRateEngland05Arable",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: England, 05%, Arable",
+      "forPreviousLanduse": "eco:Arable",
+      "soilEmissionValue": -12.833333333333336
+    },
+    {
+      "@id": "calc:soilEmissionScotland05",
+      "@type": "calc:SoilEmissionLookupEntry",
+      "label": "Soil emission: Scotland, 05% topsoil lost",
+      "soilEmissionCountry": "proj:Scotland",
+      "topsoilPercentageCode": "05",
+      "hasSoilEmissionRate": [
+        "calc:soilRateScotland05Seminatural",
+        "calc:soilRateScotland05Pasture",
+        "calc:soilRateScotland05Arable"
+      ]
+    },
+    {
+      "@id": "calc:soilRateScotland05Seminatural",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Scotland, 05%, Seminatural",
+      "forPreviousLanduse": "eco:Seminatural",
+      "soilEmissionValue": -29.333333333333332
+    },
+    {
+      "@id": "calc:soilRateScotland05Pasture",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Scotland, 05%, Pasture",
+      "forPreviousLanduse": "eco:Pasture",
+      "soilEmissionValue": -29.333333333333332
+    },
+    {
+      "@id": "calc:soilRateScotland05Arable",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Scotland, 05%, Arable",
+      "forPreviousLanduse": "eco:Arable",
+      "soilEmissionValue": -22.0
+    },
+    {
+      "@id": "calc:soilEmissionWales05",
+      "@type": "calc:SoilEmissionLookupEntry",
+      "label": "Soil emission: Wales, 05% topsoil lost",
+      "soilEmissionCountry": "proj:Wales",
+      "topsoilPercentageCode": "05",
+      "hasSoilEmissionRate": [
+        "calc:soilRateWales05Seminatural",
+        "calc:soilRateWales05Pasture",
+        "calc:soilRateWales05Arable"
+      ]
+    },
+    {
+      "@id": "calc:soilRateWales05Seminatural",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Wales, 05%, Seminatural",
+      "forPreviousLanduse": "eco:Seminatural",
+      "soilEmissionValue": -20.166666666666668
+    },
+    {
+      "@id": "calc:soilRateWales05Pasture",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Wales, 05%, Pasture",
+      "forPreviousLanduse": "eco:Pasture",
+      "soilEmissionValue": -16.5
+    },
+    {
+      "@id": "calc:soilRateWales05Arable",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Wales, 05%, Arable",
+      "forPreviousLanduse": "eco:Arable",
+      "soilEmissionValue": -12.833333333333336
+    },
+    {
+      "@id": "calc:soilEmissionNorthernIreland05",
+      "@type": "calc:SoilEmissionLookupEntry",
+      "label": "Soil emission: Northern Ireland, 05% topsoil lost",
+      "soilEmissionCountry": "proj:NorthernIreland",
+      "topsoilPercentageCode": "05",
+      "hasSoilEmissionRate": [
+        "calc:soilRateNorthernIreland05Seminatural",
+        "calc:soilRateNorthernIreland05Pasture",
+        "calc:soilRateNorthernIreland05Arable"
+      ]
+    },
+    {
+      "@id": "calc:soilRateNorthernIreland05Seminatural",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Northern Ireland, 05%, Seminatural",
+      "forPreviousLanduse": "eco:Seminatural",
+      "soilEmissionValue": -34.833333333333336
+    },
+    {
+      "@id": "calc:soilRateNorthernIreland05Pasture",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Northern Ireland, 05%, Pasture",
+      "forPreviousLanduse": "eco:Pasture",
+      "soilEmissionValue": -23.833333333333336
+    },
+    {
+      "@id": "calc:soilRateNorthernIreland05Arable",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Northern Ireland, 05%, Arable",
+      "forPreviousLanduse": "eco:Arable",
+      "soilEmissionValue": -18.333333333333336
+    },
+    {
+      "@id": "calc:soilEmissionEngland10",
+      "@type": "calc:SoilEmissionLookupEntry",
+      "label": "Soil emission: England, 10% topsoil lost",
+      "soilEmissionCountry": "proj:England",
+      "topsoilPercentageCode": "10",
+      "hasSoilEmissionRate": [
+        "calc:soilRateEngland10Seminatural",
+        "calc:soilRateEngland10Pasture",
+        "calc:soilRateEngland10Arable"
+      ]
+    },
+    {
+      "@id": "calc:soilRateEngland10Seminatural",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: England, 10%, Seminatural",
+      "forPreviousLanduse": "eco:Seminatural",
+      "soilEmissionValue": -44.0
+    },
+    {
+      "@id": "calc:soilRateEngland10Pasture",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: England, 10%, Pasture",
+      "forPreviousLanduse": "eco:Pasture",
+      "soilEmissionValue": -29.333333333333332
+    },
+    {
+      "@id": "calc:soilRateEngland10Arable",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: England, 10%, Arable",
+      "forPreviousLanduse": "eco:Arable",
+      "soilEmissionValue": -25.66666666666667
+    },
+    {
+      "@id": "calc:soilEmissionScotland10",
+      "@type": "calc:SoilEmissionLookupEntry",
+      "label": "Soil emission: Scotland, 10% topsoil lost",
+      "soilEmissionCountry": "proj:Scotland",
+      "topsoilPercentageCode": "10",
+      "hasSoilEmissionRate": [
+        "calc:soilRateScotland10Seminatural",
+        "calc:soilRateScotland10Pasture",
+        "calc:soilRateScotland10Arable"
+      ]
+    },
+    {
+      "@id": "calc:soilRateScotland10Seminatural",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Scotland, 10%, Seminatural",
+      "forPreviousLanduse": "eco:Seminatural",
+      "soilEmissionValue": -58.666666666666664
+    },
+    {
+      "@id": "calc:soilRateScotland10Pasture",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Scotland, 10%, Pasture",
+      "forPreviousLanduse": "eco:Pasture",
+      "soilEmissionValue": -58.666666666666664
+    },
+    {
+      "@id": "calc:soilRateScotland10Arable",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Scotland, 10%, Arable",
+      "forPreviousLanduse": "eco:Arable",
+      "soilEmissionValue": -44.0
+    },
+    {
+      "@id": "calc:soilEmissionWales10",
+      "@type": "calc:SoilEmissionLookupEntry",
+      "label": "Soil emission: Wales, 10% topsoil lost",
+      "soilEmissionCountry": "proj:Wales",
+      "topsoilPercentageCode": "10",
+      "hasSoilEmissionRate": [
+        "calc:soilRateWales10Seminatural",
+        "calc:soilRateWales10Pasture",
+        "calc:soilRateWales10Arable"
+      ]
+    },
+    {
+      "@id": "calc:soilRateWales10Seminatural",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Wales, 10%, Seminatural",
+      "forPreviousLanduse": "eco:Seminatural",
+      "soilEmissionValue": -40.333333333333336
+    },
+    {
+      "@id": "calc:soilRateWales10Pasture",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Wales, 10%, Pasture",
+      "forPreviousLanduse": "eco:Pasture",
+      "soilEmissionValue": -33.0
+    },
+    {
+      "@id": "calc:soilRateWales10Arable",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Wales, 10%, Arable",
+      "forPreviousLanduse": "eco:Arable",
+      "soilEmissionValue": -25.66666666666667
+    },
+    {
+      "@id": "calc:soilEmissionNorthernIreland10",
+      "@type": "calc:SoilEmissionLookupEntry",
+      "label": "Soil emission: Northern Ireland, 10% topsoil lost",
+      "soilEmissionCountry": "proj:NorthernIreland",
+      "topsoilPercentageCode": "10",
+      "hasSoilEmissionRate": [
+        "calc:soilRateNorthernIreland10Seminatural",
+        "calc:soilRateNorthernIreland10Pasture",
+        "calc:soilRateNorthernIreland10Arable"
+      ]
+    },
+    {
+      "@id": "calc:soilRateNorthernIreland10Seminatural",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Northern Ireland, 10%, Seminatural",
+      "forPreviousLanduse": "eco:Seminatural",
+      "soilEmissionValue": -69.66666666666667
+    },
+    {
+      "@id": "calc:soilRateNorthernIreland10Pasture",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Northern Ireland, 10%, Pasture",
+      "forPreviousLanduse": "eco:Pasture",
+      "soilEmissionValue": -47.66666666666667
+    },
+    {
+      "@id": "calc:soilRateNorthernIreland10Arable",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Northern Ireland, 10%, Arable",
+      "forPreviousLanduse": "eco:Arable",
+      "soilEmissionValue": -36.66666666666667
+    },
+    {
+      "@id": "calc:soilEmissionEngland20",
+      "@type": "calc:SoilEmissionLookupEntry",
+      "label": "Soil emission: England, 20% topsoil lost",
+      "soilEmissionCountry": "proj:England",
+      "topsoilPercentageCode": "20",
+      "hasSoilEmissionRate": [
+        "calc:soilRateEngland20Seminatural",
+        "calc:soilRateEngland20Pasture",
+        "calc:soilRateEngland20Arable"
+      ]
+    },
+    {
+      "@id": "calc:soilRateEngland20Seminatural",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: England, 20%, Seminatural",
+      "forPreviousLanduse": "eco:Seminatural",
+      "soilEmissionValue": -88.0
+    },
+    {
+      "@id": "calc:soilRateEngland20Pasture",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: England, 20%, Pasture",
+      "forPreviousLanduse": "eco:Pasture",
+      "soilEmissionValue": -58.666666666666664
+    },
+    {
+      "@id": "calc:soilRateEngland20Arable",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: England, 20%, Arable",
+      "forPreviousLanduse": "eco:Arable",
+      "soilEmissionValue": -51.33333333333334
+    },
+    {
+      "@id": "calc:soilEmissionScotland20",
+      "@type": "calc:SoilEmissionLookupEntry",
+      "label": "Soil emission: Scotland, 20% topsoil lost",
+      "soilEmissionCountry": "proj:Scotland",
+      "topsoilPercentageCode": "20",
+      "hasSoilEmissionRate": [
+        "calc:soilRateScotland20Seminatural",
+        "calc:soilRateScotland20Pasture",
+        "calc:soilRateScotland20Arable"
+      ]
+    },
+    {
+      "@id": "calc:soilRateScotland20Seminatural",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Scotland, 20%, Seminatural",
+      "forPreviousLanduse": "eco:Seminatural",
+      "soilEmissionValue": -117.33333333333333
+    },
+    {
+      "@id": "calc:soilRateScotland20Pasture",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Scotland, 20%, Pasture",
+      "forPreviousLanduse": "eco:Pasture",
+      "soilEmissionValue": -117.33333333333333
+    },
+    {
+      "@id": "calc:soilRateScotland20Arable",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Scotland, 20%, Arable",
+      "forPreviousLanduse": "eco:Arable",
+      "soilEmissionValue": -88.0
+    },
+    {
+      "@id": "calc:soilEmissionWales20",
+      "@type": "calc:SoilEmissionLookupEntry",
+      "label": "Soil emission: Wales, 20% topsoil lost",
+      "soilEmissionCountry": "proj:Wales",
+      "topsoilPercentageCode": "20",
+      "hasSoilEmissionRate": [
+        "calc:soilRateWales20Seminatural",
+        "calc:soilRateWales20Pasture",
+        "calc:soilRateWales20Arable"
+      ]
+    },
+    {
+      "@id": "calc:soilRateWales20Seminatural",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Wales, 20%, Seminatural",
+      "forPreviousLanduse": "eco:Seminatural",
+      "soilEmissionValue": -80.66666666666667
+    },
+    {
+      "@id": "calc:soilRateWales20Pasture",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Wales, 20%, Pasture",
+      "forPreviousLanduse": "eco:Pasture",
+      "soilEmissionValue": -66.0
+    },
+    {
+      "@id": "calc:soilRateWales20Arable",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Wales, 20%, Arable",
+      "forPreviousLanduse": "eco:Arable",
+      "soilEmissionValue": -51.33333333333334
+    },
+    {
+      "@id": "calc:soilEmissionNorthernIreland20",
+      "@type": "calc:SoilEmissionLookupEntry",
+      "label": "Soil emission: Northern Ireland, 20% topsoil lost",
+      "soilEmissionCountry": "proj:NorthernIreland",
+      "topsoilPercentageCode": "20",
+      "hasSoilEmissionRate": [
+        "calc:soilRateNorthernIreland20Seminatural",
+        "calc:soilRateNorthernIreland20Pasture",
+        "calc:soilRateNorthernIreland20Arable"
+      ]
+    },
+    {
+      "@id": "calc:soilRateNorthernIreland20Seminatural",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Northern Ireland, 20%, Seminatural",
+      "forPreviousLanduse": "eco:Seminatural",
+      "soilEmissionValue": -139.33333333333334
+    },
+    {
+      "@id": "calc:soilRateNorthernIreland20Pasture",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Northern Ireland, 20%, Pasture",
+      "forPreviousLanduse": "eco:Pasture",
+      "soilEmissionValue": -95.33333333333334
+    },
+    {
+      "@id": "calc:soilRateNorthernIreland20Arable",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Northern Ireland, 20%, Arable",
+      "forPreviousLanduse": "eco:Arable",
+      "soilEmissionValue": -73.33333333333334
+    },
+    {
+      "@id": "calc:soilEmissionEngland40",
+      "@type": "calc:SoilEmissionLookupEntry",
+      "label": "Soil emission: England, 40% topsoil lost",
+      "soilEmissionCountry": "proj:England",
+      "topsoilPercentageCode": "40",
+      "hasSoilEmissionRate": [
+        "calc:soilRateEngland40Seminatural",
+        "calc:soilRateEngland40Pasture",
+        "calc:soilRateEngland40Arable"
+      ]
+    },
+    {
+      "@id": "calc:soilRateEngland40Seminatural",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: England, 40%, Seminatural",
+      "forPreviousLanduse": "eco:Seminatural",
+      "soilEmissionValue": -176.0
+    },
+    {
+      "@id": "calc:soilRateEngland40Pasture",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: England, 40%, Pasture",
+      "forPreviousLanduse": "eco:Pasture",
+      "soilEmissionValue": -117.33333333333333
+    },
+    {
+      "@id": "calc:soilRateEngland40Arable",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: England, 40%, Arable",
+      "forPreviousLanduse": "eco:Arable",
+      "soilEmissionValue": -102.66666666666669
+    },
+    {
+      "@id": "calc:soilEmissionScotland40",
+      "@type": "calc:SoilEmissionLookupEntry",
+      "label": "Soil emission: Scotland, 40% topsoil lost",
+      "soilEmissionCountry": "proj:Scotland",
+      "topsoilPercentageCode": "40",
+      "hasSoilEmissionRate": [
+        "calc:soilRateScotland40Seminatural",
+        "calc:soilRateScotland40Pasture",
+        "calc:soilRateScotland40Arable"
+      ]
+    },
+    {
+      "@id": "calc:soilRateScotland40Seminatural",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Scotland, 40%, Seminatural",
+      "forPreviousLanduse": "eco:Seminatural",
+      "soilEmissionValue": -234.66666666666666
+    },
+    {
+      "@id": "calc:soilRateScotland40Pasture",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Scotland, 40%, Pasture",
+      "forPreviousLanduse": "eco:Pasture",
+      "soilEmissionValue": -234.66666666666666
+    },
+    {
+      "@id": "calc:soilRateScotland40Arable",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Scotland, 40%, Arable",
+      "forPreviousLanduse": "eco:Arable",
+      "soilEmissionValue": -176.0
+    },
+    {
+      "@id": "calc:soilEmissionWales40",
+      "@type": "calc:SoilEmissionLookupEntry",
+      "label": "Soil emission: Wales, 40% topsoil lost",
+      "soilEmissionCountry": "proj:Wales",
+      "topsoilPercentageCode": "40",
+      "hasSoilEmissionRate": [
+        "calc:soilRateWales40Seminatural",
+        "calc:soilRateWales40Pasture",
+        "calc:soilRateWales40Arable"
+      ]
+    },
+    {
+      "@id": "calc:soilRateWales40Seminatural",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Wales, 40%, Seminatural",
+      "forPreviousLanduse": "eco:Seminatural",
+      "soilEmissionValue": -161.33333333333334
+    },
+    {
+      "@id": "calc:soilRateWales40Pasture",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Wales, 40%, Pasture",
+      "forPreviousLanduse": "eco:Pasture",
+      "soilEmissionValue": -132.0
+    },
+    {
+      "@id": "calc:soilRateWales40Arable",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Wales, 40%, Arable",
+      "forPreviousLanduse": "eco:Arable",
+      "soilEmissionValue": -102.66666666666669
+    },
+    {
+      "@id": "calc:soilEmissionNorthernIreland40",
+      "@type": "calc:SoilEmissionLookupEntry",
+      "label": "Soil emission: Northern Ireland, 40% topsoil lost",
+      "soilEmissionCountry": "proj:NorthernIreland",
+      "topsoilPercentageCode": "40",
+      "hasSoilEmissionRate": [
+        "calc:soilRateNorthernIreland40Seminatural",
+        "calc:soilRateNorthernIreland40Pasture",
+        "calc:soilRateNorthernIreland40Arable"
+      ]
+    },
+    {
+      "@id": "calc:soilRateNorthernIreland40Seminatural",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Northern Ireland, 40%, Seminatural",
+      "forPreviousLanduse": "eco:Seminatural",
+      "soilEmissionValue": -278.6666666666667
+    },
+    {
+      "@id": "calc:soilRateNorthernIreland40Pasture",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Northern Ireland, 40%, Pasture",
+      "forPreviousLanduse": "eco:Pasture",
+      "soilEmissionValue": -190.66666666666669
+    },
+    {
+      "@id": "calc:soilRateNorthernIreland40Arable",
+      "@type": "calc:SoilEmissionRate",
+      "label": "Soil rate: Northern Ireland, 40%, Arable",
+      "forPreviousLanduse": "eco:Arable",
+      "soilEmissionValue": -146.66666666666669
+    }
+  ]
+}

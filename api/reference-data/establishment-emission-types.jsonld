@@ -1,0 +1,111 @@
+{
+  "@context": {
+    "proj": "https://data.carbon-calculator.co.uk/ontologies/project#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "qty": "https://data.carbon-calculator.co.uk/ontologies/quantity#",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "emissionRate": {
+      "@id": "proj:emissionRate",
+      "@type": "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "emissionRateUnit": {
+      "@id": "proj:emissionRateUnit",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "proj:SeedlingEmission",
+      "@type": "proj:EstablishmentEmissionType",
+      "label": "Seedlings",
+      "comment": "Spacing-dependent rate \u2014 looked up via eco:TreeSpacingOption eco:seedlingRate."
+    },
+    {
+      "@id": "proj:TreeShelterEmission",
+      "@type": "proj:EstablishmentEmissionType",
+      "label": "Tree protection - Tree shelters",
+      "comment": "Spacing-dependent rate \u2014 looked up via eco:TreeSpacingOption eco:hasShelterRate."
+    },
+    {
+      "@id": "proj:SpiralGuardEmission",
+      "@type": "proj:EstablishmentEmissionType",
+      "label": "Tree protection - Spiral guards",
+      "comment": "Spacing-dependent rate \u2014 looked up via eco:TreeSpacingOption eco:hasSpiralGuardRate."
+    },
+    {
+      "@id": "proj:VoleguardEmission",
+      "@type": "proj:EstablishmentEmissionType",
+      "label": "Tree protection - Voleguards",
+      "comment": "Spacing-dependent rate \u2014 looked up via eco:TreeSpacingOption eco:voleguardRate."
+    },
+    {
+      "@id": "proj:FertiliserEmission",
+      "@type": "proj:EstablishmentEmissionType",
+      "label": "Fertiliser",
+      "comment": "Spacing-dependent rate \u2014 looked up via eco:TreeSpacingOption eco:fertiliserRate."
+    },
+    {
+      "@id": "proj:MoundingEmission",
+      "@type": "proj:EstablishmentEmissionType",
+      "label": "Ground preparation (fuel): Mounding",
+      "emissionRate": -0.41987,
+      "emissionRateUnit": "qty:hectare"
+    },
+    {
+      "@id": "proj:ScarifyingEmission",
+      "@type": "proj:EstablishmentEmissionType",
+      "label": "Ground preparation (fuel): Scarifying",
+      "emissionRate": -0.05185,
+      "emissionRateUnit": "qty:hectare"
+    },
+    {
+      "@id": "proj:PloughingEmission",
+      "@type": "proj:EstablishmentEmissionType",
+      "label": "Ground preparation (fuel): Ploughing",
+      "emissionRate": -0.06874,
+      "emissionRateUnit": "qty:hectare"
+    },
+    {
+      "@id": "proj:SubsoilingEmission",
+      "@type": "proj:EstablishmentEmissionType",
+      "label": "Ground preparation (fuel): Subsoiling",
+      "emissionRate": -0.17296,
+      "emissionRateUnit": "qty:hectare"
+    },
+    {
+      "@id": "proj:HerbicideEmission",
+      "@type": "proj:EstablishmentEmissionType",
+      "label": "Herbicide",
+      "emissionRate": -0.04414,
+      "emissionRateUnit": "qty:hectare"
+    },
+    {
+      "@id": "proj:FencingEmission",
+      "@type": "proj:EstablishmentEmissionType",
+      "label": "Fencing",
+      "emissionRate": -0.0022,
+      "emissionRateUnit": "qty:metre"
+    },
+    {
+      "@id": "proj:GateEmission",
+      "@type": "proj:EstablishmentEmissionType",
+      "label": "Gates",
+      "emissionRate": -0.583,
+      "emissionRateUnit": "qty:each"
+    },
+    {
+      "@id": "proj:RoadBuildingEmission",
+      "@type": "proj:EstablishmentEmissionType",
+      "label": "Road building",
+      "emissionRate": -43.13,
+      "emissionRateUnit": "qty:kilometre"
+    },
+    {
+      "@id": "proj:VegetationRemovalEmission",
+      "@type": "proj:EstablishmentEmissionType",
+      "label": "Emissions from removal of trees or other vegetation",
+      "comment": "Manual entry \u2014 no fixed rate; total emissions entered directly by the user."
+    }
+  ]
+}

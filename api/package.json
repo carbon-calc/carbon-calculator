@@ -1,0 +1,21 @@
+{
+  "name": "wcc-carbon-calculator-api",
+  "version": "1.0.0",
+  "description": "Woodland Carbon Code carbon capture calculator API",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "NODE_OPTIONS='--experimental-vm-modules' jest --verbose"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}

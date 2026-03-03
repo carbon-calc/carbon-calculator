@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "proj": "https://data.carbon-calculator.co.uk/ontologies/project#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment"
+  },
+  "@graph": [
+    {
+      "@id": "proj:Standard10Yearly",
+      "@type": "proj:VerificationScheme",
+      "label": "Standard 10-Yearly Verification",
+      "comment": "Standard WCC verification at 10-year intervals."
+    },
+    {
+      "@id": "proj:Guarantee5Yearly",
+      "@type": "proj:VerificationScheme",
+      "label": "5-Yearly Verification (Woodland Carbon Guarantee)",
+      "comment": "5-yearly verification for WCC projects in England using the Woodland Carbon Guarantee."
+    }
+  ]
+}

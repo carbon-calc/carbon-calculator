@@ -1,0 +1,18 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix eco:   <https://data.carbon-calculator.co.uk/ontologies/ecology#> .
+
+# =============================================================================
+# Reference Data — Previous Landuse
+# =============================================================================
+
+eco:Arable
+    a eco:PreviousLanduse ;
+    rdfs:label "Arable"@en .
+
+eco:Pasture
+    a eco:PreviousLanduse ;
+    rdfs:label "Pasture"@en .
+
+eco:Seminatural
+    a eco:PreviousLanduse ;
+    rdfs:label "Seminatural"@en .

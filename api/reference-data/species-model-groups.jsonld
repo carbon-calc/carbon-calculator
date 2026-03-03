@@ -1,0 +1,375 @@
+{
+  "@context": {
+    "eco": "https://data.carbon-calculator.co.uk/ontologies/ecology#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "label": "rdfs:label",
+    "speciesModelCode": "eco:speciesModelCode",
+    "hasAvailableSpacing": {
+      "@id": "eco:hasAvailableSpacing",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "hasAvailableYieldClass": {
+      "@id": "eco:hasAvailableYieldClass",
+      "@type": "@id",
+      "@container": "@set"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "eco:modelGroupBE",
+      "@type": "eco:SpeciesModelGroup",
+      "label": "Model Group BE",
+      "speciesModelCode": "BE",
+      "hasAvailableSpacing": [
+        "eco:spacing1p2",
+        "eco:spacing2p5",
+        "eco:spacing3p0",
+        "eco:spacing4p0",
+        "eco:spacing5p0"
+      ],
+      "hasAvailableYieldClass": [
+        "eco:yieldClass2",
+        "eco:yieldClass4",
+        "eco:yieldClass6",
+        "eco:yieldClass8",
+        "eco:yieldClass10"
+      ]
+    },
+    {
+      "@id": "eco:modelGroupCP",
+      "@type": "eco:SpeciesModelGroup",
+      "label": "Model Group CP",
+      "speciesModelCode": "CP",
+      "hasAvailableSpacing": [
+        "eco:spacing1p4"
+      ],
+      "hasAvailableYieldClass": [
+        "eco:yieldClass6",
+        "eco:yieldClass8",
+        "eco:yieldClass10",
+        "eco:yieldClass12",
+        "eco:yieldClass14",
+        "eco:yieldClass16",
+        "eco:yieldClass18",
+        "eco:yieldClass20"
+      ]
+    },
+    {
+      "@id": "eco:modelGroupDF",
+      "@type": "eco:SpeciesModelGroup",
+      "label": "Model Group DF",
+      "speciesModelCode": "DF",
+      "hasAvailableSpacing": [
+        "eco:spacing1p7"
+      ],
+      "hasAvailableYieldClass": [
+        "eco:yieldClass8",
+        "eco:yieldClass10",
+        "eco:yieldClass12",
+        "eco:yieldClass14",
+        "eco:yieldClass16",
+        "eco:yieldClass18",
+        "eco:yieldClass20",
+        "eco:yieldClass22",
+        "eco:yieldClass24"
+      ]
+    },
+    {
+      "@id": "eco:modelGroupEL",
+      "@type": "eco:SpeciesModelGroup",
+      "label": "Model Group EL",
+      "speciesModelCode": "EL",
+      "hasAvailableSpacing": [
+        "eco:spacing1p7"
+      ],
+      "hasAvailableYieldClass": [
+        "eco:yieldClass4",
+        "eco:yieldClass6",
+        "eco:yieldClass8",
+        "eco:yieldClass10",
+        "eco:yieldClass12"
+      ]
+    },
+    {
+      "@id": "eco:modelGroupGF",
+      "@type": "eco:SpeciesModelGroup",
+      "label": "Model Group GF",
+      "speciesModelCode": "GF",
+      "hasAvailableSpacing": [
+        "eco:spacing1p8"
+      ],
+      "hasAvailableYieldClass": [
+        "eco:yieldClass12",
+        "eco:yieldClass14",
+        "eco:yieldClass16",
+        "eco:yieldClass18",
+        "eco:yieldClass20",
+        "eco:yieldClass22",
+        "eco:yieldClass24",
+        "eco:yieldClass26",
+        "eco:yieldClass28",
+        "eco:yieldClass30"
+      ]
+    },
+    {
+      "@id": "eco:modelGroupHL",
+      "@type": "eco:SpeciesModelGroup",
+      "label": "Model Group HL",
+      "speciesModelCode": "HL",
+      "hasAvailableSpacing": [
+        "eco:spacing1p7"
+      ],
+      "hasAvailableYieldClass": [
+        "eco:yieldClass4",
+        "eco:yieldClass6",
+        "eco:yieldClass8",
+        "eco:yieldClass10",
+        "eco:yieldClass12",
+        "eco:yieldClass14"
+      ]
+    },
+    {
+      "@id": "eco:modelGroupJL",
+      "@type": "eco:SpeciesModelGroup",
+      "label": "Model Group JL",
+      "speciesModelCode": "JL",
+      "hasAvailableSpacing": [
+        "eco:spacing1p7"
+      ],
+      "hasAvailableYieldClass": [
+        "eco:yieldClass4",
+        "eco:yieldClass6",
+        "eco:yieldClass8",
+        "eco:yieldClass10",
+        "eco:yieldClass12",
+        "eco:yieldClass14"
+      ]
+    },
+    {
+      "@id": "eco:modelGroupLEC",
+      "@type": "eco:SpeciesModelGroup",
+      "label": "Model Group LEC",
+      "speciesModelCode": "LE",
+      "hasAvailableSpacing": [
+        "eco:spacing1p5"
+      ],
+      "hasAvailableYieldClass": [
+        "eco:yieldClass12",
+        "eco:yieldClass14",
+        "eco:yieldClass16",
+        "eco:yieldClass18",
+        "eco:yieldClass20",
+        "eco:yieldClass22",
+        "eco:yieldClass24"
+      ]
+    },
+    {
+      "@id": "eco:modelGroupLP",
+      "@type": "eco:SpeciesModelGroup",
+      "label": "Model Group LP",
+      "speciesModelCode": "LP",
+      "hasAvailableSpacing": [
+        "eco:spacing1p5"
+      ],
+      "hasAvailableYieldClass": [
+        "eco:yieldClass4",
+        "eco:yieldClass6",
+        "eco:yieldClass8",
+        "eco:yieldClass10",
+        "eco:yieldClass12",
+        "eco:yieldClass14"
+      ]
+    },
+    {
+      "@id": "eco:modelGroupNBL",
+      "@type": "eco:SpeciesModelGroup",
+      "label": "Model Group NBL",
+      "speciesModelCode": "NB",
+      "hasAvailableSpacing": [
+        "eco:spacing3p0",
+        "eco:spacing4p0",
+        "eco:spacing5p0"
+      ],
+      "hasAvailableYieldClass": [
+        "eco:yieldClass2",
+        "eco:yieldClass4"
+      ]
+    },
+    {
+      "@id": "eco:modelGroupNF",
+      "@type": "eco:SpeciesModelGroup",
+      "label": "Model Group NF",
+      "speciesModelCode": "NF",
+      "hasAvailableSpacing": [
+        "eco:spacing1p5"
+      ],
+      "hasAvailableYieldClass": [
+        "eco:yieldClass10",
+        "eco:yieldClass12",
+        "eco:yieldClass14",
+        "eco:yieldClass16",
+        "eco:yieldClass18",
+        "eco:yieldClass20",
+        "eco:yieldClass22"
+      ]
+    },
+    {
+      "@id": "eco:modelGroupNPI",
+      "@type": "eco:SpeciesModelGroup",
+      "label": "Model Group NPI",
+      "speciesModelCode": "NP",
+      "hasAvailableSpacing": [
+        "eco:spacing2p0",
+        "eco:spacing3p0",
+        "eco:spacing4p0",
+        "eco:spacing5p0"
+      ],
+      "hasAvailableYieldClass": [
+        "eco:yieldClass2",
+        "eco:yieldClass4"
+      ]
+    },
+    {
+      "@id": "eco:modelGroupNS",
+      "@type": "eco:SpeciesModelGroup",
+      "label": "Model Group NS",
+      "speciesModelCode": "NS",
+      "hasAvailableSpacing": [
+        "eco:spacing1p5"
+      ],
+      "hasAvailableYieldClass": [
+        "eco:yieldClass6",
+        "eco:yieldClass8",
+        "eco:yieldClass10",
+        "eco:yieldClass12",
+        "eco:yieldClass14",
+        "eco:yieldClass16",
+        "eco:yieldClass18",
+        "eco:yieldClass20",
+        "eco:yieldClass22"
+      ]
+    },
+    {
+      "@id": "eco:modelGroupOK",
+      "@type": "eco:SpeciesModelGroup",
+      "label": "Model Group OK",
+      "speciesModelCode": "OK",
+      "hasAvailableSpacing": [
+        "eco:spacing1p2",
+        "eco:spacing2p5",
+        "eco:spacing3p0",
+        "eco:spacing4p0",
+        "eco:spacing5p0"
+      ],
+      "hasAvailableYieldClass": [
+        "eco:yieldClass2",
+        "eco:yieldClass4",
+        "eco:yieldClass6",
+        "eco:yieldClass8"
+      ]
+    },
+    {
+      "@id": "eco:modelGroupRC",
+      "@type": "eco:SpeciesModelGroup",
+      "label": "Model Group RC",
+      "speciesModelCode": "RC",
+      "hasAvailableSpacing": [
+        "eco:spacing1p5"
+      ],
+      "hasAvailableYieldClass": [
+        "eco:yieldClass12",
+        "eco:yieldClass14",
+        "eco:yieldClass16",
+        "eco:yieldClass18",
+        "eco:yieldClass20",
+        "eco:yieldClass22",
+        "eco:yieldClass24"
+      ]
+    },
+    {
+      "@id": "eco:modelGroupSAB",
+      "@type": "eco:SpeciesModelGroup",
+      "label": "Model Group SAB",
+      "speciesModelCode": "SA",
+      "hasAvailableSpacing": [
+        "eco:spacing1p5",
+        "eco:spacing2p5",
+        "eco:spacing3p0",
+        "eco:spacing4p0",
+        "eco:spacing5p0"
+      ],
+      "hasAvailableYieldClass": [
+        "eco:yieldClass2",
+        "eco:yieldClass4",
+        "eco:yieldClass6",
+        "eco:yieldClass8",
+        "eco:yieldClass10",
+        "eco:yieldClass12"
+      ]
+    },
+    {
+      "@id": "eco:modelGroupSP",
+      "@type": "eco:SpeciesModelGroup",
+      "label": "Model Group SP",
+      "speciesModelCode": "SP",
+      "hasAvailableSpacing": [
+        "eco:spacing1p4",
+        "eco:spacing2p0",
+        "eco:spacing2p5",
+        "eco:spacing3p0",
+        "eco:spacing4p0",
+        "eco:spacing5p0"
+      ],
+      "hasAvailableYieldClass": [
+        "eco:yieldClass2",
+        "eco:yieldClass4",
+        "eco:yieldClass6",
+        "eco:yieldClass8",
+        "eco:yieldClass10",
+        "eco:yieldClass12",
+        "eco:yieldClass14"
+      ]
+    },
+    {
+      "@id": "eco:modelGroupSS",
+      "@type": "eco:SpeciesModelGroup",
+      "label": "Model Group SS",
+      "speciesModelCode": "SS",
+      "hasAvailableSpacing": [
+        "eco:spacing1p7",
+        "eco:spacing2p0"
+      ],
+      "hasAvailableYieldClass": [
+        "eco:yieldClass6",
+        "eco:yieldClass8",
+        "eco:yieldClass10",
+        "eco:yieldClass12",
+        "eco:yieldClass14",
+        "eco:yieldClass16",
+        "eco:yieldClass18",
+        "eco:yieldClass20",
+        "eco:yieldClass22",
+        "eco:yieldClass24"
+      ]
+    },
+    {
+      "@id": "eco:modelGroupWH",
+      "@type": "eco:SpeciesModelGroup",
+      "label": "Model Group WH",
+      "speciesModelCode": "WH",
+      "hasAvailableSpacing": [
+        "eco:spacing1p5"
+      ],
+      "hasAvailableYieldClass": [
+        "eco:yieldClass12",
+        "eco:yieldClass14",
+        "eco:yieldClass16",
+        "eco:yieldClass18",
+        "eco:yieldClass20",
+        "eco:yieldClass22",
+        "eco:yieldClass24"
+      ]
+    }
+  ]
+}

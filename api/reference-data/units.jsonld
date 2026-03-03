@@ -1,0 +1,110 @@
+{
+  "@context": {
+    "qty": "https://data.carbon-calculator.co.uk/ontologies/quantity#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "qudt": "http://qudt.org/vocab/unit/",
+    "label": "rdfs:label",
+    "altLabel": "skos:altLabel",
+    "unitSymbol": "qty:unitSymbol",
+    "alignedQUDTUnit": { "@id": "qty:alignedQUDTUnit", "@type": "@id" }
+  },
+  "@graph": [
+    {
+      "@id": "qty:hectare",
+      "@type": "qty:UnitOfMeasurement",
+      "label": "hectare",
+      "altLabel": "hectares",
+      "unitSymbol": "ha",
+      "alignedQUDTUnit": "qudt:HA"
+    },
+    {
+      "@id": "qty:squareMetre",
+      "@type": "qty:UnitOfMeasurement",
+      "label": "square metre",
+      "altLabel": "square metres",
+      "unitSymbol": "m²",
+      "alignedQUDTUnit": "qudt:M2"
+    },
+    {
+      "@id": "qty:metre",
+      "@type": "qty:UnitOfMeasurement",
+      "label": "metre",
+      "altLabel": "metres",
+      "unitSymbol": "m",
+      "alignedQUDTUnit": "qudt:M"
+    },
+    {
+      "@id": "qty:kilometre",
+      "@type": "qty:UnitOfMeasurement",
+      "label": "kilometre",
+      "altLabel": "kilometres",
+      "unitSymbol": "km",
+      "alignedQUDTUnit": "qudt:KiloM"
+    },
+    {
+      "@id": "qty:year",
+      "@type": "qty:UnitOfMeasurement",
+      "label": "year",
+      "altLabel": "years",
+      "unitSymbol": "yr",
+      "alignedQUDTUnit": "qudt:YR"
+    },
+    {
+      "@id": "qty:tonnesCO2e",
+      "@type": "qty:UnitOfMeasurement",
+      "label": "tonnes CO₂ equivalent",
+      "altLabel": "tonnes of carbon dioxide equivalent",
+      "unitSymbol": "tCO2e"
+    },
+    {
+      "@id": "qty:tonnesCO2ePerHectare",
+      "@type": "qty:UnitOfMeasurement",
+      "label": "tonnes CO₂e per hectare",
+      "altLabel": "tonnes of carbon dioxide equivalent per hectare",
+      "unitSymbol": "tCO2e/ha"
+    },
+    {
+      "@id": "qty:tonnesCO2ePerHectarePerYear",
+      "@type": "qty:UnitOfMeasurement",
+      "label": "tonnes CO₂e per hectare per year",
+      "altLabel": "tonnes of carbon dioxide equivalent per hectare per year",
+      "unitSymbol": "tCO2e/ha/yr"
+    },
+    {
+      "@id": "qty:tonnesCO2ePerHectarePer5YearPeriod",
+      "@type": "qty:UnitOfMeasurement",
+      "label": "tonnes CO₂e per hectare per 5-year period",
+      "altLabel": "tonnes of carbon dioxide equivalent per hectare per five-year period",
+      "unitSymbol": "tCO2e/ha/5yr"
+    },
+    {
+      "@id": "qty:tonnesCO2ePerUnit",
+      "@type": "qty:UnitOfMeasurement",
+      "label": "tonnes CO₂e per unit",
+      "altLabel": "tonnes of carbon dioxide equivalent per unit",
+      "unitSymbol": "tCO2e/unit"
+    },
+    {
+      "@id": "qty:tonnesCO2ePerKilometre",
+      "@type": "qty:UnitOfMeasurement",
+      "label": "tonnes CO₂e per kilometre",
+      "altLabel": "tonnes of carbon dioxide equivalent per kilometre",
+      "unitSymbol": "tCO2e/km"
+    },
+    {
+      "@id": "qty:percent",
+      "@type": "qty:UnitOfMeasurement",
+      "label": "percent",
+      "unitSymbol": "%",
+      "alignedQUDTUnit": "qudt:PERCENT"
+    },
+    {
+      "@id": "qty:each",
+      "@type": "qty:UnitOfMeasurement",
+      "label": "each",
+      "altLabel": "each (discrete count)",
+      "unitSymbol": "ea"
+    }
+  ]
+}

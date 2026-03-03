@@ -1,0 +1,245 @@
+{
+  "@context": {
+    "eco": "https://data.carbon-calculator.co.uk/ontologies/ecology#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "label": "rdfs:label",
+    "spacingValue": {
+      "@id": "eco:spacingValue",
+      "@type": "xsd:double"
+    },
+    "seedlingRate": {
+      "@id": "eco:seedlingRate",
+      "@type": "xsd:double"
+    },
+    "voleguardRate": {
+      "@id": "eco:voleguardRate",
+      "@type": "xsd:double"
+    },
+    "fertiliserRate": {
+      "@id": "eco:fertiliserRate",
+      "@type": "xsd:double"
+    },
+    "hasShelterRate": {
+      "@id": "eco:hasShelterRate",
+      "@type": "@id"
+    },
+    "hasSpiralGuardRate": {
+      "@id": "eco:hasSpiralGuardRate",
+      "@type": "@id"
+    },
+    "protectionEmissionRate": {
+      "@id": "eco:protectionEmissionRate",
+      "@type": "xsd:double"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "eco:spacing1p2",
+      "@type": "eco:TreeSpacingOption",
+      "label": "1.2m spacing",
+      "spacingValue": 1.2,
+      "seedlingRate": -1.0416666666666667,
+      "voleguardRate": -2.152777777777778,
+      "fertiliserRate": -0.10902777777777779,
+      "hasShelterRate": "eco:shelter1p2_1p2m",
+      "hasSpiralGuardRate": "eco:spiral1p2_0p6m"
+    },
+    {
+      "@id": "eco:shelter1p2_1p2m",
+      "@type": "eco:ShelterRate",
+      "label": "Shelter rate at 1.2m spacing, 1.2m height",
+      "protectionEmissionRate": -59.097222222222236
+    },
+    {
+      "@id": "eco:spiral1p2_0p6m",
+      "@type": "eco:SpiralGuardRate",
+      "label": "Spiral guard rate at 1.2m spacing, 0.6m height",
+      "protectionEmissionRate": -7.7777777777777795
+    },
+    {
+      "@id": "eco:spacing1p4",
+      "@type": "eco:TreeSpacingOption",
+      "label": "1.4m spacing",
+      "spacingValue": 1.4,
+      "seedlingRate": -0.7653061224489796,
+      "voleguardRate": -1.5816326530612246,
+      "fertiliserRate": -0.08010204081632653,
+      "hasShelterRate": "eco:shelter1p4_1p2m",
+      "hasSpiralGuardRate": "eco:spiral1p4_0p6m"
+    },
+    {
+      "@id": "eco:shelter1p4_1p2m",
+      "@type": "eco:ShelterRate",
+      "label": "Shelter rate at 1.4m spacing, 1.2m height",
+      "protectionEmissionRate": -43.41836734693878
+    },
+    {
+      "@id": "eco:spiral1p4_0p6m",
+      "@type": "eco:SpiralGuardRate",
+      "label": "Spiral guard rate at 1.4m spacing, 0.6m height",
+      "protectionEmissionRate": -5.714285714285714
+    },
+    {
+      "@id": "eco:spacing1p5",
+      "@type": "eco:TreeSpacingOption",
+      "label": "1.5m spacing",
+      "spacingValue": 1.5,
+      "seedlingRate": -0.6666666666666667,
+      "voleguardRate": -1.377777777777778,
+      "fertiliserRate": -0.06977777777777779,
+      "hasShelterRate": "eco:shelter1p5_1p2m",
+      "hasSpiralGuardRate": "eco:spiral1p5_0p6m"
+    },
+    {
+      "@id": "eco:shelter1p5_1p2m",
+      "@type": "eco:ShelterRate",
+      "label": "Shelter rate at 1.5m spacing, 1.2m height",
+      "protectionEmissionRate": -37.82222222222223
+    },
+    {
+      "@id": "eco:spiral1p5_0p6m",
+      "@type": "eco:SpiralGuardRate",
+      "label": "Spiral guard rate at 1.5m spacing, 0.6m height",
+      "protectionEmissionRate": -4.977777777777778
+    },
+    {
+      "@id": "eco:spacing1p7",
+      "@type": "eco:TreeSpacingOption",
+      "label": "1.7m spacing",
+      "spacingValue": 1.7,
+      "seedlingRate": -0.5190311418685122,
+      "voleguardRate": -1.072664359861592,
+      "fertiliserRate": -0.05432525951557094,
+      "hasShelterRate": "eco:shelter1p7_1p2m",
+      "hasSpiralGuardRate": "eco:spiral1p7_0p6m"
+    },
+    {
+      "@id": "eco:shelter1p7_1p2m",
+      "@type": "eco:ShelterRate",
+      "label": "Shelter rate at 1.7m spacing, 1.2m height",
+      "protectionEmissionRate": -29.446366782006926
+    },
+    {
+      "@id": "eco:spiral1p7_0p6m",
+      "@type": "eco:SpiralGuardRate",
+      "label": "Spiral guard rate at 1.7m spacing, 0.6m height",
+      "protectionEmissionRate": -3.8754325259515574
+    },
+    {
+      "@id": "eco:spacing2p0",
+      "@type": "eco:TreeSpacingOption",
+      "label": "2.0m spacing",
+      "spacingValue": 2.0,
+      "seedlingRate": -0.37499999999999994,
+      "voleguardRate": -0.775,
+      "fertiliserRate": -0.03925,
+      "hasShelterRate": "eco:shelter2p0_1p2m",
+      "hasSpiralGuardRate": "eco:spiral2p0_0p6m"
+    },
+    {
+      "@id": "eco:shelter2p0_1p2m",
+      "@type": "eco:ShelterRate",
+      "label": "Shelter rate at 2.0m spacing, 1.2m height",
+      "protectionEmissionRate": -21.275000000000002
+    },
+    {
+      "@id": "eco:spiral2p0_0p6m",
+      "@type": "eco:SpiralGuardRate",
+      "label": "Spiral guard rate at 2.0m spacing, 0.6m height",
+      "protectionEmissionRate": -2.8
+    },
+    {
+      "@id": "eco:spacing2p5",
+      "@type": "eco:TreeSpacingOption",
+      "label": "2.5m spacing",
+      "spacingValue": 2.5,
+      "seedlingRate": -0.24,
+      "voleguardRate": -0.496,
+      "fertiliserRate": -0.025119999999999996,
+      "hasShelterRate": "eco:shelter2p5_1p2m",
+      "hasSpiralGuardRate": "eco:spiral2p5_0p6m"
+    },
+    {
+      "@id": "eco:shelter2p5_1p2m",
+      "@type": "eco:ShelterRate",
+      "label": "Shelter rate at 2.5m spacing, 1.2m height",
+      "protectionEmissionRate": -13.616
+    },
+    {
+      "@id": "eco:spiral2p5_0p6m",
+      "@type": "eco:SpiralGuardRate",
+      "label": "Spiral guard rate at 2.5m spacing, 0.6m height",
+      "protectionEmissionRate": -1.7919999999999998
+    },
+    {
+      "@id": "eco:spacing3p0",
+      "@type": "eco:TreeSpacingOption",
+      "label": "3.0m spacing",
+      "spacingValue": 3.0,
+      "seedlingRate": -0.16666666666666669,
+      "voleguardRate": -0.3444444444444445,
+      "fertiliserRate": -0.017444444444444446,
+      "hasShelterRate": "eco:shelter3p0_1p2m",
+      "hasSpiralGuardRate": "eco:spiral3p0_0p6m"
+    },
+    {
+      "@id": "eco:shelter3p0_1p2m",
+      "@type": "eco:ShelterRate",
+      "label": "Shelter rate at 3.0m spacing, 1.2m height",
+      "protectionEmissionRate": -9.455555555555557
+    },
+    {
+      "@id": "eco:spiral3p0_0p6m",
+      "@type": "eco:SpiralGuardRate",
+      "label": "Spiral guard rate at 3.0m spacing, 0.6m height",
+      "protectionEmissionRate": -1.2444444444444445
+    },
+    {
+      "@id": "eco:spacing4p0",
+      "@type": "eco:TreeSpacingOption",
+      "label": "4.0m spacing",
+      "spacingValue": 4.0,
+      "seedlingRate": -0.09374999999999999,
+      "voleguardRate": -0.19375,
+      "fertiliserRate": -0.0098125,
+      "hasShelterRate": "eco:shelter4p0_1p2m",
+      "hasSpiralGuardRate": "eco:spiral4p0_0p6m"
+    },
+    {
+      "@id": "eco:shelter4p0_1p2m",
+      "@type": "eco:ShelterRate",
+      "label": "Shelter rate at 4.0m spacing, 1.2m height",
+      "protectionEmissionRate": -5.3187500000000005
+    },
+    {
+      "@id": "eco:spiral4p0_0p6m",
+      "@type": "eco:SpiralGuardRate",
+      "label": "Spiral guard rate at 4.0m spacing, 0.6m height",
+      "protectionEmissionRate": -0.7
+    },
+    {
+      "@id": "eco:spacing5p0",
+      "@type": "eco:TreeSpacingOption",
+      "label": "5.0m spacing",
+      "spacingValue": 5.0,
+      "seedlingRate": -0.06,
+      "voleguardRate": -0.124,
+      "fertiliserRate": -0.006279999999999999,
+      "hasShelterRate": "eco:shelter5p0_1p2m",
+      "hasSpiralGuardRate": "eco:spiral5p0_0p6m"
+    },
+    {
+      "@id": "eco:shelter5p0_1p2m",
+      "@type": "eco:ShelterRate",
+      "label": "Shelter rate at 5.0m spacing, 1.2m height",
+      "protectionEmissionRate": -3.404
+    },
+    {
+      "@id": "eco:spiral5p0_0p6m",
+      "@type": "eco:SpiralGuardRate",
+      "label": "Spiral guard rate at 5.0m spacing, 0.6m height",
+      "protectionEmissionRate": -0.44799999999999995
+    }
+  ]
+}

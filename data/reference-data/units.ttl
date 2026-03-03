@@ -1,0 +1,91 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix unit:  <http://qudt.org/vocab/unit/> .
+@prefix qty:   <https://data.carbon-calculator.co.uk/ontologies/quantity#> .
+
+# =============================================================================
+# Reference Data — Units of Measurement
+# =============================================================================
+
+qty:hectare
+    a qty:UnitOfMeasurement ;
+    rdfs:label "hectare"@en ;
+    skos:altLabel "hectares"@en ;
+    qty:unitSymbol "ha" ;
+    qty:alignedQUDTUnit unit:HA .
+
+qty:squareMetre
+    a qty:UnitOfMeasurement ;
+    rdfs:label "square metre"@en ;
+    skos:altLabel "square metres"@en ;
+    qty:unitSymbol "m²" ;
+    qty:alignedQUDTUnit unit:M2 .
+
+qty:metre
+    a qty:UnitOfMeasurement ;
+    rdfs:label "metre"@en ;
+    skos:altLabel "metres"@en ;
+    qty:unitSymbol "m" ;
+    qty:alignedQUDTUnit unit:M .
+
+qty:kilometre
+    a qty:UnitOfMeasurement ;
+    rdfs:label "kilometre"@en ;
+    skos:altLabel "kilometres"@en ;
+    qty:unitSymbol "km" ;
+    qty:alignedQUDTUnit unit:KiloM .
+
+qty:year
+    a qty:UnitOfMeasurement ;
+    rdfs:label "year"@en ;
+    skos:altLabel "years"@en ;
+    qty:unitSymbol "yr" ;
+    qty:alignedQUDTUnit unit:YR .
+
+qty:tonnesCO2e
+    a qty:UnitOfMeasurement ;
+    rdfs:label "tonnes CO₂ equivalent"@en ;
+    skos:altLabel "tonnes of carbon dioxide equivalent"@en ;
+    qty:unitSymbol "tCO2e" .
+
+qty:tonnesCO2ePerHectare
+    a qty:UnitOfMeasurement ;
+    rdfs:label "tonnes CO₂e per hectare"@en ;
+    skos:altLabel "tonnes of carbon dioxide equivalent per hectare"@en ;
+    qty:unitSymbol "tCO2e/ha" .
+
+qty:tonnesCO2ePerHectarePerYear
+    a qty:UnitOfMeasurement ;
+    rdfs:label "tonnes CO₂e per hectare per year"@en ;
+    skos:altLabel "tonnes of carbon dioxide equivalent per hectare per year"@en ;
+    qty:unitSymbol "tCO2e/ha/yr" .
+
+qty:tonnesCO2ePerHectarePer5YearPeriod
+    a qty:UnitOfMeasurement ;
+    rdfs:label "tonnes CO₂e per hectare per 5-year period"@en ;
+    skos:altLabel "tonnes of carbon dioxide equivalent per hectare per five-year period"@en ;
+    qty:unitSymbol "tCO2e/ha/5yr" .
+
+qty:tonnesCO2ePerUnit
+    a qty:UnitOfMeasurement ;
+    rdfs:label "tonnes CO₂e per unit"@en ;
+    skos:altLabel "tonnes of carbon dioxide equivalent per unit"@en ;
+    qty:unitSymbol "tCO2e/unit" .
+
+qty:tonnesCO2ePerKilometre
+    a qty:UnitOfMeasurement ;
+    rdfs:label "tonnes CO₂e per kilometre"@en ;
+    skos:altLabel "tonnes of carbon dioxide equivalent per kilometre"@en ;
+    qty:unitSymbol "tCO2e/km" .
+
+qty:percent
+    a qty:UnitOfMeasurement ;
+    rdfs:label "percent"@en ;
+    qty:unitSymbol "%" ;
+    qty:alignedQUDTUnit unit:PERCENT .
+
+qty:each
+    a qty:UnitOfMeasurement ;
+    rdfs:label "each"@en ;
+    skos:altLabel "each (discrete count)"@en ;
+    qty:unitSymbol "ea" .

@@ -1,0 +1,541 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix qty:   <https://data.carbon-calculator.co.uk/ontologies/quantity#> .
+@prefix eco:   <https://data.carbon-calculator.co.uk/ontologies/ecology#> .
+@prefix proj:  <https://data.carbon-calculator.co.uk/ontologies/project#> .
+@prefix calc:  <https://data.carbon-calculator.co.uk/ontologies/calculation#> .
+
+# =============================================================================
+# Carbon Calculation Ontology
+# =============================================================================
+# Encodes carbon calculation results (predictions, sequestration summaries,
+# PIU vintages) and lookup-table structures (biomass carbon, soil emissions)
+# used in the calculation.
+# =============================================================================
+
+<https://data.carbon-calculator.co.uk/ontologies/calculation>
+    a owl:Ontology ;
+    rdfs:label "Carbon Calculation Ontology"@en ;
+    rdfs:comment "Ontology for carbon sequestration calculations, predictions, Pending Issuance Units, biomass carbon lookup data, and soil emission reference data. Imports the WCC Project, Ecology, and Quantity ontologies."@en ;
+    owl:versionInfo "2.0.0" ;
+    owl:versionIRI <https://data.carbon-calculator.co.uk/ontologies/calculation/2.0.0> ;
+    owl:imports <https://data.carbon-calculator.co.uk/ontologies/project> ;
+    owl:imports <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    owl:imports <https://data.carbon-calculator.co.uk/ontologies/quantity> .
+
+
+# =============================================================================
+# Classes — Carbon Calculation Results
+# =============================================================================
+
+calc:CarbonCalculation
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "Carbon Calculation"@en ;
+    rdfs:comment "The complete set of carbon calculation results for a woodland creation project, comprising period predictions and PIU vintage allocations."@en .
+
+calc:CarbonPrediction
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "Carbon Prediction"@en ;
+    rdfs:comment "A single row in the summary carbon sequestration table, representing cumulative calculations for one 5-year period."@en .
+
+calc:PIUVintage
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "PIU Vintage"@en ;
+    rdfs:comment "A Pending Issuance Unit vintage allocation for a verification period, specifying the total PIUs, buffer contribution, and net PIUs to the project."@en .
+
+calc:PIUVintageSchedule
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "PIU Vintage Schedule"@en ;
+    rdfs:comment "A complete schedule of PIU vintages for a project, under either the standard 10-yearly or 5-yearly (Woodland Carbon Guarantee) verification scheme."@en .
+
+
+# =============================================================================
+# Classes — Lookup Table Structures
+# =============================================================================
+
+calc:BiomassLookupEntry
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "Biomass Carbon Lookup Entry"@en ;
+    rdfs:comment "A single entry in the biomass carbon lookup table, providing carbon sequestration values for a specific combination of species, spacing, yield class, management regime, and 5-year period."@en .
+
+calc:SoilEmissionLookupEntry
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "Soil Emission Lookup Entry"@en ;
+    rdfs:comment "A single entry in the soil emission lookup table, providing soil carbon loss rates for a specific combination of country, topsoil disturbance percentage, and ground preparation method."@en .
+
+calc:SoilEmissionRate
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "Soil Emission Rate"@en ;
+    rdfs:comment "A soil carbon emission rate for a specific previous landuse within a soil emission lookup entry, expressed in tCO2e per hectare."@en .
+
+calc:ClearfellMaxSequestration
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "Clearfell Maximum Sequestration"@en ;
+    rdfs:comment "Maximum carbon sequestration cap at a given clearfell age for a specific species, spacing, yield class, and management regime."@en .
+
+calc:SoilCarbonAccumulationRate
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "Soil Carbon Accumulation Rate"@en ;
+    rdfs:comment "A per-period lookup value giving the cumulative soil carbon accumulation (tCO2e/ha) for previously-arable mineral soil under minimum-intervention management. Indexed by growth period."@en .
+
+
+# =============================================================================
+# Object Properties — Linking Calculation to Project
+# =============================================================================
+
+calc:calculationForProject
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "calculation for project"@en ;
+    rdfs:comment "Links a carbon calculation to the woodland creation project it belongs to."@en ;
+    rdfs:domain calc:CarbonCalculation ;
+    rdfs:range proj:WoodlandCreationProject .
+
+calc:hasCalculation
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    owl:inverseOf calc:calculationForProject ;
+    rdfs:label "has calculation"@en ;
+    rdfs:comment "Links a woodland creation project to its carbon calculation."@en ;
+    rdfs:domain proj:WoodlandCreationProject ;
+    rdfs:range calc:CarbonCalculation .
+
+calc:hasCarbonPrediction
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "has carbon prediction"@en ;
+    rdfs:comment "Links a carbon calculation to one of its period predictions."@en ;
+    rdfs:domain calc:CarbonCalculation ;
+    rdfs:range calc:CarbonPrediction .
+
+calc:predictionInCalculation
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    owl:inverseOf calc:hasCarbonPrediction ;
+    rdfs:label "prediction in calculation"@en ;
+    rdfs:comment "Links a carbon prediction back to its parent calculation."@en ;
+    rdfs:domain calc:CarbonPrediction ;
+    rdfs:range calc:CarbonCalculation .
+
+calc:hasPIUVintageSchedule
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "has PIU vintage schedule"@en ;
+    rdfs:comment "Links a carbon calculation to its PIU vintage schedule."@en ;
+    rdfs:domain calc:CarbonCalculation ;
+    rdfs:range calc:PIUVintageSchedule .
+
+calc:hasVintage
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "has vintage"@en ;
+    rdfs:comment "Links a vintage schedule to one of its individual vintage allocations."@en ;
+    rdfs:domain calc:PIUVintageSchedule ;
+    rdfs:range calc:PIUVintage .
+
+calc:vintageInSchedule
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    owl:inverseOf calc:hasVintage ;
+    rdfs:label "vintage in schedule"@en ;
+    rdfs:comment "Links a PIU vintage back to its parent schedule."@en ;
+    rdfs:domain calc:PIUVintage ;
+    rdfs:range calc:PIUVintageSchedule .
+
+calc:usesVerificationScheme
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "uses verification scheme"@en ;
+    rdfs:comment "Links a vintage schedule to the verification timing scheme it follows."@en ;
+    rdfs:domain calc:PIUVintageSchedule ;
+    rdfs:range proj:VerificationScheme .
+
+calc:hasVerificationScheme
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "has verification scheme"@en ;
+    rdfs:comment "Links a project to the verification scheme governing its carbon unit issuance."@en ;
+    rdfs:domain proj:WoodlandCreationProject ;
+    rdfs:range proj:VerificationScheme .
+
+calc:determinedByPrediction
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "determined by prediction"@en ;
+    rdfs:comment "Links a PIU vintage to the carbon prediction(s) from which its values are derived."@en ;
+    rdfs:domain calc:PIUVintage ;
+    rdfs:range calc:CarbonPrediction .
+
+calc:aggregatesSection
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "aggregates section"@en ;
+    rdfs:comment "Links a carbon prediction to the planting sections whose carbon values it aggregates."@en ;
+    rdfs:domain calc:CarbonPrediction ;
+    rdfs:range proj:PlantingSection .
+
+
+# =============================================================================
+# Object Properties — Carbon Prediction Quantities
+# =============================================================================
+
+calc:forPeriod
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "for period"@en ;
+    rdfs:comment "Links a carbon prediction or biomass lookup entry to its growth period."@en ;
+    rdfs:domain [ a owl:Class ; owl:unionOf ( calc:CarbonPrediction calc:BiomassLookupEntry ) ] ;
+    rdfs:range proj:GrowthPeriod .
+
+calc:cumulativeCarbonFromLookups
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "cumulative carbon from lookups"@en ;
+    rdfs:comment "A: Cumulative carbon sequestration summed from biomass lookup tables across all planting sections (tCO2e)."@en ;
+    rdfs:domain calc:CarbonPrediction ;
+    rdfs:range qty:Quantity .
+
+calc:cumulativeCarbonLess20Pct
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "cumulative carbon less 20%"@en ;
+    rdfs:comment "B: Cumulative carbon sequestration after 20% model precision deduction (= 80% of A) (tCO2e)."@en ;
+    rdfs:domain calc:CarbonPrediction ;
+    rdfs:range qty:Quantity .
+
+calc:establishmentEmissionsContribution
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "establishment emissions contribution"@en ;
+    rdfs:comment "C: Removal of vegetation and/or establishment emissions applied to this period (tCO2e)."@en ;
+    rdfs:domain calc:CarbonPrediction ;
+    rdfs:range qty:Quantity .
+
+calc:cumulativeSoilCarbon
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "cumulative soil carbon"@en ;
+    rdfs:comment "D: Cumulative soil carbon (loss in year 1 plus cumulative accumulation if relevant) (tCO2e)."@en ;
+    rdfs:domain calc:CarbonPrediction ;
+    rdfs:range qty:Quantity .
+
+calc:totalProjectSequestration
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "total project sequestration"@en ;
+    rdfs:comment "E = B + C + D: Total project carbon sequestration for this period (tCO2e)."@en ;
+    rdfs:domain calc:CarbonPrediction ;
+    rdfs:range qty:Quantity .
+
+calc:baselineDeduction
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "baseline deduction"@en ;
+    rdfs:comment "F: Baseline deduction (normally zero, no change over time) (tCO2e)."@en ;
+    rdfs:domain calc:CarbonPrediction ;
+    rdfs:range qty:Quantity .
+
+calc:leakageDeduction
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "leakage deduction"@en ;
+    rdfs:comment "G: Leakage deduction (normally zero, no change over time) (tCO2e)."@en ;
+    rdfs:domain calc:CarbonPrediction ;
+    rdfs:range qty:Quantity .
+
+calc:netProjectSequestration
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "net project sequestration"@en ;
+    rdfs:comment "H = E + F - G: Net project carbon sequestration adjusted for baseline and leakage (tCO2e)."@en ;
+    rdfs:domain calc:CarbonPrediction ;
+    rdfs:range qty:Quantity .
+
+calc:bufferContribution
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "buffer contribution"@en ;
+    rdfs:comment "I: Buffer contribution (15–20% of H) withheld for risk management (tCO2e)."@en ;
+    rdfs:domain calc:CarbonPrediction ;
+    rdfs:range qty:Quantity .
+
+calc:claimableSequestration
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "claimable sequestration"@en ;
+    rdfs:comment "J = H - I: Claimable carbon sequestration after buffer deduction (tCO2e)."@en ;
+    rdfs:domain calc:CarbonPrediction ;
+    rdfs:range qty:Quantity .
+
+calc:averageClaimablePerHectare
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "average claimable per hectare"@en ;
+    rdfs:comment "K = J / Net Area: Average total claimable sequestration per hectare by year x (tCO2e/ha)."@en ;
+    rdfs:domain calc:CarbonPrediction ;
+    rdfs:range qty:Rate .
+
+
+# =============================================================================
+# Object Properties — PIU Vintage Quantities
+# =============================================================================
+
+calc:totalPIUs
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "total PIUs"@en ;
+    rdfs:comment "Total Pending Issuance Units in this vintage period (tCO2e)."@en ;
+    rdfs:domain calc:PIUVintage ;
+    rdfs:range qty:Quantity .
+
+calc:vintageBufferContribution
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "vintage buffer contribution"@en ;
+    rdfs:comment "Buffer contribution deducted from this vintage (tCO2e)."@en ;
+    rdfs:domain calc:PIUVintage ;
+    rdfs:range qty:Quantity .
+
+calc:piusToProject
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "PIUs to project"@en ;
+    rdfs:comment "Net PIUs allocated to the project after buffer deduction (tCO2e)."@en ;
+    rdfs:domain calc:PIUVintage ;
+    rdfs:range qty:Quantity .
+
+
+# =============================================================================
+# Object Properties — Biomass Lookup & Clearfell References
+# =============================================================================
+
+calc:contributesCarbonPool
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "contributes carbon pool"@en ;
+    rdfs:comment "Links a biomass lookup entry to the carbon pool it measures."@en ;
+    rdfs:domain calc:BiomassLookupEntry ;
+    rdfs:range eco:CarbonPool .
+
+calc:maxSequestrationAtAge
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "max sequestration at age"@en ;
+    rdfs:comment "The maximum carbon sequestration cap at a given rotation age (tCO2e/ha)."@en ;
+    rdfs:domain calc:ClearfellMaxSequestration ;
+    rdfs:range qty:Quantity .
+
+calc:rotationLength
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "rotation length"@en ;
+    rdfs:comment "The clearfell rotation length for this max sequestration entry."@en ;
+    rdfs:domain calc:ClearfellMaxSequestration ;
+    rdfs:range qty:Duration .
+
+
+# =============================================================================
+# Object Properties — Biomass Lookup Quantities
+# =============================================================================
+
+calc:carbonStanding
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "carbon standing"@en ;
+    rdfs:comment "Carbon standing rate for this biomass entry (tCO2e/ha/yr)."@en ;
+    rdfs:domain calc:BiomassLookupEntry ;
+    rdfs:range qty:Rate .
+
+calc:debrisCarbon
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "debris carbon"@en ;
+    rdfs:comment "Debris carbon rate for this biomass entry (tCO2e/ha/yr)."@en ;
+    rdfs:domain calc:BiomassLookupEntry ;
+    rdfs:range qty:Rate .
+
+calc:totalCarbonRate
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "total carbon rate"@en ;
+    rdfs:comment "Total carbon rate for this biomass entry (tCO2e/ha/yr)."@en ;
+    rdfs:domain calc:BiomassLookupEntry ;
+    rdfs:range qty:Rate .
+
+calc:cumulativeInPeriod
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "cumulative in period"@en ;
+    rdfs:comment "Cumulative carbon within this 5-year period (tCO2e/ha/5yr)."@en ;
+    rdfs:domain calc:BiomassLookupEntry ;
+    rdfs:range qty:Quantity .
+
+calc:cumulativeBiomassSequestration
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "cumulative biomass sequestration"@en ;
+    rdfs:comment "Cumulative total biomass carbon sequestration up to this period (tCO2e/ha)."@en ;
+    rdfs:domain calc:BiomassLookupEntry ;
+    rdfs:range qty:Quantity .
+
+calc:cumulativeManagementEmissions
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "cumulative management emissions"@en ;
+    rdfs:comment "Cumulative emissions from ongoing management up to this period (tCO2e/ha)."@en ;
+    rdfs:domain calc:BiomassLookupEntry ;
+    rdfs:range qty:Quantity .
+
+calc:cumulativeTotalSequestration
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "cumulative total sequestration"@en ;
+    rdfs:comment "Cumulative total carbon sequestration (biomass minus management emissions) up to this period (tCO2e/ha)."@en ;
+    rdfs:domain calc:BiomassLookupEntry ;
+    rdfs:range qty:Quantity .
+
+calc:removedFromForest
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "removed from forest"@en ;
+    rdfs:comment "Carbon removed from the forest system in this period (tCO2e/ha/yr)."@en ;
+    rdfs:domain calc:BiomassLookupEntry ;
+    rdfs:range qty:Rate .
+
+
+# =============================================================================
+# Object Properties — Soil Emission Lookup
+# =============================================================================
+
+calc:soilEmissionCountry
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "soil emission country"@en ;
+    rdfs:comment "Links a soil emission lookup entry to its country."@en ;
+    rdfs:domain calc:SoilEmissionLookupEntry ;
+    rdfs:range proj:Country .
+
+calc:soilEmissionGroundPreparation
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "soil emission ground preparation"@en ;
+    rdfs:comment "Links a soil emission lookup entry to the ground preparation method (via its topsoil carbon lost code)."@en ;
+    rdfs:domain calc:SoilEmissionLookupEntry ;
+    rdfs:range eco:GroundPreparationMethod .
+
+calc:hasSoilEmissionRate
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "has soil emission rate"@en ;
+    rdfs:comment "Links a soil emission lookup entry to a rate for a specific previous landuse."@en ;
+    rdfs:domain calc:SoilEmissionLookupEntry ;
+    rdfs:range calc:SoilEmissionRate .
+
+calc:forPreviousLanduse
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "for previous landuse"@en ;
+    rdfs:comment "Links a soil emission rate to the previous landuse it applies to."@en ;
+    rdfs:domain calc:SoilEmissionRate ;
+    rdfs:range eco:PreviousLanduse .
+
+
+# =============================================================================
+# Data Properties — Carbon Prediction
+# =============================================================================
+
+calc:cumulativeToYear
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "cumulative to year"@en ;
+    rdfs:comment "The year number to which this prediction is cumulative (0, 5, 10 ... 100)."@en ;
+    rdfs:domain calc:CarbonPrediction ;
+    rdfs:range xsd:integer .
+
+
+# =============================================================================
+# Data Properties — PIU Vintage
+# =============================================================================
+
+calc:yearsSinceStart
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "years since start"@en ;
+    rdfs:comment "The number of years since the project start date at which verification occurs."@en ;
+    rdfs:domain calc:PIUVintage ;
+    rdfs:range xsd:integer .
+
+calc:vintageStartDate
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "vintage start date"@en ;
+    rdfs:comment "The start date of this vintage period."@en ;
+    rdfs:domain calc:PIUVintage ;
+    rdfs:range xsd:date .
+
+calc:vintageEndDate
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "vintage end date"@en ;
+    rdfs:comment "The end date of this vintage period."@en ;
+    rdfs:domain calc:PIUVintage ;
+    rdfs:range xsd:date .
+
+
+# =============================================================================
+# Data Properties — Soil Emissions
+# =============================================================================
+
+calc:topsoilPercentageCode
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "topsoil percentage code"@en ;
+    rdfs:comment "The topsoil carbon loss percentage code: 00, 02, 05, 10, 20, or 40."@en ;
+    rdfs:domain calc:SoilEmissionLookupEntry ;
+    rdfs:range xsd:string .
+
+calc:soilEmissionValue
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "soil emission value"@en ;
+    rdfs:comment "The soil carbon emission rate value in tCO2e per hectare."@en ;
+    rdfs:domain calc:SoilEmissionRate ;
+    rdfs:range xsd:double .
+
+
+# =============================================================================
+# Object Properties — Soil Carbon Accumulation Rate
+# =============================================================================
+
+calc:accumulationForPeriod
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "accumulation for period"@en ;
+    rdfs:comment "Links a soil carbon accumulation rate to its growth period."@en ;
+    rdfs:domain calc:SoilCarbonAccumulationRate ;
+    rdfs:range proj:GrowthPeriod .
+
+
+# =============================================================================
+# Data Properties — Soil Carbon Accumulation Rate
+# =============================================================================
+
+calc:accumulationValue
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/calculation> ;
+    rdfs:label "accumulation value"@en ;
+    rdfs:comment "Cumulative soil carbon accumulation in tCO2e per hectare up to this growth period, for previously-arable mineral soil under minimum-intervention management."@en ;
+    rdfs:domain calc:SoilCarbonAccumulationRate ;
+    rdfs:range xsd:double .
+

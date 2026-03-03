@@ -1,0 +1,1091 @@
+{
+  "@context": {
+    "eco": "https://data.carbon-calculator.co.uk/ontologies/ecology#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "label": "rdfs:label",
+    "speciesCode": "eco:speciesCode",
+    "latinName": "eco:latinName",
+    "mapsToModelGroup": {
+      "@id": "eco:mapsToModelGroup",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "eco:Alder",
+      "@type": "eco:TreeSpecies",
+      "label": "Alder",
+      "speciesCode": "",
+      "latinName": "Alnus spp.",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:ArmandSPine",
+      "@type": "eco:TreeSpecies",
+      "label": "Armand's pine",
+      "speciesCode": "",
+      "latinName": "Pinus armandii",
+      "mapsToModelGroup": "eco:modelGroupSP"
+    },
+    {
+      "@id": "eco:Ash",
+      "@type": "eco:TreeSpecies",
+      "label": "Ash",
+      "speciesCode": "AH (SAB)",
+      "latinName": "Fraxinus excelsior",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:Aspen",
+      "@type": "eco:TreeSpecies",
+      "label": "Aspen",
+      "speciesCode": "",
+      "latinName": "Populus tremula",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:AtlasCedar",
+      "@type": "eco:TreeSpecies",
+      "label": "Atlas cedar",
+      "speciesCode": "",
+      "latinName": "Cedrus atlantica",
+      "mapsToModelGroup": "eco:modelGroupNF"
+    },
+    {
+      "@id": "eco:AustrianPine",
+      "@type": "eco:TreeSpecies",
+      "label": "Austrian pine",
+      "speciesCode": "",
+      "latinName": "Pinus nigra var nigra",
+      "mapsToModelGroup": "eco:modelGroupCP"
+    },
+    {
+      "@id": "eco:Beech",
+      "@type": "eco:TreeSpecies",
+      "label": "Beech",
+      "speciesCode": "BE",
+      "latinName": "Fagus sylvatica",
+      "mapsToModelGroup": "eco:modelGroupBE"
+    },
+    {
+      "@id": "eco:BhutanPine",
+      "@type": "eco:TreeSpecies",
+      "label": "Bhutan pine",
+      "speciesCode": "",
+      "latinName": "Pinus wallichiana",
+      "mapsToModelGroup": "eco:modelGroupSP"
+    },
+    {
+      "@id": "eco:BigLeafMaple",
+      "@type": "eco:TreeSpecies",
+      "label": "Big leaf maple",
+      "speciesCode": "",
+      "latinName": "Acer macrophyllum",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:BirchDownySilver",
+      "@type": "eco:TreeSpecies",
+      "label": "Birch (downy/silver)",
+      "speciesCode": "BI (SAB)",
+      "latinName": "Betula spp.",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:BirdCherry",
+      "@type": "eco:TreeSpecies",
+      "label": "Bird cherry",
+      "speciesCode": "",
+      "latinName": "Prunus padus",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:BishopPine",
+      "@type": "eco:TreeSpecies",
+      "label": "Bishop pine",
+      "speciesCode": "",
+      "latinName": "Pinus muricata",
+      "mapsToModelGroup": "eco:modelGroupCP"
+    },
+    {
+      "@id": "eco:BlackPoplar",
+      "@type": "eco:TreeSpecies",
+      "label": "Black poplar",
+      "speciesCode": "",
+      "latinName": "Populus nigra",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:BlackWalnut",
+      "@type": "eco:TreeSpecies",
+      "label": "Black walnut",
+      "speciesCode": "",
+      "latinName": "Juglans nigra",
+      "mapsToModelGroup": "eco:modelGroupOK"
+    },
+    {
+      "@id": "eco:Blackthorn",
+      "@type": "eco:TreeSpecies",
+      "label": "Blackthorn",
+      "speciesCode": "",
+      "latinName": "Prunus spinose",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:BornmullerSFir",
+      "@type": "eco:TreeSpecies",
+      "label": "Bornmuller's fir",
+      "speciesCode": "",
+      "latinName": "Abies bornmuelleriana",
+      "mapsToModelGroup": "eco:modelGroupNF"
+    },
+    {
+      "@id": "eco:Box",
+      "@type": "eco:TreeSpecies",
+      "label": "Box",
+      "speciesCode": "",
+      "latinName": "Buxus spp.",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:CalabrianPine",
+      "@type": "eco:TreeSpecies",
+      "label": "Calabrian pine",
+      "speciesCode": "",
+      "latinName": "Pinus brutia",
+      "mapsToModelGroup": "eco:modelGroupSP"
+    },
+    {
+      "@id": "eco:CedarOfLebanon",
+      "@type": "eco:TreeSpecies",
+      "label": "Cedar of Lebanon",
+      "speciesCode": "",
+      "latinName": "Cedrus libani",
+      "mapsToModelGroup": "eco:modelGroupNF"
+    },
+    {
+      "@id": "eco:CiderGum",
+      "@type": "eco:TreeSpecies",
+      "label": "Cider gum",
+      "speciesCode": "",
+      "latinName": "Eucalyptus gunnii",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:CoastRedwood",
+      "@type": "eco:TreeSpecies",
+      "label": "Coast redwood",
+      "speciesCode": "",
+      "latinName": "Sequoia sempervirens",
+      "mapsToModelGroup": "eco:modelGroupGF"
+    },
+    {
+      "@id": "eco:CommonAlder",
+      "@type": "eco:TreeSpecies",
+      "label": "Common alder",
+      "speciesCode": "",
+      "latinName": "Alnus glutinosa",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:CommonLime",
+      "@type": "eco:TreeSpecies",
+      "label": "Common lime",
+      "speciesCode": "",
+      "latinName": "Tilia europea",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:CommonWalnut",
+      "@type": "eco:TreeSpecies",
+      "label": "Common walnut",
+      "speciesCode": "",
+      "latinName": "Juglans regia",
+      "mapsToModelGroup": "eco:modelGroupOK"
+    },
+    {
+      "@id": "eco:CorsicanPine",
+      "@type": "eco:TreeSpecies",
+      "label": "Corsican pine",
+      "speciesCode": "CP",
+      "latinName": "Pinus nigra var maritima",
+      "mapsToModelGroup": "eco:modelGroupCP"
+    },
+    {
+      "@id": "eco:CrabApple",
+      "@type": "eco:TreeSpecies",
+      "label": "Crab apple",
+      "speciesCode": "",
+      "latinName": "Malus sylvestris",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:CrackWillow",
+      "@type": "eco:TreeSpecies",
+      "label": "Crack willow",
+      "speciesCode": "",
+      "latinName": "Salix fragilis",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:DouglasFir",
+      "@type": "eco:TreeSpecies",
+      "label": "Douglas fir",
+      "speciesCode": "DF",
+      "latinName": "Pseudotsuga menziesii",
+      "mapsToModelGroup": "eco:modelGroupDF"
+    },
+    {
+      "@id": "eco:DownyBirch",
+      "@type": "eco:TreeSpecies",
+      "label": "Downy birch",
+      "speciesCode": "",
+      "latinName": "Betula pubescens",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:DownyOak",
+      "@type": "eco:TreeSpecies",
+      "label": "Downy oak",
+      "speciesCode": "",
+      "latinName": "Quercus pubescens",
+      "mapsToModelGroup": "eco:modelGroupOK"
+    },
+    {
+      "@id": "eco:Elm",
+      "@type": "eco:TreeSpecies",
+      "label": "Elm",
+      "speciesCode": "",
+      "latinName": "Ulmus spp.",
+      "mapsToModelGroup": "eco:modelGroupBE"
+    },
+    {
+      "@id": "eco:EnglishElm",
+      "@type": "eco:TreeSpecies",
+      "label": "English elm",
+      "speciesCode": "",
+      "latinName": "Ulmus procera",
+      "mapsToModelGroup": "eco:modelGroupBE"
+    },
+    {
+      "@id": "eco:EuropeanLarch",
+      "@type": "eco:TreeSpecies",
+      "label": "European larch",
+      "speciesCode": "EL",
+      "latinName": "Larix decidua",
+      "mapsToModelGroup": "eco:modelGroupEL"
+    },
+    {
+      "@id": "eco:EuropeanSilverFir",
+      "@type": "eco:TreeSpecies",
+      "label": "European silver fir",
+      "speciesCode": "",
+      "latinName": "Abies alba",
+      "mapsToModelGroup": "eco:modelGroupNF"
+    },
+    {
+      "@id": "eco:FieldMaple",
+      "@type": "eco:TreeSpecies",
+      "label": "Field maple",
+      "speciesCode": "",
+      "latinName": "Acer campestre",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:GoatWillow",
+      "@type": "eco:TreeSpecies",
+      "label": "Goat willow",
+      "speciesCode": "",
+      "latinName": "Salix caprea",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:GrandFir",
+      "@type": "eco:TreeSpecies",
+      "label": "Grand fir",
+      "speciesCode": "GF",
+      "latinName": "Abies grandis",
+      "mapsToModelGroup": "eco:modelGroupGF"
+    },
+    {
+      "@id": "eco:GrecianFir",
+      "@type": "eco:TreeSpecies",
+      "label": "Grecian fir",
+      "speciesCode": "",
+      "latinName": "Abies cephalonica",
+      "mapsToModelGroup": "eco:modelGroupNF"
+    },
+    {
+      "@id": "eco:GreenAlder",
+      "@type": "eco:TreeSpecies",
+      "label": "Green alder",
+      "speciesCode": "",
+      "latinName": "Alnus viridis",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:GreyAlder",
+      "@type": "eco:TreeSpecies",
+      "label": "Grey alder",
+      "speciesCode": "",
+      "latinName": "Alnus incana",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:GreyPoplar",
+      "@type": "eco:TreeSpecies",
+      "label": "Grey poplar",
+      "speciesCode": "",
+      "latinName": "Populus canescens",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:GreyWillow",
+      "@type": "eco:TreeSpecies",
+      "label": "Grey willow",
+      "speciesCode": "",
+      "latinName": "Salix cinerea",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:HawthornSpecies",
+      "@type": "eco:TreeSpecies",
+      "label": "Hawthorn species",
+      "speciesCode": "",
+      "latinName": "Crataegus spp",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:Hazel",
+      "@type": "eco:TreeSpecies",
+      "label": "Hazel",
+      "speciesCode": "",
+      "latinName": "Corylus avellana",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:HollySpecies",
+      "@type": "eco:TreeSpecies",
+      "label": "Holly species",
+      "speciesCode": "",
+      "latinName": "Ilex spp.",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:HolmOak",
+      "@type": "eco:TreeSpecies",
+      "label": "Holm oak",
+      "speciesCode": "",
+      "latinName": "Quercus ilex",
+      "mapsToModelGroup": "eco:modelGroupOK"
+    },
+    {
+      "@id": "eco:Hornbeam",
+      "@type": "eco:TreeSpecies",
+      "label": "Hornbeam",
+      "speciesCode": "",
+      "latinName": "Carpinus betulus",
+      "mapsToModelGroup": "eco:modelGroupBE"
+    },
+    {
+      "@id": "eco:HorseChestnut",
+      "@type": "eco:TreeSpecies",
+      "label": "Horse chestnut",
+      "speciesCode": "",
+      "latinName": "Aesculus hippocastanum",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:HungarianOak",
+      "@type": "eco:TreeSpecies",
+      "label": "Hungarian oak",
+      "speciesCode": "",
+      "latinName": "Quercus frainetto",
+      "mapsToModelGroup": "eco:modelGroupOK"
+    },
+    {
+      "@id": "eco:HybridLarch",
+      "@type": "eco:TreeSpecies",
+      "label": "Hybrid larch",
+      "speciesCode": "HL",
+      "latinName": "Larix x eurolepis",
+      "mapsToModelGroup": "eco:modelGroupHL"
+    },
+    {
+      "@id": "eco:HybridPoplars",
+      "@type": "eco:TreeSpecies",
+      "label": "Hybrid poplars",
+      "speciesCode": "",
+      "latinName": "Populus serotina/trichocarpa etc.",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:ItalianAlder",
+      "@type": "eco:TreeSpecies",
+      "label": "Italian alder",
+      "speciesCode": "",
+      "latinName": "Alnus cordata",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:JapaneseCedar",
+      "@type": "eco:TreeSpecies",
+      "label": "Japanese cedar",
+      "speciesCode": "",
+      "latinName": "Cryptomeria japonica",
+      "mapsToModelGroup": "eco:modelGroupRC"
+    },
+    {
+      "@id": "eco:JapaneseLarch",
+      "@type": "eco:TreeSpecies",
+      "label": "Japanese larch",
+      "speciesCode": "JL",
+      "latinName": "Larix kaempferi",
+      "mapsToModelGroup": "eco:modelGroupJL"
+    },
+    {
+      "@id": "eco:KoreanPine",
+      "@type": "eco:TreeSpecies",
+      "label": "Korean pine",
+      "speciesCode": "",
+      "latinName": "Pinus koreana",
+      "mapsToModelGroup": "eco:modelGroupSP"
+    },
+    {
+      "@id": "eco:LargeLeavedLime",
+      "@type": "eco:TreeSpecies",
+      "label": "Large-leaved lime",
+      "speciesCode": "",
+      "latinName": "Tilia platyphyllos",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:LawsonSCypress",
+      "@type": "eco:TreeSpecies",
+      "label": "Lawson's cypress",
+      "speciesCode": "",
+      "latinName": "Chamaecyparis lawsoniana",
+      "mapsToModelGroup": "eco:modelGroupRC"
+    },
+    {
+      "@id": "eco:Lenga",
+      "@type": "eco:TreeSpecies",
+      "label": "Lenga",
+      "speciesCode": "",
+      "latinName": "Nothofagus pumilio",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:LeylandCypress",
+      "@type": "eco:TreeSpecies",
+      "label": "Leyland cypress",
+      "speciesCode": "LEC",
+      "latinName": "Cupressocyparis leylandii",
+      "mapsToModelGroup": "eco:modelGroupLEC"
+    },
+    {
+      "@id": "eco:Lime",
+      "@type": "eco:TreeSpecies",
+      "label": "Lime",
+      "speciesCode": "",
+      "latinName": "Tilia spp.",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:LoblollyPine",
+      "@type": "eco:TreeSpecies",
+      "label": "Loblolly pine",
+      "speciesCode": "",
+      "latinName": "Pinus taeda",
+      "mapsToModelGroup": "eco:modelGroupCP"
+    },
+    {
+      "@id": "eco:LodgepolePine",
+      "@type": "eco:TreeSpecies",
+      "label": "Lodgepole pine",
+      "speciesCode": "LP",
+      "latinName": "Pinus contorta",
+      "mapsToModelGroup": "eco:modelGroupLP"
+    },
+    {
+      "@id": "eco:LondonPlane",
+      "@type": "eco:TreeSpecies",
+      "label": "London plane",
+      "speciesCode": "",
+      "latinName": "Platanus x acerifolia",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:MacedonianPine",
+      "@type": "eco:TreeSpecies",
+      "label": "Macedonian pine",
+      "speciesCode": "",
+      "latinName": "Pinus peuce",
+      "mapsToModelGroup": "eco:modelGroupCP"
+    },
+    {
+      "@id": "eco:MaritimePine",
+      "@type": "eco:TreeSpecies",
+      "label": "Maritime pine",
+      "speciesCode": "",
+      "latinName": "Pinus pinaster",
+      "mapsToModelGroup": "eco:modelGroupLP"
+    },
+    {
+      "@id": "eco:MexicanWhitePine",
+      "@type": "eco:TreeSpecies",
+      "label": "Mexican white pine",
+      "speciesCode": "",
+      "latinName": "Pinus ayacahuite",
+      "mapsToModelGroup": "eco:modelGroupSP"
+    },
+    {
+      "@id": "eco:MontereyPine",
+      "@type": "eco:TreeSpecies",
+      "label": "Monterey pine",
+      "speciesCode": "",
+      "latinName": "Pinus radiata",
+      "mapsToModelGroup": "eco:modelGroupCP"
+    },
+    {
+      "@id": "eco:MountainPine",
+      "@type": "eco:TreeSpecies",
+      "label": "Mountain pine",
+      "speciesCode": "",
+      "latinName": "Pinus uncinata",
+      "mapsToModelGroup": "eco:modelGroupSP"
+    },
+    {
+      "@id": "eco:NarrowLeafedAsh",
+      "@type": "eco:TreeSpecies",
+      "label": "Narrow-leafed ash",
+      "speciesCode": "",
+      "latinName": "Fraxinus angustifolia",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:NatRegenMixedBroadleaves",
+      "@type": "eco:TreeSpecies",
+      "label": "Nat Regen - Mixed Broadleaves",
+      "speciesCode": "NBL",
+      "mapsToModelGroup": "eco:modelGroupNBL"
+    },
+    {
+      "@id": "eco:NatRegenScotsPine",
+      "@type": "eco:TreeSpecies",
+      "label": "Nat Regen - Scots Pine",
+      "speciesCode": "NPI",
+      "mapsToModelGroup": "eco:modelGroupNPI"
+    },
+    {
+      "@id": "eco:NobleFir",
+      "@type": "eco:TreeSpecies",
+      "label": "Noble fir",
+      "speciesCode": "NF",
+      "latinName": "Abies procera",
+      "mapsToModelGroup": "eco:modelGroupNF"
+    },
+    {
+      "@id": "eco:NordmannFir",
+      "@type": "eco:TreeSpecies",
+      "label": "Nordmann fir",
+      "speciesCode": "",
+      "latinName": "Abies nordmanniana",
+      "mapsToModelGroup": "eco:modelGroupNF"
+    },
+    {
+      "@id": "eco:NorwayMaple",
+      "@type": "eco:TreeSpecies",
+      "label": "Norway maple",
+      "speciesCode": "",
+      "latinName": "Acer platanoides",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:NorwaySpruce",
+      "@type": "eco:TreeSpecies",
+      "label": "Norway spruce",
+      "speciesCode": "NS",
+      "latinName": "Picea abies",
+      "mapsToModelGroup": "eco:modelGroupNS"
+    },
+    {
+      "@id": "eco:OakRoburPetraea",
+      "@type": "eco:TreeSpecies",
+      "label": "Oak (robur/petraea)",
+      "speciesCode": "OK",
+      "latinName": "Quercus spp.",
+      "mapsToModelGroup": "eco:modelGroupOK"
+    },
+    {
+      "@id": "eco:OrientalBeech",
+      "@type": "eco:TreeSpecies",
+      "label": "Oriental beech",
+      "speciesCode": "",
+      "latinName": "Fagus orientalis",
+      "mapsToModelGroup": "eco:modelGroupBE"
+    },
+    {
+      "@id": "eco:OrientalSpruce",
+      "@type": "eco:TreeSpecies",
+      "label": "Oriental spruce",
+      "speciesCode": "",
+      "latinName": "Picea orientalis",
+      "mapsToModelGroup": "eco:modelGroupNS"
+    },
+    {
+      "@id": "eco:OtherBirches",
+      "@type": "eco:TreeSpecies",
+      "label": "Other birches",
+      "speciesCode": "",
+      "latinName": "Betula spp.",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:OtherBroadleaves",
+      "@type": "eco:TreeSpecies",
+      "label": "Other broadleaves",
+      "speciesCode": "",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:OtherCedar",
+      "@type": "eco:TreeSpecies",
+      "label": "Other Cedar",
+      "speciesCode": "",
+      "latinName": "Cedrus spp.",
+      "mapsToModelGroup": "eco:modelGroupNF"
+    },
+    {
+      "@id": "eco:OtherCherrySpp",
+      "@type": "eco:TreeSpecies",
+      "label": "Other cherry spp",
+      "speciesCode": "",
+      "latinName": "Prunus spp.",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:OtherConifers",
+      "@type": "eco:TreeSpecies",
+      "label": "Other conifers",
+      "speciesCode": "",
+      "mapsToModelGroup": "eco:modelGroupNS"
+    },
+    {
+      "@id": "eco:OtherEucalyptus",
+      "@type": "eco:TreeSpecies",
+      "label": "Other Eucalyptus",
+      "speciesCode": "",
+      "latinName": "Eucalyptus spp.",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:OtherFirsAbies",
+      "@type": "eco:TreeSpecies",
+      "label": "Other firs (Abies)",
+      "speciesCode": "",
+      "latinName": "Abies spp.",
+      "mapsToModelGroup": "eco:modelGroupNF"
+    },
+    {
+      "@id": "eco:OtherLarches",
+      "@type": "eco:TreeSpecies",
+      "label": "Other larches",
+      "speciesCode": "",
+      "latinName": "Larix spp.",
+      "mapsToModelGroup": "eco:modelGroupEL"
+    },
+    {
+      "@id": "eco:OtherNothofagus",
+      "@type": "eco:TreeSpecies",
+      "label": "Other Nothofagus",
+      "speciesCode": "",
+      "latinName": "Nothofagus spp.",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:OtherOakSpp",
+      "@type": "eco:TreeSpecies",
+      "label": "Other oak spp",
+      "speciesCode": "",
+      "latinName": "Quercus spp.",
+      "mapsToModelGroup": "eco:modelGroupOK"
+    },
+    {
+      "@id": "eco:OtherPines",
+      "@type": "eco:TreeSpecies",
+      "label": "Other pines",
+      "speciesCode": "",
+      "latinName": "Pinus spp.",
+      "mapsToModelGroup": "eco:modelGroupSP"
+    },
+    {
+      "@id": "eco:OtherPoplarSpp",
+      "@type": "eco:TreeSpecies",
+      "label": "Other Poplar spp",
+      "speciesCode": "",
+      "latinName": "Populus spp.",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:OtherSpruces",
+      "@type": "eco:TreeSpecies",
+      "label": "Other spruces",
+      "speciesCode": "",
+      "latinName": "Picea spp.",
+      "mapsToModelGroup": "eco:modelGroupNS"
+    },
+    {
+      "@id": "eco:OtherWalnut",
+      "@type": "eco:TreeSpecies",
+      "label": "Other walnut",
+      "speciesCode": "",
+      "latinName": "Juglans spp.",
+      "mapsToModelGroup": "eco:modelGroupOK"
+    },
+    {
+      "@id": "eco:OtherWillows",
+      "@type": "eco:TreeSpecies",
+      "label": "Other willows",
+      "speciesCode": "",
+      "latinName": "Salix spp.",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:PaperBarkBirch",
+      "@type": "eco:TreeSpecies",
+      "label": "Paper-bark birch",
+      "speciesCode": "",
+      "latinName": "Betula papyrifera",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:PedunculateCommonOak",
+      "@type": "eco:TreeSpecies",
+      "label": "Pedunculate/common oak",
+      "speciesCode": "",
+      "latinName": "Quercus robur",
+      "mapsToModelGroup": "eco:modelGroupOK"
+    },
+    {
+      "@id": "eco:PlaneSpp",
+      "@type": "eco:TreeSpecies",
+      "label": "Plane spp",
+      "speciesCode": "",
+      "latinName": "Platanus spp.",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:PonderosaPine",
+      "@type": "eco:TreeSpecies",
+      "label": "Ponderosa pine",
+      "speciesCode": "",
+      "latinName": "Pinus ponderosa",
+      "mapsToModelGroup": "eco:modelGroupSP"
+    },
+    {
+      "@id": "eco:PyreneanOak",
+      "@type": "eco:TreeSpecies",
+      "label": "Pyrenean oak",
+      "speciesCode": "",
+      "latinName": "Quercus pyrenaica",
+      "mapsToModelGroup": "eco:modelGroupOK"
+    },
+    {
+      "@id": "eco:RaoulRauli",
+      "@type": "eco:TreeSpecies",
+      "label": "Raoul/rauli",
+      "speciesCode": "",
+      "latinName": "Nothofagus nervosa",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:RedAlder",
+      "@type": "eco:TreeSpecies",
+      "label": "Red alder",
+      "speciesCode": "",
+      "latinName": "Alnus rubra",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:RedAsh",
+      "@type": "eco:TreeSpecies",
+      "label": "Red ash",
+      "speciesCode": "",
+      "latinName": "Fraxinus pennsylvanica",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:RedFirPacificSilver",
+      "@type": "eco:TreeSpecies",
+      "label": "Red fir (pacific silver)",
+      "speciesCode": "",
+      "latinName": "Abies amabilis",
+      "mapsToModelGroup": "eco:modelGroupGF"
+    },
+    {
+      "@id": "eco:RedOak",
+      "@type": "eco:TreeSpecies",
+      "label": "Red oak",
+      "speciesCode": "",
+      "latinName": "Quercus borealis",
+      "mapsToModelGroup": "eco:modelGroupBE"
+    },
+    {
+      "@id": "eco:Roble",
+      "@type": "eco:TreeSpecies",
+      "label": "Roble",
+      "speciesCode": "",
+      "latinName": "Nothofagus obliqua",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:Rowan",
+      "@type": "eco:TreeSpecies",
+      "label": "Rowan",
+      "speciesCode": "",
+      "latinName": "Sorbus aucuparia",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:ScotsPine",
+      "@type": "eco:TreeSpecies",
+      "label": "Scots pine",
+      "speciesCode": "SP",
+      "latinName": "Pinus sylvestris",
+      "mapsToModelGroup": "eco:modelGroupSP"
+    },
+    {
+      "@id": "eco:SerbianSpruce",
+      "@type": "eco:TreeSpecies",
+      "label": "Serbian spruce",
+      "speciesCode": "",
+      "latinName": "Picea omorika",
+      "mapsToModelGroup": "eco:modelGroupNS"
+    },
+    {
+      "@id": "eco:SessileOak",
+      "@type": "eco:TreeSpecies",
+      "label": "Sessile oak",
+      "speciesCode": "",
+      "latinName": "Quercus petraea",
+      "mapsToModelGroup": "eco:modelGroupOK"
+    },
+    {
+      "@id": "eco:ShagbarkHickory",
+      "@type": "eco:TreeSpecies",
+      "label": "Shagbark hickory",
+      "speciesCode": "",
+      "latinName": "Carya ovata",
+      "mapsToModelGroup": "eco:modelGroupBE"
+    },
+    {
+      "@id": "eco:ShiningGum",
+      "@type": "eco:TreeSpecies",
+      "label": "Shining gum",
+      "speciesCode": "",
+      "latinName": "Eucalyptus nitens",
+      "mapsToModelGroup": "eco:modelGroupBE"
+    },
+    {
+      "@id": "eco:SilverBirch",
+      "@type": "eco:TreeSpecies",
+      "label": "Silver birch",
+      "speciesCode": "",
+      "latinName": "Betula pendula",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:SilverMaple",
+      "@type": "eco:TreeSpecies",
+      "label": "Silver maple",
+      "speciesCode": "",
+      "latinName": "Acer saccharinum",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:SitkaSpruce",
+      "@type": "eco:TreeSpecies",
+      "label": "Sitka spruce",
+      "speciesCode": "SS",
+      "latinName": "Picea sitchensis",
+      "mapsToModelGroup": "eco:modelGroupSS"
+    },
+    {
+      "@id": "eco:SlashPine",
+      "@type": "eco:TreeSpecies",
+      "label": "Slash pine",
+      "speciesCode": "",
+      "latinName": "Pinus ellottii",
+      "mapsToModelGroup": "eco:modelGroupLP"
+    },
+    {
+      "@id": "eco:SmallLeavedLime",
+      "@type": "eco:TreeSpecies",
+      "label": "Small-leaved lime",
+      "speciesCode": "",
+      "latinName": "Tilia cordata",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:SmoothLeavedElm",
+      "@type": "eco:TreeSpecies",
+      "label": "Smooth-leaved elm",
+      "speciesCode": "",
+      "latinName": "Ulmus carpinifolia",
+      "mapsToModelGroup": "eco:modelGroupBE"
+    },
+    {
+      "@id": "eco:SweetChestnut",
+      "@type": "eco:TreeSpecies",
+      "label": "Sweet chestnut",
+      "speciesCode": "",
+      "latinName": "Castanea sativa",
+      "mapsToModelGroup": "eco:modelGroupBE"
+    },
+    {
+      "@id": "eco:Sycamore",
+      "@type": "eco:TreeSpecies",
+      "label": "Sycamore",
+      "speciesCode": "SY (SAB)",
+      "latinName": "Acer pseudoplatanus",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:TulipTree",
+      "@type": "eco:TreeSpecies",
+      "label": "Tulip tree",
+      "speciesCode": "",
+      "latinName": "Liriodendron tulipifera",
+      "mapsToModelGroup": "eco:modelGroupBE"
+    },
+    {
+      "@id": "eco:TurkeyOak",
+      "@type": "eco:TreeSpecies",
+      "label": "Turkey oak",
+      "speciesCode": "",
+      "latinName": "Quercus cerris",
+      "mapsToModelGroup": "eco:modelGroupOK"
+    },
+    {
+      "@id": "eco:Wellingtonia",
+      "@type": "eco:TreeSpecies",
+      "label": "Wellingtonia",
+      "speciesCode": "",
+      "latinName": "Sequoiadendron giganteum",
+      "mapsToModelGroup": "eco:modelGroupGF"
+    },
+    {
+      "@id": "eco:WesternHemlock",
+      "@type": "eco:TreeSpecies",
+      "label": "Western hemlock",
+      "speciesCode": "WH",
+      "latinName": "Tsuga heterophylla",
+      "mapsToModelGroup": "eco:modelGroupWH"
+    },
+    {
+      "@id": "eco:WesternRedCedar",
+      "@type": "eco:TreeSpecies",
+      "label": "Western red cedar",
+      "speciesCode": "RC",
+      "latinName": "Thuja plicata",
+      "mapsToModelGroup": "eco:modelGroupRC"
+    },
+    {
+      "@id": "eco:WesternWhitePine",
+      "@type": "eco:TreeSpecies",
+      "label": "Western white pine",
+      "speciesCode": "",
+      "latinName": "Pinus monticola",
+      "mapsToModelGroup": "eco:modelGroupLP"
+    },
+    {
+      "@id": "eco:WeymouthPine",
+      "@type": "eco:TreeSpecies",
+      "label": "Weymouth pine",
+      "speciesCode": "",
+      "latinName": "Pinus strobus",
+      "mapsToModelGroup": "eco:modelGroupSP"
+    },
+    {
+      "@id": "eco:WhiteAsh",
+      "@type": "eco:TreeSpecies",
+      "label": "White ash",
+      "speciesCode": "",
+      "latinName": "Fraxinus Americana",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:WhiteOak",
+      "@type": "eco:TreeSpecies",
+      "label": "White oak",
+      "speciesCode": "",
+      "latinName": "Quercus alba",
+      "mapsToModelGroup": "eco:modelGroupOK"
+    },
+    {
+      "@id": "eco:WhitePoplar",
+      "@type": "eco:TreeSpecies",
+      "label": "White poplar",
+      "speciesCode": "",
+      "latinName": "Populus alba",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:WhiteWillow",
+      "@type": "eco:TreeSpecies",
+      "label": "White willow",
+      "speciesCode": "",
+      "latinName": "Salix alba",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:Whitebeam",
+      "@type": "eco:TreeSpecies",
+      "label": "Whitebeam",
+      "speciesCode": "",
+      "latinName": "Sorbus aria",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:WildCherryGean",
+      "@type": "eco:TreeSpecies",
+      "label": "Wild cherry, gean",
+      "speciesCode": "",
+      "latinName": "Prunus avium",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:WildServiceTree",
+      "@type": "eco:TreeSpecies",
+      "label": "Wild service tree",
+      "speciesCode": "",
+      "latinName": "Sorbus torminalis",
+      "mapsToModelGroup": "eco:modelGroupSAB"
+    },
+    {
+      "@id": "eco:WychElm",
+      "@type": "eco:TreeSpecies",
+      "label": "Wych elm",
+      "speciesCode": "",
+      "latinName": "Ulmus glabra",
+      "mapsToModelGroup": "eco:modelGroupBE"
+    },
+    {
+      "@id": "eco:Yew",
+      "@type": "eco:TreeSpecies",
+      "label": "Yew",
+      "speciesCode": "",
+      "latinName": "Taxus baccata",
+      "mapsToModelGroup": "eco:modelGroupSP"
+    },
+    {
+      "@id": "eco:YunnanPine",
+      "@type": "eco:TreeSpecies",
+      "label": "Yunnan pine",
+      "speciesCode": "",
+      "latinName": "Pinus yunnanensis",
+      "mapsToModelGroup": "eco:modelGroupSP"
+    }
+  ]
+}

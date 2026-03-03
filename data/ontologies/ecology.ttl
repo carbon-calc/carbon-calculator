@@ -1,0 +1,374 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix qty:   <https://data.carbon-calculator.co.uk/ontologies/quantity#> .
+@prefix eco:   <https://data.carbon-calculator.co.uk/ontologies/ecology#> .
+
+# =============================================================================
+# WCC Ecology Ontology
+# =============================================================================
+# Ecological, silvicultural, and environmental science concepts used in the
+# Woodland Carbon Code.  Covers tree species, species model groups, spacing
+# options, yield classes, management regimes, soil and land classifications,
+# regeneration types, greenhouse gases, and carbon pools.
+# =============================================================================
+
+<https://data.carbon-calculator.co.uk/ontologies/ecology>
+    a owl:Ontology ;
+    rdfs:label "WCC Ecology Ontology"@en ;
+    rdfs:comment "Ontology for ecological, silvicultural, and environmental science concepts used in the Woodland Carbon Code. Covers tree species, model groups, spacing, yield classes, management regimes, soil and land classifications, regeneration types, greenhouse gases, and carbon pools."@en ;
+    owl:versionInfo "2.0.0" ;
+    owl:versionIRI <https://data.carbon-calculator.co.uk/ontologies/ecology/2.0.0> ;
+    owl:imports <https://data.carbon-calculator.co.uk/ontologies/quantity> .
+
+
+# =============================================================================
+# Classes — Tree Species & Modelling
+# =============================================================================
+
+eco:TreeSpecies
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "Tree Species"@en ;
+    rdfs:comment "A tree species eligible for use in woodland creation projects."@en .
+
+eco:SpeciesModelGroup
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "Species Model Group"@en ;
+    rdfs:comment "A grouping of one or more tree species that share the same carbon-sequestration model parameters (yield tables, spacing options, etc.)."@en .
+
+
+# =============================================================================
+# Classes — Spacing & Yield
+# =============================================================================
+
+eco:TreeSpacingOption
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "Tree Spacing Option"@en ;
+    rdfs:comment "A permitted tree spacing (in metres) for planting, with associated per-hectare emission rates for seedlings, shelters, spiral guards, voleguards, and fertiliser."@en .
+
+eco:YieldClass
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "Yield Class"@en ;
+    rdfs:comment "A yield class representing the maximum mean annual increment of a tree crop (m³/ha/yr)."@en .
+
+
+# =============================================================================
+# Classes — Management
+# =============================================================================
+
+eco:ManagementRegime
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "Management Regime"@en ;
+    rdfs:comment "A silvicultural management regime: thinned or no-thin."@en .
+
+
+# =============================================================================
+# Classes — Tree Protection
+# =============================================================================
+
+eco:TreeProtectionRate
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "Tree Protection Rate"@en ;
+    rdfs:comment "An emission rate associated with a type of tree protection at a given height and spacing."@en .
+
+eco:ShelterRate
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:subClassOf eco:TreeProtectionRate ;
+    rdfs:label "Shelter Rate"@en ;
+    rdfs:comment "An emission rate for a tree shelter at a specific height for a given spacing."@en .
+
+eco:SpiralGuardRate
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:subClassOf eco:TreeProtectionRate ;
+    rdfs:label "Spiral Guard Rate"@en ;
+    rdfs:comment "An emission rate for a spiral guard at a specific height for a given spacing."@en .
+
+
+# =============================================================================
+# Classes — Soil & Land
+# =============================================================================
+
+eco:GroundPreparationMethod
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "Ground Preparation Method"@en ;
+    rdfs:comment "A method of ground preparation categorised by the percentage of topsoil carbon (0–30 cm depth) expected to be lost."@en .
+
+eco:PreviousLanduse
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "Previous Landuse"@en ;
+    rdfs:comment "The category of land use before woodland creation: arable, pasture, or semi-natural."@en .
+
+eco:SoilType
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "Soil Type"@en ;
+    rdfs:comment "A soil classification relevant to soil carbon calculations: mineral or organo-mineral."@en .
+
+
+# =============================================================================
+# Classes — Regeneration
+# =============================================================================
+
+eco:RegenerationType
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "Regeneration Type"@en ;
+    rdfs:comment "The type of natural regeneration: broadleaves, Scots pine, or both."@en .
+
+
+# =============================================================================
+# Classes — Chemistry & Carbon
+# =============================================================================
+
+eco:ChemicalSubstance
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "Chemical Substance"@en ;
+    rdfs:comment "A chemical substance relevant to greenhouse gas accounting."@en .
+
+eco:GreenhouseGas
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:subClassOf eco:ChemicalSubstance ;
+    rdfs:label "Greenhouse Gas"@en ;
+    rdfs:comment "A greenhouse gas with a defined global warming potential."@en .
+
+eco:CarbonPool
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "Carbon Pool"@en ;
+    rdfs:comment "A carbon pool tracked in the carbon calculation: standing biomass, debris, soil carbon, or harvested wood products."@en .
+
+
+# =============================================================================
+# Object Properties — General Linking
+# =============================================================================
+
+eco:hasSpeciesModelGroup
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "has species model group"@en ;
+    rdfs:comment "Links a resource to its species model group."@en ;
+    rdfs:range eco:SpeciesModelGroup .
+
+eco:hasTreeSpacingOption
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "has tree spacing option"@en ;
+    rdfs:comment "Links a resource to its tree spacing option."@en ;
+    rdfs:range eco:TreeSpacingOption .
+
+eco:hasYieldClass
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "has yield class"@en ;
+    rdfs:comment "Links a resource to its yield class."@en ;
+    rdfs:range eco:YieldClass .
+
+eco:hasManagementRegime
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "has management regime"@en ;
+    rdfs:comment "Links a resource to its management regime."@en ;
+    rdfs:range eco:ManagementRegime .
+
+
+# =============================================================================
+# Object Properties — Internal Ecology Links
+# =============================================================================
+
+eco:mapsToModelGroup
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "maps to model group"@en ;
+    rdfs:comment "Links a tree species to the species model group used for carbon modelling."@en ;
+    rdfs:domain eco:TreeSpecies ;
+    rdfs:range eco:SpeciesModelGroup .
+
+eco:hasAvailableSpacing
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "has available spacing"@en ;
+    rdfs:comment "Links a species model group to a valid tree spacing option."@en ;
+    rdfs:domain eco:SpeciesModelGroup ;
+    rdfs:range eco:TreeSpacingOption .
+
+eco:hasAvailableYieldClass
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "has available yield class"@en ;
+    rdfs:comment "Links a species model group to a valid yield class."@en ;
+    rdfs:domain eco:SpeciesModelGroup ;
+    rdfs:range eco:YieldClass .
+
+eco:hasShelterRate
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "has shelter rate"@en ;
+    rdfs:comment "Links a tree spacing option to a tree shelter emission rate for a specific shelter height."@en ;
+    rdfs:domain eco:TreeSpacingOption ;
+    rdfs:range eco:ShelterRate .
+
+eco:hasSpiralGuardRate
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "has spiral guard rate"@en ;
+    rdfs:comment "Links a tree spacing option to a spiral guard emission rate for a specific guard height."@en ;
+    rdfs:domain eco:TreeSpacingOption ;
+    rdfs:range eco:SpiralGuardRate .
+
+eco:protectionHeight
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "protection height"@en ;
+    rdfs:comment "The height of the tree shelter or spiral guard."@en ;
+    rdfs:domain eco:TreeProtectionRate ;
+    rdfs:range qty:Length .
+
+
+# =============================================================================
+# Data Properties — Species
+# =============================================================================
+
+eco:speciesName
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "species name"@en ;
+    rdfs:comment "The common name of the tree species."@en ;
+    rdfs:domain eco:TreeSpecies ;
+    rdfs:range xsd:string .
+
+eco:speciesCode
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "species code"@en ;
+    rdfs:comment "The short code for the tree species (e.g. BE, AH)."@en ;
+    rdfs:domain eco:TreeSpecies ;
+    rdfs:range xsd:string .
+
+eco:latinName
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "latin name"@en ;
+    rdfs:comment "The scientific (Latin) name of the tree species."@en ;
+    rdfs:domain eco:TreeSpecies ;
+    rdfs:range xsd:string .
+
+eco:speciesModelCode
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "species model code"@en ;
+    rdfs:comment "The code identifying the species model group (e.g. BE, CP, DF, SAB)."@en ;
+    rdfs:domain eco:SpeciesModelGroup ;
+    rdfs:range xsd:string .
+
+
+# =============================================================================
+# Data Properties — Spacing, Yield & Management
+# =============================================================================
+
+eco:spacingValue
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "spacing value"@en ;
+    rdfs:comment "The numeric tree spacing in metres."@en ;
+    rdfs:domain eco:TreeSpacingOption ;
+    rdfs:range xsd:double .
+
+eco:yieldClassValue
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "yield class value"@en ;
+    rdfs:comment "The numeric yield class value."@en ;
+    rdfs:domain eco:YieldClass ;
+    rdfs:range xsd:integer .
+
+eco:managementRegimeCode
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "management regime code"@en ;
+    rdfs:comment "The code for the management regime: No_thin or Thinned."@en ;
+    rdfs:domain eco:ManagementRegime ;
+    rdfs:range xsd:string .
+
+
+# =============================================================================
+# Data Properties — Ground Preparation
+# =============================================================================
+
+eco:topsoilCarbonLostCode
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "topsoil carbon lost code"@en ;
+    rdfs:comment "The percentage code for topsoil carbon lost: 00, 02, 05, 10, 20, or 40."@en ;
+    rdfs:domain eco:GroundPreparationMethod ;
+    rdfs:range xsd:string .
+
+
+# =============================================================================
+# Data Properties — Tree Spacing Emission Rates
+# =============================================================================
+
+eco:seedlingRate
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "seedling emission rate"@en ;
+    rdfs:comment "Seedling production emission rate in tCO2e per hectare for this spacing."@en ;
+    rdfs:domain eco:TreeSpacingOption ;
+    rdfs:range xsd:double .
+
+eco:protectionEmissionRate
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "protection emission rate"@en ;
+    rdfs:comment "The emission rate in tCO2e per hectare for a tree shelter or spiral guard of the associated height."@en ;
+    rdfs:domain eco:TreeProtectionRate ;
+    rdfs:range xsd:double .
+
+eco:voleguardRate
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "voleguard emission rate"@en ;
+    rdfs:comment "Voleguard emission rate in tCO2e per hectare for this spacing."@en ;
+    rdfs:domain eco:TreeSpacingOption ;
+    rdfs:range xsd:double .
+
+eco:fertiliserRate
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "fertiliser emission rate"@en ;
+    rdfs:comment "Fertiliser emission rate in tCO2e per hectare for this spacing."@en ;
+    rdfs:domain eco:TreeSpacingOption ;
+    rdfs:range xsd:double .
+
+
+# =============================================================================
+# Data Properties — Chemical Substances
+# =============================================================================
+
+eco:chemicalFormula
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "chemical formula"@en ;
+    rdfs:comment "The chemical formula of a substance (e.g. CO2, CH4)."@en ;
+    rdfs:domain eco:ChemicalSubstance ;
+    rdfs:range xsd:string .
+
+eco:globalWarmingPotential
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/ecology> ;
+    rdfs:label "global warming potential"@en ;
+    rdfs:comment "The 100-year global warming potential relative to CO2."@en ;
+    rdfs:domain eco:GreenhouseGas ;
+    rdfs:range xsd:double .

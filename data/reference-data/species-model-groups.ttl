@@ -1,0 +1,269 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix eco:   <https://data.carbon-calculator.co.uk/ontologies/ecology#> .
+
+# =============================================================================
+# Reference Data — Species Model Groups
+# =============================================================================
+# Each model group has valid spacing options and yield classes.
+# =============================================================================
+
+eco:modelGroupBE
+    a eco:SpeciesModelGroup ;
+    rdfs:label "Model Group BE"@en ;
+    eco:speciesModelCode "BE" ;
+    eco:hasAvailableSpacing eco:spacing1p2 ;
+    eco:hasAvailableSpacing eco:spacing2p5 ;
+    eco:hasAvailableSpacing eco:spacing3p0 ;
+    eco:hasAvailableSpacing eco:spacing4p0 ;
+    eco:hasAvailableSpacing eco:spacing5p0 ;
+    eco:hasAvailableYieldClass eco:yieldClass2 ;
+    eco:hasAvailableYieldClass eco:yieldClass4 ;
+    eco:hasAvailableYieldClass eco:yieldClass6 ;
+    eco:hasAvailableYieldClass eco:yieldClass8 ;
+    eco:hasAvailableYieldClass eco:yieldClass10 .
+
+eco:modelGroupCP
+    a eco:SpeciesModelGroup ;
+    rdfs:label "Model Group CP"@en ;
+    eco:speciesModelCode "CP" ;
+    eco:hasAvailableSpacing eco:spacing1p4 ;
+    eco:hasAvailableYieldClass eco:yieldClass6 ;
+    eco:hasAvailableYieldClass eco:yieldClass8 ;
+    eco:hasAvailableYieldClass eco:yieldClass10 ;
+    eco:hasAvailableYieldClass eco:yieldClass12 ;
+    eco:hasAvailableYieldClass eco:yieldClass14 ;
+    eco:hasAvailableYieldClass eco:yieldClass16 ;
+    eco:hasAvailableYieldClass eco:yieldClass18 ;
+    eco:hasAvailableYieldClass eco:yieldClass20 .
+
+eco:modelGroupDF
+    a eco:SpeciesModelGroup ;
+    rdfs:label "Model Group DF"@en ;
+    eco:speciesModelCode "DF" ;
+    eco:hasAvailableSpacing eco:spacing1p7 ;
+    eco:hasAvailableYieldClass eco:yieldClass8 ;
+    eco:hasAvailableYieldClass eco:yieldClass10 ;
+    eco:hasAvailableYieldClass eco:yieldClass12 ;
+    eco:hasAvailableYieldClass eco:yieldClass14 ;
+    eco:hasAvailableYieldClass eco:yieldClass16 ;
+    eco:hasAvailableYieldClass eco:yieldClass18 ;
+    eco:hasAvailableYieldClass eco:yieldClass20 ;
+    eco:hasAvailableYieldClass eco:yieldClass22 ;
+    eco:hasAvailableYieldClass eco:yieldClass24 .
+
+eco:modelGroupEL
+    a eco:SpeciesModelGroup ;
+    rdfs:label "Model Group EL"@en ;
+    eco:speciesModelCode "EL" ;
+    eco:hasAvailableSpacing eco:spacing1p7 ;
+    eco:hasAvailableYieldClass eco:yieldClass4 ;
+    eco:hasAvailableYieldClass eco:yieldClass6 ;
+    eco:hasAvailableYieldClass eco:yieldClass8 ;
+    eco:hasAvailableYieldClass eco:yieldClass10 ;
+    eco:hasAvailableYieldClass eco:yieldClass12 .
+
+eco:modelGroupGF
+    a eco:SpeciesModelGroup ;
+    rdfs:label "Model Group GF"@en ;
+    eco:speciesModelCode "GF" ;
+    eco:hasAvailableSpacing eco:spacing1p8 ;
+    eco:hasAvailableYieldClass eco:yieldClass12 ;
+    eco:hasAvailableYieldClass eco:yieldClass14 ;
+    eco:hasAvailableYieldClass eco:yieldClass16 ;
+    eco:hasAvailableYieldClass eco:yieldClass18 ;
+    eco:hasAvailableYieldClass eco:yieldClass20 ;
+    eco:hasAvailableYieldClass eco:yieldClass22 ;
+    eco:hasAvailableYieldClass eco:yieldClass24 ;
+    eco:hasAvailableYieldClass eco:yieldClass26 ;
+    eco:hasAvailableYieldClass eco:yieldClass28 ;
+    eco:hasAvailableYieldClass eco:yieldClass30 .
+
+eco:modelGroupHL
+    a eco:SpeciesModelGroup ;
+    rdfs:label "Model Group HL"@en ;
+    eco:speciesModelCode "HL" ;
+    eco:hasAvailableSpacing eco:spacing1p7 ;
+    eco:hasAvailableYieldClass eco:yieldClass4 ;
+    eco:hasAvailableYieldClass eco:yieldClass6 ;
+    eco:hasAvailableYieldClass eco:yieldClass8 ;
+    eco:hasAvailableYieldClass eco:yieldClass10 ;
+    eco:hasAvailableYieldClass eco:yieldClass12 ;
+    eco:hasAvailableYieldClass eco:yieldClass14 .
+
+eco:modelGroupJL
+    a eco:SpeciesModelGroup ;
+    rdfs:label "Model Group JL"@en ;
+    eco:speciesModelCode "JL" ;
+    eco:hasAvailableSpacing eco:spacing1p7 ;
+    eco:hasAvailableYieldClass eco:yieldClass4 ;
+    eco:hasAvailableYieldClass eco:yieldClass6 ;
+    eco:hasAvailableYieldClass eco:yieldClass8 ;
+    eco:hasAvailableYieldClass eco:yieldClass10 ;
+    eco:hasAvailableYieldClass eco:yieldClass12 ;
+    eco:hasAvailableYieldClass eco:yieldClass14 .
+
+eco:modelGroupLEC
+    a eco:SpeciesModelGroup ;
+    rdfs:label "Model Group LEC"@en ;
+    eco:speciesModelCode "LEC" ;
+    eco:hasAvailableSpacing eco:spacing1p5 ;
+    eco:hasAvailableYieldClass eco:yieldClass12 ;
+    eco:hasAvailableYieldClass eco:yieldClass14 ;
+    eco:hasAvailableYieldClass eco:yieldClass16 ;
+    eco:hasAvailableYieldClass eco:yieldClass18 ;
+    eco:hasAvailableYieldClass eco:yieldClass20 ;
+    eco:hasAvailableYieldClass eco:yieldClass22 ;
+    eco:hasAvailableYieldClass eco:yieldClass24 .
+
+eco:modelGroupLP
+    a eco:SpeciesModelGroup ;
+    rdfs:label "Model Group LP"@en ;
+    eco:speciesModelCode "LP" ;
+    eco:hasAvailableSpacing eco:spacing1p5 ;
+    eco:hasAvailableYieldClass eco:yieldClass4 ;
+    eco:hasAvailableYieldClass eco:yieldClass6 ;
+    eco:hasAvailableYieldClass eco:yieldClass8 ;
+    eco:hasAvailableYieldClass eco:yieldClass10 ;
+    eco:hasAvailableYieldClass eco:yieldClass12 ;
+    eco:hasAvailableYieldClass eco:yieldClass14 .
+
+eco:modelGroupNBL
+    a eco:SpeciesModelGroup ;
+    rdfs:label "Model Group NBL"@en ;
+    eco:speciesModelCode "NBL" ;
+    eco:hasAvailableSpacing eco:spacing3p0 ;
+    eco:hasAvailableSpacing eco:spacing4p0 ;
+    eco:hasAvailableSpacing eco:spacing5p0 ;
+    eco:hasAvailableYieldClass eco:yieldClass2 ;
+    eco:hasAvailableYieldClass eco:yieldClass4 .
+
+eco:modelGroupNF
+    a eco:SpeciesModelGroup ;
+    rdfs:label "Model Group NF"@en ;
+    eco:speciesModelCode "NF" ;
+    eco:hasAvailableSpacing eco:spacing1p5 ;
+    eco:hasAvailableYieldClass eco:yieldClass10 ;
+    eco:hasAvailableYieldClass eco:yieldClass12 ;
+    eco:hasAvailableYieldClass eco:yieldClass14 ;
+    eco:hasAvailableYieldClass eco:yieldClass16 ;
+    eco:hasAvailableYieldClass eco:yieldClass18 ;
+    eco:hasAvailableYieldClass eco:yieldClass20 ;
+    eco:hasAvailableYieldClass eco:yieldClass22 .
+
+eco:modelGroupNPI
+    a eco:SpeciesModelGroup ;
+    rdfs:label "Model Group NPI"@en ;
+    eco:speciesModelCode "NPI" ;
+    eco:hasAvailableSpacing eco:spacing2p0 ;
+    eco:hasAvailableSpacing eco:spacing3p0 ;
+    eco:hasAvailableSpacing eco:spacing4p0 ;
+    eco:hasAvailableSpacing eco:spacing5p0 ;
+    eco:hasAvailableYieldClass eco:yieldClass2 ;
+    eco:hasAvailableYieldClass eco:yieldClass4 .
+
+eco:modelGroupNS
+    a eco:SpeciesModelGroup ;
+    rdfs:label "Model Group NS"@en ;
+    eco:speciesModelCode "NS" ;
+    eco:hasAvailableSpacing eco:spacing1p5 ;
+    eco:hasAvailableYieldClass eco:yieldClass6 ;
+    eco:hasAvailableYieldClass eco:yieldClass8 ;
+    eco:hasAvailableYieldClass eco:yieldClass10 ;
+    eco:hasAvailableYieldClass eco:yieldClass12 ;
+    eco:hasAvailableYieldClass eco:yieldClass14 ;
+    eco:hasAvailableYieldClass eco:yieldClass16 ;
+    eco:hasAvailableYieldClass eco:yieldClass18 ;
+    eco:hasAvailableYieldClass eco:yieldClass20 ;
+    eco:hasAvailableYieldClass eco:yieldClass22 .
+
+eco:modelGroupOK
+    a eco:SpeciesModelGroup ;
+    rdfs:label "Model Group OK"@en ;
+    eco:speciesModelCode "OK" ;
+    eco:hasAvailableSpacing eco:spacing1p2 ;
+    eco:hasAvailableSpacing eco:spacing2p5 ;
+    eco:hasAvailableSpacing eco:spacing3p0 ;
+    eco:hasAvailableSpacing eco:spacing4p0 ;
+    eco:hasAvailableSpacing eco:spacing5p0 ;
+    eco:hasAvailableYieldClass eco:yieldClass2 ;
+    eco:hasAvailableYieldClass eco:yieldClass4 ;
+    eco:hasAvailableYieldClass eco:yieldClass6 ;
+    eco:hasAvailableYieldClass eco:yieldClass8 .
+
+eco:modelGroupRC
+    a eco:SpeciesModelGroup ;
+    rdfs:label "Model Group RC"@en ;
+    eco:speciesModelCode "RC" ;
+    eco:hasAvailableSpacing eco:spacing1p5 ;
+    eco:hasAvailableYieldClass eco:yieldClass12 ;
+    eco:hasAvailableYieldClass eco:yieldClass14 ;
+    eco:hasAvailableYieldClass eco:yieldClass16 ;
+    eco:hasAvailableYieldClass eco:yieldClass18 ;
+    eco:hasAvailableYieldClass eco:yieldClass20 ;
+    eco:hasAvailableYieldClass eco:yieldClass22 ;
+    eco:hasAvailableYieldClass eco:yieldClass24 .
+
+eco:modelGroupSAB
+    a eco:SpeciesModelGroup ;
+    rdfs:label "Model Group SAB"@en ;
+    eco:speciesModelCode "SAB" ;
+    eco:hasAvailableSpacing eco:spacing1p5 ;
+    eco:hasAvailableSpacing eco:spacing2p5 ;
+    eco:hasAvailableSpacing eco:spacing3p0 ;
+    eco:hasAvailableSpacing eco:spacing4p0 ;
+    eco:hasAvailableSpacing eco:spacing5p0 ;
+    eco:hasAvailableYieldClass eco:yieldClass2 ;
+    eco:hasAvailableYieldClass eco:yieldClass4 ;
+    eco:hasAvailableYieldClass eco:yieldClass6 ;
+    eco:hasAvailableYieldClass eco:yieldClass8 ;
+    eco:hasAvailableYieldClass eco:yieldClass10 ;
+    eco:hasAvailableYieldClass eco:yieldClass12 .
+
+eco:modelGroupSP
+    a eco:SpeciesModelGroup ;
+    rdfs:label "Model Group SP"@en ;
+    eco:speciesModelCode "SP" ;
+    eco:hasAvailableSpacing eco:spacing1p4 ;
+    eco:hasAvailableSpacing eco:spacing2p0 ;
+    eco:hasAvailableSpacing eco:spacing2p5 ;
+    eco:hasAvailableSpacing eco:spacing3p0 ;
+    eco:hasAvailableSpacing eco:spacing4p0 ;
+    eco:hasAvailableSpacing eco:spacing5p0 ;
+    eco:hasAvailableYieldClass eco:yieldClass2 ;
+    eco:hasAvailableYieldClass eco:yieldClass4 ;
+    eco:hasAvailableYieldClass eco:yieldClass6 ;
+    eco:hasAvailableYieldClass eco:yieldClass8 ;
+    eco:hasAvailableYieldClass eco:yieldClass10 ;
+    eco:hasAvailableYieldClass eco:yieldClass12 ;
+    eco:hasAvailableYieldClass eco:yieldClass14 .
+
+eco:modelGroupSS
+    a eco:SpeciesModelGroup ;
+    rdfs:label "Model Group SS"@en ;
+    eco:speciesModelCode "SS" ;
+    eco:hasAvailableSpacing eco:spacing1p7 ;
+    eco:hasAvailableSpacing eco:spacing2p0 ;
+    eco:hasAvailableYieldClass eco:yieldClass6 ;
+    eco:hasAvailableYieldClass eco:yieldClass8 ;
+    eco:hasAvailableYieldClass eco:yieldClass10 ;
+    eco:hasAvailableYieldClass eco:yieldClass12 ;
+    eco:hasAvailableYieldClass eco:yieldClass14 ;
+    eco:hasAvailableYieldClass eco:yieldClass16 ;
+    eco:hasAvailableYieldClass eco:yieldClass18 ;
+    eco:hasAvailableYieldClass eco:yieldClass20 ;
+    eco:hasAvailableYieldClass eco:yieldClass22 ;
+    eco:hasAvailableYieldClass eco:yieldClass24 .
+
+eco:modelGroupWH
+    a eco:SpeciesModelGroup ;
+    rdfs:label "Model Group WH"@en ;
+    eco:speciesModelCode "WH" ;
+    eco:hasAvailableSpacing eco:spacing1p5 ;
+    eco:hasAvailableYieldClass eco:yieldClass12 ;
+    eco:hasAvailableYieldClass eco:yieldClass14 ;
+    eco:hasAvailableYieldClass eco:yieldClass16 ;
+    eco:hasAvailableYieldClass eco:yieldClass18 ;
+    eco:hasAvailableYieldClass eco:yieldClass20 ;
+    eco:hasAvailableYieldClass eco:yieldClass22 ;
+    eco:hasAvailableYieldClass eco:yieldClass24 .

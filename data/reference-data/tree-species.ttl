@@ -1,0 +1,947 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix eco:   <https://data.carbon-calculator.co.uk/ontologies/ecology#> .
+
+# =============================================================================
+# Reference Data — Tree Species
+# =============================================================================
+
+eco:Alder
+    a eco:TreeSpecies ;
+    rdfs:label "Alder"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Alnus spp." ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:ArmandSPine
+    a eco:TreeSpecies ;
+    rdfs:label "Armand's pine"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Pinus armandii" ;
+    eco:mapsToModelGroup eco:modelGroupSP .
+
+eco:Ash
+    a eco:TreeSpecies ;
+    rdfs:label "Ash"@en ;
+    eco:speciesCode "AH (SAB)" ;
+    eco:latinName "Fraxinus excelsior" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:Aspen
+    a eco:TreeSpecies ;
+    rdfs:label "Aspen"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Populus tremula" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:AtlasCedar
+    a eco:TreeSpecies ;
+    rdfs:label "Atlas cedar"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Cedrus atlantica" ;
+    eco:mapsToModelGroup eco:modelGroupNF .
+
+eco:AustrianPine
+    a eco:TreeSpecies ;
+    rdfs:label "Austrian pine"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Pinus nigra var nigra" ;
+    eco:mapsToModelGroup eco:modelGroupCP .
+
+eco:Beech
+    a eco:TreeSpecies ;
+    rdfs:label "Beech"@en ;
+    eco:speciesCode "BE" ;
+    eco:latinName "Fagus sylvatica" ;
+    eco:mapsToModelGroup eco:modelGroupBE .
+
+eco:BhutanPine
+    a eco:TreeSpecies ;
+    rdfs:label "Bhutan pine"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Pinus wallichiana" ;
+    eco:mapsToModelGroup eco:modelGroupSP .
+
+eco:BigLeafMaple
+    a eco:TreeSpecies ;
+    rdfs:label "Big leaf maple"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Acer macrophyllum" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:BirchDownySilver
+    a eco:TreeSpecies ;
+    rdfs:label "Birch (downy/silver)"@en ;
+    eco:speciesCode "BI (SAB)" ;
+    eco:latinName "Betula spp." ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:BirdCherry
+    a eco:TreeSpecies ;
+    rdfs:label "Bird cherry"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Prunus padus" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:BishopPine
+    a eco:TreeSpecies ;
+    rdfs:label "Bishop pine"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Pinus muricata" ;
+    eco:mapsToModelGroup eco:modelGroupCP .
+
+eco:BlackPoplar
+    a eco:TreeSpecies ;
+    rdfs:label "Black poplar"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Populus nigra" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:BlackWalnut
+    a eco:TreeSpecies ;
+    rdfs:label "Black walnut"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Juglans nigra" ;
+    eco:mapsToModelGroup eco:modelGroupOK .
+
+eco:Blackthorn
+    a eco:TreeSpecies ;
+    rdfs:label "Blackthorn"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Prunus spinose" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:BornmullerSFir
+    a eco:TreeSpecies ;
+    rdfs:label "Bornmuller's fir"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Abies bornmuelleriana" ;
+    eco:mapsToModelGroup eco:modelGroupNF .
+
+eco:Box
+    a eco:TreeSpecies ;
+    rdfs:label "Box"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Buxus spp." ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:CalabrianPine
+    a eco:TreeSpecies ;
+    rdfs:label "Calabrian pine"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Pinus brutia" ;
+    eco:mapsToModelGroup eco:modelGroupSP .
+
+eco:CedarOfLebanon
+    a eco:TreeSpecies ;
+    rdfs:label "Cedar of Lebanon"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Cedrus libani" ;
+    eco:mapsToModelGroup eco:modelGroupNF .
+
+eco:CiderGum
+    a eco:TreeSpecies ;
+    rdfs:label "Cider gum"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Eucalyptus gunnii" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:CoastRedwood
+    a eco:TreeSpecies ;
+    rdfs:label "Coast redwood"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Sequoia sempervirens" ;
+    eco:mapsToModelGroup eco:modelGroupGF .
+
+eco:CommonAlder
+    a eco:TreeSpecies ;
+    rdfs:label "Common alder"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Alnus glutinosa" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:CommonLime
+    a eco:TreeSpecies ;
+    rdfs:label "Common lime"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Tilia europea" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:CommonWalnut
+    a eco:TreeSpecies ;
+    rdfs:label "Common walnut"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Juglans regia" ;
+    eco:mapsToModelGroup eco:modelGroupOK .
+
+eco:CorsicanPine
+    a eco:TreeSpecies ;
+    rdfs:label "Corsican pine"@en ;
+    eco:speciesCode "CP" ;
+    eco:latinName "Pinus nigra var maritima" ;
+    eco:mapsToModelGroup eco:modelGroupCP .
+
+eco:CrabApple
+    a eco:TreeSpecies ;
+    rdfs:label "Crab apple"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Malus sylvestris" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:CrackWillow
+    a eco:TreeSpecies ;
+    rdfs:label "Crack willow"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Salix fragilis" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:DouglasFir
+    a eco:TreeSpecies ;
+    rdfs:label "Douglas fir"@en ;
+    eco:speciesCode "DF" ;
+    eco:latinName "Pseudotsuga menziesii" ;
+    eco:mapsToModelGroup eco:modelGroupDF .
+
+eco:DownyBirch
+    a eco:TreeSpecies ;
+    rdfs:label "Downy birch"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Betula pubescens" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:DownyOak
+    a eco:TreeSpecies ;
+    rdfs:label "Downy oak"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Quercus pubescens" ;
+    eco:mapsToModelGroup eco:modelGroupOK .
+
+eco:Elm
+    a eco:TreeSpecies ;
+    rdfs:label "Elm"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Ulmus spp." ;
+    eco:mapsToModelGroup eco:modelGroupBE .
+
+eco:EnglishElm
+    a eco:TreeSpecies ;
+    rdfs:label "English elm"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Ulmus procera" ;
+    eco:mapsToModelGroup eco:modelGroupBE .
+
+eco:EuropeanLarch
+    a eco:TreeSpecies ;
+    rdfs:label "European larch"@en ;
+    eco:speciesCode "EL" ;
+    eco:latinName "Larix decidua" ;
+    eco:mapsToModelGroup eco:modelGroupEL .
+
+eco:EuropeanSilverFir
+    a eco:TreeSpecies ;
+    rdfs:label "European silver fir"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Abies alba" ;
+    eco:mapsToModelGroup eco:modelGroupNF .
+
+eco:FieldMaple
+    a eco:TreeSpecies ;
+    rdfs:label "Field maple"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Acer campestre" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:GoatWillow
+    a eco:TreeSpecies ;
+    rdfs:label "Goat willow"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Salix caprea" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:GrandFir
+    a eco:TreeSpecies ;
+    rdfs:label "Grand fir"@en ;
+    eco:speciesCode "GF" ;
+    eco:latinName "Abies grandis" ;
+    eco:mapsToModelGroup eco:modelGroupGF .
+
+eco:GrecianFir
+    a eco:TreeSpecies ;
+    rdfs:label "Grecian fir"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Abies cephalonica" ;
+    eco:mapsToModelGroup eco:modelGroupNF .
+
+eco:GreenAlder
+    a eco:TreeSpecies ;
+    rdfs:label "Green alder"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Alnus viridis" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:GreyAlder
+    a eco:TreeSpecies ;
+    rdfs:label "Grey alder"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Alnus incana" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:GreyPoplar
+    a eco:TreeSpecies ;
+    rdfs:label "Grey poplar"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Populus canescens" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:GreyWillow
+    a eco:TreeSpecies ;
+    rdfs:label "Grey willow"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Salix cinerea" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:HawthornSpecies
+    a eco:TreeSpecies ;
+    rdfs:label "Hawthorn species"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Crataegus spp" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:Hazel
+    a eco:TreeSpecies ;
+    rdfs:label "Hazel"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Corylus avellana" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:HollySpecies
+    a eco:TreeSpecies ;
+    rdfs:label "Holly species"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Ilex spp." ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:HolmOak
+    a eco:TreeSpecies ;
+    rdfs:label "Holm oak"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Quercus ilex" ;
+    eco:mapsToModelGroup eco:modelGroupOK .
+
+eco:Hornbeam
+    a eco:TreeSpecies ;
+    rdfs:label "Hornbeam"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Carpinus betulus" ;
+    eco:mapsToModelGroup eco:modelGroupBE .
+
+eco:HorseChestnut
+    a eco:TreeSpecies ;
+    rdfs:label "Horse chestnut"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Aesculus hippocastanum" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:HungarianOak
+    a eco:TreeSpecies ;
+    rdfs:label "Hungarian oak"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Quercus frainetto" ;
+    eco:mapsToModelGroup eco:modelGroupOK .
+
+eco:HybridLarch
+    a eco:TreeSpecies ;
+    rdfs:label "Hybrid larch"@en ;
+    eco:speciesCode "HL" ;
+    eco:latinName "Larix x eurolepis" ;
+    eco:mapsToModelGroup eco:modelGroupHL .
+
+eco:HybridPoplars
+    a eco:TreeSpecies ;
+    rdfs:label "Hybrid poplars"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Populus serotina/trichocarpa etc." ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:ItalianAlder
+    a eco:TreeSpecies ;
+    rdfs:label "Italian alder"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Alnus cordata" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:JapaneseCedar
+    a eco:TreeSpecies ;
+    rdfs:label "Japanese cedar"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Cryptomeria japonica" ;
+    eco:mapsToModelGroup eco:modelGroupRC .
+
+eco:JapaneseLarch
+    a eco:TreeSpecies ;
+    rdfs:label "Japanese larch"@en ;
+    eco:speciesCode "JL" ;
+    eco:latinName "Larix kaempferi" ;
+    eco:mapsToModelGroup eco:modelGroupJL .
+
+eco:KoreanPine
+    a eco:TreeSpecies ;
+    rdfs:label "Korean pine"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Pinus koreana" ;
+    eco:mapsToModelGroup eco:modelGroupSP .
+
+eco:LargeLeavedLime
+    a eco:TreeSpecies ;
+    rdfs:label "Large-leaved lime"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Tilia platyphyllos" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:LawsonSCypress
+    a eco:TreeSpecies ;
+    rdfs:label "Lawson's cypress"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Chamaecyparis lawsoniana" ;
+    eco:mapsToModelGroup eco:modelGroupRC .
+
+eco:Lenga
+    a eco:TreeSpecies ;
+    rdfs:label "Lenga"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Nothofagus pumilio" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:LeylandCypress
+    a eco:TreeSpecies ;
+    rdfs:label "Leyland cypress"@en ;
+    eco:speciesCode "LEC" ;
+    eco:latinName "Cupressocyparis leylandii" ;
+    eco:mapsToModelGroup eco:modelGroupLEC .
+
+eco:Lime
+    a eco:TreeSpecies ;
+    rdfs:label "Lime"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Tilia spp." ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:LoblollyPine
+    a eco:TreeSpecies ;
+    rdfs:label "Loblolly pine"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Pinus taeda" ;
+    eco:mapsToModelGroup eco:modelGroupCP .
+
+eco:LodgepolePine
+    a eco:TreeSpecies ;
+    rdfs:label "Lodgepole pine"@en ;
+    eco:speciesCode "LP" ;
+    eco:latinName "Pinus contorta" ;
+    eco:mapsToModelGroup eco:modelGroupLP .
+
+eco:LondonPlane
+    a eco:TreeSpecies ;
+    rdfs:label "London plane"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Platanus x acerifolia" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:MacedonianPine
+    a eco:TreeSpecies ;
+    rdfs:label "Macedonian pine"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Pinus peuce" ;
+    eco:mapsToModelGroup eco:modelGroupCP .
+
+eco:MaritimePine
+    a eco:TreeSpecies ;
+    rdfs:label "Maritime pine"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Pinus pinaster" ;
+    eco:mapsToModelGroup eco:modelGroupLP .
+
+eco:MexicanWhitePine
+    a eco:TreeSpecies ;
+    rdfs:label "Mexican white pine"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Pinus ayacahuite" ;
+    eco:mapsToModelGroup eco:modelGroupSP .
+
+eco:MontereyPine
+    a eco:TreeSpecies ;
+    rdfs:label "Monterey pine"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Pinus radiata" ;
+    eco:mapsToModelGroup eco:modelGroupCP .
+
+eco:MountainPine
+    a eco:TreeSpecies ;
+    rdfs:label "Mountain pine"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Pinus uncinata" ;
+    eco:mapsToModelGroup eco:modelGroupSP .
+
+eco:NarrowLeafedAsh
+    a eco:TreeSpecies ;
+    rdfs:label "Narrow-leafed ash"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Fraxinus angustifolia" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:NatRegenMixedBroadleaves
+    a eco:TreeSpecies ;
+    rdfs:label "Nat Regen - Mixed Broadleaves"@en ;
+    eco:speciesCode "NBL" ;
+    eco:mapsToModelGroup eco:modelGroupNBL .
+
+eco:NatRegenScotsPine
+    a eco:TreeSpecies ;
+    rdfs:label "Nat Regen - Scots Pine"@en ;
+    eco:speciesCode "NPI" ;
+    eco:mapsToModelGroup eco:modelGroupNPI .
+
+eco:NobleFir
+    a eco:TreeSpecies ;
+    rdfs:label "Noble fir"@en ;
+    eco:speciesCode "NF" ;
+    eco:latinName "Abies procera" ;
+    eco:mapsToModelGroup eco:modelGroupNF .
+
+eco:NordmannFir
+    a eco:TreeSpecies ;
+    rdfs:label "Nordmann fir"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Abies nordmanniana" ;
+    eco:mapsToModelGroup eco:modelGroupNF .
+
+eco:NorwayMaple
+    a eco:TreeSpecies ;
+    rdfs:label "Norway maple"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Acer platanoides" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:NorwaySpruce
+    a eco:TreeSpecies ;
+    rdfs:label "Norway spruce"@en ;
+    eco:speciesCode "NS" ;
+    eco:latinName "Picea abies" ;
+    eco:mapsToModelGroup eco:modelGroupNS .
+
+eco:OakRoburPetraea
+    a eco:TreeSpecies ;
+    rdfs:label "Oak (robur/petraea)"@en ;
+    eco:speciesCode "OK" ;
+    eco:latinName "Quercus spp." ;
+    eco:mapsToModelGroup eco:modelGroupOK .
+
+eco:OrientalBeech
+    a eco:TreeSpecies ;
+    rdfs:label "Oriental beech"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Fagus orientalis" ;
+    eco:mapsToModelGroup eco:modelGroupBE .
+
+eco:OrientalSpruce
+    a eco:TreeSpecies ;
+    rdfs:label "Oriental spruce"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Picea orientalis" ;
+    eco:mapsToModelGroup eco:modelGroupNS .
+
+eco:OtherBirches
+    a eco:TreeSpecies ;
+    rdfs:label "Other birches"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Betula spp." ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:OtherBroadleaves
+    a eco:TreeSpecies ;
+    rdfs:label "Other broadleaves"@en ;
+    eco:speciesCode "" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:OtherCedar
+    a eco:TreeSpecies ;
+    rdfs:label "Other Cedar"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Cedrus spp." ;
+    eco:mapsToModelGroup eco:modelGroupNF .
+
+eco:OtherCherrySpp
+    a eco:TreeSpecies ;
+    rdfs:label "Other cherry spp"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Prunus spp." ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:OtherConifers
+    a eco:TreeSpecies ;
+    rdfs:label "Other conifers"@en ;
+    eco:speciesCode "" ;
+    eco:mapsToModelGroup eco:modelGroupNS .
+
+eco:OtherEucalyptus
+    a eco:TreeSpecies ;
+    rdfs:label "Other Eucalyptus"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Eucalyptus spp." ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:OtherFirsAbies
+    a eco:TreeSpecies ;
+    rdfs:label "Other firs (Abies)"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Abies spp." ;
+    eco:mapsToModelGroup eco:modelGroupNF .
+
+eco:OtherLarches
+    a eco:TreeSpecies ;
+    rdfs:label "Other larches"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Larix spp." ;
+    eco:mapsToModelGroup eco:modelGroupEL .
+
+eco:OtherNothofagus
+    a eco:TreeSpecies ;
+    rdfs:label "Other Nothofagus"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Nothofagus spp." ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:OtherOakSpp
+    a eco:TreeSpecies ;
+    rdfs:label "Other oak spp"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Quercus spp." ;
+    eco:mapsToModelGroup eco:modelGroupOK .
+
+eco:OtherPines
+    a eco:TreeSpecies ;
+    rdfs:label "Other pines"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Pinus spp." ;
+    eco:mapsToModelGroup eco:modelGroupSP .
+
+eco:OtherPoplarSpp
+    a eco:TreeSpecies ;
+    rdfs:label "Other Poplar spp"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Populus spp." ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:OtherSpruces
+    a eco:TreeSpecies ;
+    rdfs:label "Other spruces"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Picea spp." ;
+    eco:mapsToModelGroup eco:modelGroupNS .
+
+eco:OtherWalnut
+    a eco:TreeSpecies ;
+    rdfs:label "Other walnut"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Juglans spp." ;
+    eco:mapsToModelGroup eco:modelGroupOK .
+
+eco:OtherWillows
+    a eco:TreeSpecies ;
+    rdfs:label "Other willows"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Salix spp." ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:PaperBarkBirch
+    a eco:TreeSpecies ;
+    rdfs:label "Paper-bark birch"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Betula papyrifera" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:PedunculateCommonOak
+    a eco:TreeSpecies ;
+    rdfs:label "Pedunculate/common oak"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Quercus robur" ;
+    eco:mapsToModelGroup eco:modelGroupOK .
+
+eco:PlaneSpp
+    a eco:TreeSpecies ;
+    rdfs:label "Plane spp"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Platanus spp." ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:PonderosaPine
+    a eco:TreeSpecies ;
+    rdfs:label "Ponderosa pine"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Pinus ponderosa" ;
+    eco:mapsToModelGroup eco:modelGroupSP .
+
+eco:PyreneanOak
+    a eco:TreeSpecies ;
+    rdfs:label "Pyrenean oak"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Quercus pyrenaica" ;
+    eco:mapsToModelGroup eco:modelGroupOK .
+
+eco:RaoulRauli
+    a eco:TreeSpecies ;
+    rdfs:label "Raoul/rauli"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Nothofagus nervosa" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:RedAlder
+    a eco:TreeSpecies ;
+    rdfs:label "Red alder"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Alnus rubra" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:RedAsh
+    a eco:TreeSpecies ;
+    rdfs:label "Red ash"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Fraxinus pennsylvanica" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:RedFirPacificSilver
+    a eco:TreeSpecies ;
+    rdfs:label "Red fir (pacific silver)"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Abies amabilis" ;
+    eco:mapsToModelGroup eco:modelGroupGF .
+
+eco:RedOak
+    a eco:TreeSpecies ;
+    rdfs:label "Red oak"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Quercus borealis" ;
+    eco:mapsToModelGroup eco:modelGroupBE .
+
+eco:Roble
+    a eco:TreeSpecies ;
+    rdfs:label "Roble"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Nothofagus obliqua" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:Rowan
+    a eco:TreeSpecies ;
+    rdfs:label "Rowan"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Sorbus aucuparia" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:ScotsPine
+    a eco:TreeSpecies ;
+    rdfs:label "Scots pine"@en ;
+    eco:speciesCode "SP" ;
+    eco:latinName "Pinus sylvestris" ;
+    eco:mapsToModelGroup eco:modelGroupSP .
+
+eco:SerbianSpruce
+    a eco:TreeSpecies ;
+    rdfs:label "Serbian spruce"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Picea omorika" ;
+    eco:mapsToModelGroup eco:modelGroupNS .
+
+eco:SessileOak
+    a eco:TreeSpecies ;
+    rdfs:label "Sessile oak"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Quercus petraea" ;
+    eco:mapsToModelGroup eco:modelGroupOK .
+
+eco:ShagbarkHickory
+    a eco:TreeSpecies ;
+    rdfs:label "Shagbark hickory"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Carya ovata" ;
+    eco:mapsToModelGroup eco:modelGroupBE .
+
+eco:ShiningGum
+    a eco:TreeSpecies ;
+    rdfs:label "Shining gum"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Eucalyptus nitens" ;
+    eco:mapsToModelGroup eco:modelGroupBE .
+
+eco:SilverBirch
+    a eco:TreeSpecies ;
+    rdfs:label "Silver birch"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Betula pendula" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:SilverMaple
+    a eco:TreeSpecies ;
+    rdfs:label "Silver maple"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Acer saccharinum" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:SitkaSpruce
+    a eco:TreeSpecies ;
+    rdfs:label "Sitka spruce"@en ;
+    eco:speciesCode "SS" ;
+    eco:latinName "Picea sitchensis" ;
+    eco:mapsToModelGroup eco:modelGroupSS .
+
+eco:SlashPine
+    a eco:TreeSpecies ;
+    rdfs:label "Slash pine"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Pinus ellottii" ;
+    eco:mapsToModelGroup eco:modelGroupLP .
+
+eco:SmallLeavedLime
+    a eco:TreeSpecies ;
+    rdfs:label "Small-leaved lime"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Tilia cordata" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:SmoothLeavedElm
+    a eco:TreeSpecies ;
+    rdfs:label "Smooth-leaved elm"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Ulmus carpinifolia" ;
+    eco:mapsToModelGroup eco:modelGroupBE .
+
+eco:SweetChestnut
+    a eco:TreeSpecies ;
+    rdfs:label "Sweet chestnut"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Castanea sativa" ;
+    eco:mapsToModelGroup eco:modelGroupBE .
+
+eco:Sycamore
+    a eco:TreeSpecies ;
+    rdfs:label "Sycamore"@en ;
+    eco:speciesCode "SY (SAB)" ;
+    eco:latinName "Acer pseudoplatanus" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:TulipTree
+    a eco:TreeSpecies ;
+    rdfs:label "Tulip tree"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Liriodendron tulipifera" ;
+    eco:mapsToModelGroup eco:modelGroupBE .
+
+eco:TurkeyOak
+    a eco:TreeSpecies ;
+    rdfs:label "Turkey oak"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Quercus cerris" ;
+    eco:mapsToModelGroup eco:modelGroupOK .
+
+eco:Wellingtonia
+    a eco:TreeSpecies ;
+    rdfs:label "Wellingtonia"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Sequoiadendron giganteum" ;
+    eco:mapsToModelGroup eco:modelGroupGF .
+
+eco:WesternHemlock
+    a eco:TreeSpecies ;
+    rdfs:label "Western hemlock"@en ;
+    eco:speciesCode "WH" ;
+    eco:latinName "Tsuga heterophylla" ;
+    eco:mapsToModelGroup eco:modelGroupWH .
+
+eco:WesternRedCedar
+    a eco:TreeSpecies ;
+    rdfs:label "Western red cedar"@en ;
+    eco:speciesCode "RC" ;
+    eco:latinName "Thuja plicata" ;
+    eco:mapsToModelGroup eco:modelGroupRC .
+
+eco:WesternWhitePine
+    a eco:TreeSpecies ;
+    rdfs:label "Western white pine"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Pinus monticola" ;
+    eco:mapsToModelGroup eco:modelGroupLP .
+
+eco:WeymouthPine
+    a eco:TreeSpecies ;
+    rdfs:label "Weymouth pine"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Pinus strobus" ;
+    eco:mapsToModelGroup eco:modelGroupSP .
+
+eco:WhiteAsh
+    a eco:TreeSpecies ;
+    rdfs:label "White ash"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Fraxinus Americana" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:WhiteOak
+    a eco:TreeSpecies ;
+    rdfs:label "White oak"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Quercus alba" ;
+    eco:mapsToModelGroup eco:modelGroupOK .
+
+eco:WhitePoplar
+    a eco:TreeSpecies ;
+    rdfs:label "White poplar"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Populus alba" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:WhiteWillow
+    a eco:TreeSpecies ;
+    rdfs:label "White willow"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Salix alba" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:Whitebeam
+    a eco:TreeSpecies ;
+    rdfs:label "Whitebeam"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Sorbus aria" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:WildCherryGean
+    a eco:TreeSpecies ;
+    rdfs:label "Wild cherry, gean"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Prunus avium" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:WildServiceTree
+    a eco:TreeSpecies ;
+    rdfs:label "Wild service tree"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Sorbus torminalis" ;
+    eco:mapsToModelGroup eco:modelGroupSAB .
+
+eco:WychElm
+    a eco:TreeSpecies ;
+    rdfs:label "Wych elm"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Ulmus glabra" ;
+    eco:mapsToModelGroup eco:modelGroupBE .
+
+eco:Yew
+    a eco:TreeSpecies ;
+    rdfs:label "Yew"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Taxus baccata" ;
+    eco:mapsToModelGroup eco:modelGroupSP .
+
+eco:YunnanPine
+    a eco:TreeSpecies ;
+    rdfs:label "Yunnan pine"@en ;
+    eco:speciesCode "" ;
+    eco:latinName "Pinus yunnanensis" ;
+    eco:mapsToModelGroup eco:modelGroupSP .

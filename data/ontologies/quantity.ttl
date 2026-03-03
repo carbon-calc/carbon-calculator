@@ -1,0 +1,197 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix qudt:  <http://qudt.org/schema/qudt/> .
+@prefix unit:  <http://qudt.org/vocab/unit/> .
+@prefix qty:   <https://data.carbon-calculator.co.uk/ontologies/quantity#> .
+
+# =============================================================================
+# Woodland Carbon Code — Quantity Ontology
+# =============================================================================
+# A general-purpose quantity ontology for expressing measurements as a unit
+# of measurement paired with either a single value or a range (min/max).
+# Designed for reuse by the WCC planting and carbon-calculation ontologies.
+# =============================================================================
+
+<https://data.carbon-calculator.co.uk/ontologies/quantity>
+    a owl:Ontology ;
+    rdfs:label "WCC Quantity Ontology"@en ;
+    rdfs:comment "A lightweight ontology for representing quantities with units of measurement and either scalar values or min/max ranges. Aligned with QUDT where practical."@en ;
+    owl:versionInfo "2.0.0" ;
+    owl:versionIRI <https://data.carbon-calculator.co.uk/ontologies/quantity/2.0.0> .
+
+
+# =============================================================================
+# Classes
+# =============================================================================
+
+qty:Quantity
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/quantity> ;
+    rdfs:label "Quantity"@en ;
+    rdfs:comment "A measured or calculated amount expressed with a unit of measurement and either a scalar value or a min/max range."@en .
+
+qty:ScalarQuantity
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/quantity> ;
+    rdfs:subClassOf qty:Quantity ;
+    rdfs:label "Scalar Quantity"@en ;
+    rdfs:comment "A quantity with a single numeric value and a unit."@en ;
+    owl:disjointWith qty:RangeQuantity .
+
+qty:RangeQuantity
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/quantity> ;
+    rdfs:subClassOf qty:Quantity ;
+    rdfs:label "Range Quantity"@en ;
+    rdfs:comment "A quantity expressed as a minimum–maximum range with a unit."@en ;
+    owl:disjointWith qty:ScalarQuantity .
+
+qty:UnitOfMeasurement
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/quantity> ;
+    rdfs:label "Unit of Measurement"@en ;
+    rdfs:comment "A standard unit in which a quantity is expressed."@en .
+
+qty:Area
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/quantity> ;
+    rdfs:subClassOf qty:Quantity ;
+    rdfs:label "Area"@en ;
+    rdfs:comment "A quantity measuring two-dimensional extent."@en .
+
+qty:Length
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/quantity> ;
+    rdfs:subClassOf qty:Quantity ;
+    rdfs:label "Length"@en ;
+    rdfs:comment "A quantity measuring one-dimensional extent."@en .
+
+qty:Mass
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/quantity> ;
+    rdfs:subClassOf qty:Quantity ;
+    rdfs:label "Mass"@en ;
+    rdfs:comment "A quantity measuring the amount of matter."@en .
+
+qty:Duration
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/quantity> ;
+    rdfs:subClassOf qty:Quantity ;
+    rdfs:label "Duration"@en ;
+    rdfs:comment "A quantity measuring elapsed time."@en .
+
+qty:Count
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/quantity> ;
+    rdfs:subClassOf qty:Quantity ;
+    rdfs:label "Count"@en ;
+    rdfs:comment "A dimensionless quantity representing an integer count of discrete items."@en .
+
+qty:Rate
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/quantity> ;
+    rdfs:subClassOf qty:Quantity ;
+    rdfs:label "Rate"@en ;
+    rdfs:comment "A quantity that is the ratio of two other quantities (e.g. tCO2e per hectare)."@en .
+
+qty:Percentage
+    a owl:Class ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/quantity> ;
+    rdfs:subClassOf qty:Quantity ;
+    rdfs:label "Percentage"@en ;
+    rdfs:comment "A dimensionless quantity expressed as a fraction of 100."@en .
+
+
+# =============================================================================
+# Object Properties
+# =============================================================================
+
+qty:hasUnit
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/quantity> ;
+    rdfs:label "has unit"@en ;
+    rdfs:comment "The unit of measurement in which the quantity is expressed."@en ;
+    rdfs:domain qty:Quantity ;
+    rdfs:range qty:UnitOfMeasurement .
+
+qty:numeratorUnit
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/quantity> ;
+    rdfs:subPropertyOf qty:hasUnit ;
+    rdfs:label "numerator unit"@en ;
+    rdfs:comment "The unit of the numerator in a rate quantity."@en ;
+    rdfs:domain qty:Rate ;
+    rdfs:range qty:UnitOfMeasurement .
+
+qty:denominatorUnit
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/quantity> ;
+    rdfs:label "denominator unit"@en ;
+    rdfs:comment "The unit of the denominator in a rate quantity."@en ;
+    rdfs:domain qty:Rate ;
+    rdfs:range qty:UnitOfMeasurement .
+
+qty:alignedQUDTUnit
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/quantity> ;
+    rdfs:label "aligned QUDT unit"@en ;
+    rdfs:comment "Links a WCC UnitOfMeasurement to its corresponding QUDT unit individual, if one exists."@en ;
+    rdfs:domain qty:UnitOfMeasurement ;
+    rdfs:range owl:Thing .
+
+
+# =============================================================================
+# Data Properties
+# =============================================================================
+
+qty:numericValue
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/quantity> ;
+    rdfs:label "numeric value"@en ;
+    rdfs:comment "The single scalar value of the quantity."@en ;
+    rdfs:domain qty:ScalarQuantity ;
+    rdfs:range xsd:double .
+
+qty:minValue
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/quantity> ;
+    rdfs:label "minimum value"@en ;
+    rdfs:comment "The lower bound of a range quantity."@en ;
+    rdfs:domain qty:RangeQuantity ;
+    rdfs:range xsd:double .
+
+qty:maxValue
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/quantity> ;
+    rdfs:label "maximum value"@en ;
+    rdfs:comment "The upper bound of a range quantity."@en ;
+    rdfs:domain qty:RangeQuantity ;
+    rdfs:range xsd:double .
+
+qty:integerValue
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/quantity> ;
+    rdfs:label "integer value"@en ;
+    rdfs:comment "An integer scalar value (for counts and similar)."@en ;
+    rdfs:domain qty:ScalarQuantity ;
+    rdfs:range xsd:integer .
+
+qty:percentageValue
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/quantity> ;
+    rdfs:label "percentage value"@en ;
+    rdfs:comment "A numeric value expressed as a percentage (0–100)."@en ;
+    rdfs:domain qty:Percentage ;
+    rdfs:range xsd:double .
+
+qty:unitSymbol
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://data.carbon-calculator.co.uk/ontologies/quantity> ;
+    rdfs:label "unit symbol"@en ;
+    rdfs:comment "The conventional symbol for a unit of measurement (e.g. 'ha', 'km', 'm')."@en ;
+    rdfs:domain qty:UnitOfMeasurement ;
+    rdfs:range xsd:string .
+

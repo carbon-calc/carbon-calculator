@@ -1,0 +1,26 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix eco:   <https://data.carbon-calculator.co.uk/ontologies/ecology#> .
+
+# =============================================================================
+# Reference Data — Carbon Pools
+# =============================================================================
+
+eco:StandingBiomass
+    a eco:CarbonPool ;
+    rdfs:label "Standing Biomass"@en ;
+    rdfs:comment "Carbon standing in living trees."@en .
+
+eco:Debris
+    a eco:CarbonPool ;
+    rdfs:label "Debris"@en ;
+    rdfs:comment "Carbon in deadwood, litter, and forest floor debris."@en .
+
+eco:SoilCarbon
+    a eco:CarbonPool ;
+    rdfs:label "Soil Carbon"@en ;
+    rdfs:comment "Carbon stored in soil organic matter (topsoil 0-30cm)."@en .
+
+eco:HarvestedWoodProducts
+    a eco:CarbonPool ;
+    rdfs:label "Harvested Wood Products"@en ;
+    rdfs:comment "Carbon removed from forest in harvested timber."@en .

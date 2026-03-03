@@ -1,0 +1,24 @@
+{
+  "@context": {
+    "eco": "https://data.carbon-calculator.co.uk/ontologies/ecology#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "label": "rdfs:label"
+  },
+  "@graph": [
+    {
+      "@id": "eco:BroadleavesRegen",
+      "@type": "eco:RegenerationType",
+      "label": "Broadleaves"
+    },
+    {
+      "@id": "eco:ScotsPineRegen",
+      "@type": "eco:RegenerationType",
+      "label": "Scots Pine"
+    },
+    {
+      "@id": "eco:BothRegen",
+      "@type": "eco:RegenerationType",
+      "label": "Both"
+    }
+  ]
+}
