@@ -163,7 +163,7 @@ classDiagram
     Quantity --> UnitOfMeasurement : hasUnit
     Rate --> UnitOfMeasurement : numeratorUnit
     Rate --> UnitOfMeasurement : denominatorUnit
-    UnitOfMeasurement --> "owl:Thing" : alignedQUDTUnit
+    UnitOfMeasurement --> `owl:Thing` : alignedQUDTUnit
 
     note for ScalarQuantity "Disjoint with RangeQuantity"
     note for RangeQuantity "Disjoint with ScalarQuantity"
@@ -279,7 +279,7 @@ classDiagram
     TreeSpacingOption --> SpiralGuardRate : hasSpiralGuardRate
     TreeProtectionRate <|-- ShelterRate
     TreeProtectionRate <|-- SpiralGuardRate
-    TreeProtectionRate --> "qty:Length" : protectionHeight
+    TreeProtectionRate --> `qty:Length` : protectionHeight
     ChemicalSubstance <|-- GreenhouseGas
 ```
 
